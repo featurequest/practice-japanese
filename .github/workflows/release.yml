@@ -1,0 +1,55 @@
+name: Generate and Release PDFs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate flash cards
+        run: |
+          python generate.py -o output/flashcards-55x82.pdf
+          python generate.py -o output/flashcards-63x88.pdf --card-width 63 --card-height 88
+          python generate.py -o output/flashcards-74x105.pdf --card-width 74 --card-height 105
+
+      - name: Generate practice sheets
+        run: |
+          python generate.py --practice -o output/practice-hiragana.pdf --hiragana-only
+          python generate.py --practice -o output/practice-katakana.pdf --katakana-only
+
+      - name: Generate example images
+        run: |
+          sudo apt-get install -y poppler-utils
+          python generate.py --generate-examples
+
+      - name: Set calver tag
+        id: version
+        run: echo "tag=$(date -u +'%Y.%m.%d').${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: ${{ steps.version.outputs.tag }}
+          make_latest: true
+          files: |
+            output/flashcards-55x82.pdf
+            output/flashcards-63x88.pdf
+            output/flashcards-74x105.pdf
+            output/practice-hiragana.pdf
+            output/practice-katakana.pdf
+            docs/example_flashcards_front.jpg
+            docs/example_flashcards_back.jpg
+            docs/example_practice.jpg

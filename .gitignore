@@ -1,0 +1,8 @@
+fonts/*.otf
+output/
+__pycache__/
+*.pyc
+.pytest_cache/
+.kanjivg_cache/
+docs/superpowers/
+.claude/
