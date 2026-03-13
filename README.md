@@ -86,6 +86,27 @@ Flash cards default to `output/kana_flashcards.pdf`, practice sheets to `output/
 
 Adjust `BACK_PAGE_OFFSET_Y` in `config.py` if your printer's duplex alignment is off.
 
+## Configuration
+
+All tunables are in `config.py`. Values use ReportLab's `mm` unit.
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `CARD_WIDTH` | 55mm | Card width (also settable via `--card-width`) |
+| `CARD_HEIGHT` | 82mm | Card height (also settable via `--card-height`) |
+| `BACK_PAGE_OFFSET_Y` | -2.0mm | Vertical shift for back page content to compensate for duplex misalignment. Positive = up, negative = down |
+| `KANA_FONT_SIZE` | 34mm | Large character size on card front |
+| `ROMAJI_FONT_SIZE` | 8mm | Romaji text size on card back |
+| `LABEL_FONT_SIZE` | 3mm | "hiragana"/"katakana" label size on card front |
+| `STROKE_LINE_WIDTH` | 0.8mm | Stroke diagram line thickness |
+| `STROKE_DOT_RADIUS` | 1.0mm | Stroke start-point dot size |
+| `STROKE_COLOR` | (0.2, 0.2, 0.2) | Stroke line color (dark gray) |
+| `STROKE_NUMBER_COLOR` | (0.8, 0.1, 0.1) | Stroke number color (red) |
+| `CUT_LINE_WIDTH` | 0.2mm | Cut guide line thickness |
+| `CUT_LINE_COLOR` | (0.7, 0.7, 0.7) | Cut guide line color (light gray) |
+
+Grid layout (`COLS`, `ROWS`, `MARGIN_X`, `MARGIN_Y`) is auto-computed from the card and page sizes so cards are always centered on A4.
+
 ## Licenses and Attribution
 
 ### Stroke Data — KanjiVG
