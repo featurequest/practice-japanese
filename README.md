@@ -6,6 +6,16 @@ Produces two types of PDF:
 - **Flash cards** — 208 double-sided cards (104 hiragana + 104 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
 - **Practice sheets** — Landscape A4 pages with 2cm grid boxes. Each character gets 3 rows: the first box shows the KanjiVG stroke-order character, the rest are empty for handwriting practice. Boxes include dashed cross guides for centering.
 
+## Downloads
+
+Download the latest pre-built PDFs:
+
+- [Flash cards 55×82mm](https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-55x82.pdf)
+- [Flash cards 63×88mm](https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-63x88.pdf)
+- [Flash cards 74×105mm](https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-74x105.pdf)
+- [Practice sheets — Hiragana](https://github.com/featurequest/practice-japanese/releases/latest/download/practice-hiragana.pdf)
+- [Practice sheets — Katakana](https://github.com/featurequest/practice-japanese/releases/latest/download/practice-katakana.pdf)
+
 ## Examples
 
 **Flash cards — front (character) and back (romaji + stroke order):**
