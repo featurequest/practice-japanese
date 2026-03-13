@@ -5,9 +5,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v4
 
@@ -33,6 +37,14 @@ jobs:
         run: |
           sudo apt-get install -y poppler-utils
           python generate.py --generate-examples
+
+      - name: Commit updated example images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/example_flashcards_front.jpg docs/example_flashcards_back.jpg docs/example_practice.jpg
+          git diff --staged --quiet || git commit -m "docs: update example images [skip ci]"
+          git push
 
       - name: Set calver tag
         id: version
