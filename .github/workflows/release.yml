@@ -62,6 +62,3 @@ jobs:
             output/flashcards-74x105.pdf
             output/practice-hiragana.pdf
             output/practice-katakana.pdf
-            docs/example_flashcards_front.jpg
-            docs/example_flashcards_back.jpg
-            docs/example_practice.jpg
