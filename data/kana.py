@@ -28,7 +28,7 @@ _HIRAGANA_DATA = [
     # Dakuten - Za
     ("ざ", "za", "sa"), ("じ", "ji", "sa"), ("ず", "zu", "sa"), ("ぜ", "ze", "sa"), ("ぞ", "zo", "sa"),
     # Dakuten - Da
-    ("だ", "da", "ta"), ("ぢ", "di", "ta"), ("づ", "du", "ta"), ("で", "de", "ta"), ("ど", "do", "ta"),
+    ("だ", "da", "ta"), ("ぢ", "ji", "ta"), ("づ", "zu", "ta"), ("で", "de", "ta"), ("ど", "do", "ta"),
     # Dakuten - Ba
     ("ば", "ba", "ha"), ("び", "bi", "ha"), ("ぶ", "bu", "ha"), ("べ", "be", "ha"), ("ぼ", "bo", "ha"),
     # Handakuten - Pa
@@ -73,7 +73,7 @@ _KATAKANA_DATA = [
     # Dakuten - Za
     ("ザ", "za", "sa"), ("ジ", "ji", "sa"), ("ズ", "zu", "sa"), ("ゼ", "ze", "sa"), ("ゾ", "zo", "sa"),
     # Dakuten - Da
-    ("ダ", "da", "ta"), ("ヂ", "di", "ta"), ("ヅ", "du", "ta"), ("デ", "de", "ta"), ("ド", "do", "ta"),
+    ("ダ", "da", "ta"), ("ヂ", "ji", "ta"), ("ヅ", "zu", "ta"), ("デ", "de", "ta"), ("ド", "do", "ta"),
     # Dakuten - Ba
     ("バ", "ba", "ha"), ("ビ", "bi", "ha"), ("ブ", "bu", "ha"), ("ベ", "be", "ha"), ("ボ", "bo", "ha"),
     # Handakuten - Pa
@@ -99,10 +99,14 @@ KATAKANA = [KanaCard(character=c, romaji=r, kana_type="katakana", row=row, card_
 def _apply_strokes():
     """Attach stroke data to all kana cards."""
     from data.strokes import HIRAGANA_STROKES, KATAKANA_STROKES
+    # Characters whose display romaji differs from their stroke data key
+    _stroke_keys = {"ぢ": "di", "づ": "du", "ヂ": "di", "ヅ": "du"}
     for card in HIRAGANA:
-        card.strokes = HIRAGANA_STROKES.get(card.romaji, [])
+        key = _stroke_keys.get(card.character, card.romaji)
+        card.strokes = HIRAGANA_STROKES.get(key, [])
     for card in KATAKANA:
-        card.strokes = KATAKANA_STROKES.get(card.romaji, [])
+        key = _stroke_keys.get(card.character, card.romaji)
+        card.strokes = KATAKANA_STROKES.get(key, [])
 
 
 _apply_strokes()
