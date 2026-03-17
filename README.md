@@ -37,6 +37,14 @@ Download the latest pre-built PDFs:
 
 <img src="docs/example_practice.jpg" width="90%" />
 
+**Reference chart:**
+
+<img src="docs/example_chart.jpg" width="90%" />
+
+**Stroke order:**
+
+<img src="docs/example_stroke_order.jpg" width="45%" />
+
 ## Coverage
 
 Each script includes:

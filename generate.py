@@ -100,24 +100,34 @@ def _generate_examples():
         # Generate temporary PDFs
         flashcards_pdf = os.path.join(tmp, "flashcards.pdf")
         practice_pdf = os.path.join(tmp, "practice.pdf")
+        chart_pdf = os.path.join(tmp, "chart.pdf")
+        stroke_order_pdf = os.path.join(tmp, "stroke_order.pdf")
 
         cards = HIRAGANA + KATAKANA
         generate_pdf(cards, flashcards_pdf)
         generate_practice_pdf(cards, practice_pdf)
 
-        # Extract first pages as JPEG
+        kana_types = ["hiragana", "katakana"]
+        generate_chart_pdf(kana_types, chart_pdf)
+        generate_stroke_order_pdf(kana_types, stroke_order_pdf)
+
+        # Extract pages as JPEG
+        import glob
         for label, pdf, page in [
             ("flashcards-front", flashcards_pdf, 1),
             ("flashcards-back", flashcards_pdf, 2),
             ("practice", practice_pdf, 1),
+            ("chart", chart_pdf, 1),
+            ("stroke-order", stroke_order_pdf, 1),
         ]:
             prefix = os.path.join(tmp, label)
             subprocess.run([
                 "pdftoppm", "-jpeg", "-f", str(page), "-l", str(page),
                 "-r", "200", pdf, prefix,
             ], check=True)
-            # pdftoppm adds zero-padded page number
-            tmp_jpg = f"{prefix}-{page:02d}.jpg"
+            # pdftoppm zero-pads based on total pages; find the output file
+            matches = glob.glob(f"{prefix}-*.jpg")
+            tmp_jpg = matches[0]
             dest = os.path.join(out_dir, f"example_{label.replace('-', '_')}.jpg")
             shutil.move(tmp_jpg, dest)
             print(f"  Written to {dest}")
