@@ -7,6 +7,7 @@ import config
 from data.kana import HIRAGANA, KATAKANA
 from renderer.pdf_renderer import generate_pdf
 from renderer.practice_sheet import generate_practice_pdf
+from renderer.chart import generate_chart_pdf, generate_stroke_order_pdf
 
 
 def _update_strokes():
@@ -138,6 +139,10 @@ def main():
                         help="Card height in mm (default: 82)")
     parser.add_argument("--practice", action="store_true",
                         help="Generate practice worksheet instead of flash cards")
+    parser.add_argument("--chart", action="store_true",
+                        help="Generate reference chart instead of flash cards")
+    parser.add_argument("--stroke-order", action="store_true",
+                        help="Generate stroke order reference instead of flash cards")
     parser.add_argument("--update-strokes", action="store_true",
                         help="Download latest KanjiVG and regenerate stroke data")
     parser.add_argument("--generate-examples", action="store_true",
@@ -165,13 +170,30 @@ def main():
         cards.extend(KATAKANA)
 
     os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
-    if args.practice:
+    kana_types = []
+    if not args.katakana_only:
+        kana_types.append("hiragana")
+    if not args.hiragana_only:
+        kana_types.append("katakana")
+
+    if args.chart:
+        if args.output == "output/kana_flashcards.pdf":
+            args.output = "output/kana_chart.pdf"
+        generate_chart_pdf(kana_types, args.output)
+        print(f"Generated chart ({', '.join(kana_types)}) → {args.output}")
+    elif args.stroke_order:
+        if args.output == "output/kana_flashcards.pdf":
+            args.output = "output/kana_stroke_order.pdf"
+        generate_stroke_order_pdf(kana_types, args.output)
+        print(f"Generated stroke order ({', '.join(kana_types)}) → {args.output}")
+    elif args.practice:
         if args.output == "output/kana_flashcards.pdf":
             args.output = "output/kana_practice.pdf"
         generate_practice_pdf(cards, args.output)
     else:
         generate_pdf(cards, args.output)
-    print(f"Generated {len(cards)} cards → {args.output}")
+    if not args.chart and not args.stroke_order:
+        print(f"Generated {len(cards)} cards → {args.output}")
 
 
 if __name__ == "__main__":

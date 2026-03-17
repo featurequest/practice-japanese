@@ -1,10 +1,12 @@
 # Japanese Kana Practice
 
-Generate printable flash cards and handwriting practice sheets for all hiragana and katakana characters with stroke order diagrams.
+Generate printable flash cards, handwriting practice sheets, reference charts, and stroke order guides for all hiragana and katakana characters.
 
-Produces two types of PDF:
+Produces four types of PDF:
 - **Flash cards** — 208 double-sided cards (104 hiragana + 104 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
 - **Practice sheets** — Landscape A4 pages with 2cm grid boxes. Each character gets 3 rows: the first box shows the KanjiVG stroke-order character, the rest are empty for handwriting practice. Boxes include dashed cross guides for centering.
+- **Reference charts** — Landscape A4 pages with the standard gojūon table layout: basic characters, dakuten/handakuten, and yōon combinations with romaji labels.
+- **Stroke order** — Portrait A4 pages with KanjiVG stroke diagrams and numbered indicators for each character, split into basic, dakuten, and combination sections for readability.
 
 ## Downloads
 
@@ -15,6 +17,12 @@ Download the latest pre-built PDFs:
 - [Flash cards 74×105mm](https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-74x105.pdf)
 - [Practice sheets — Hiragana](https://github.com/featurequest/practice-japanese/releases/latest/download/practice-hiragana.pdf)
 - [Practice sheets — Katakana](https://github.com/featurequest/practice-japanese/releases/latest/download/practice-katakana.pdf)
+- [Reference chart](https://github.com/featurequest/practice-japanese/releases/latest/download/chart.pdf)
+- [Reference chart — Hiragana](https://github.com/featurequest/practice-japanese/releases/latest/download/chart-hiragana.pdf)
+- [Reference chart — Katakana](https://github.com/featurequest/practice-japanese/releases/latest/download/chart-katakana.pdf)
+- [Stroke order](https://github.com/featurequest/practice-japanese/releases/latest/download/stroke-order.pdf)
+- [Stroke order — Hiragana](https://github.com/featurequest/practice-japanese/releases/latest/download/stroke-order-hiragana.pdf)
+- [Stroke order — Katakana](https://github.com/featurequest/practice-japanese/releases/latest/download/stroke-order-katakana.pdf)
 
 ## Examples
 
@@ -68,6 +76,16 @@ python generate.py --practice                    # Full set
 python generate.py --practice --hiragana-only    # Hiragana only
 python generate.py --practice --katakana-only    # Katakana only
 
+# Reference charts (landscape A4, gojūon table layout)
+python generate.py --chart                       # Both scripts
+python generate.py --chart --hiragana-only       # Hiragana only
+python generate.py --chart --katakana-only       # Katakana only
+
+# Stroke order (portrait A4, KanjiVG diagrams with numbered strokes)
+python generate.py --stroke-order                       # Both scripts
+python generate.py --stroke-order --hiragana-only       # Hiragana only
+python generate.py --stroke-order --katakana-only       # Katakana only
+
 # Custom card size (in mm, default: 55×82)
 python generate.py --card-width 60 --card-height 90
 
@@ -76,7 +94,7 @@ python generate.py --update-strokes      # Re-download KanjiVG and regenerate st
 python generate.py --generate-examples   # Regenerate example images in docs/
 ```
 
-Flash cards default to `output/kana_flashcards.pdf`, practice sheets to `output/kana_practice.pdf`.
+Default output paths: `output/kana_flashcards.pdf`, `output/kana_practice.pdf`, `output/kana_chart.pdf`, `output/kana_stroke_order.pdf`.
 
 ## Printing
 

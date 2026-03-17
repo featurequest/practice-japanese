@@ -23,6 +23,14 @@ python generate.py --card-width 63 --card-height 88  # Custom card size (mm)
 python generate.py --practice                    # Full set
 python generate.py --practice --hiragana-only    # Hiragana only
 
+# Generate reference charts (landscape A4)
+python generate.py --chart                       # Both scripts
+python generate.py --chart --hiragana-only       # Hiragana only
+
+# Generate stroke order (portrait A4)
+python generate.py --stroke-order                       # Both scripts
+python generate.py --stroke-order --hiragana-only       # Hiragana only
+
 # Run tests
 python -m pytest tests/ -v
 python -m pytest tests/test_stroke_diagram.py -v      # Single test file
@@ -52,6 +60,7 @@ The Klee One SemiBold font is bundled in `fonts/` (SIL OFL licensed).
 - `card_back.py` — Romaji + stroke diagram
 - `stroke_diagram.py` — Renders KanjiVG SVG paths with numbered stroke indicators
 - `practice_sheet.py` — Landscape A4 practice worksheets with 2cm grid boxes and dashed cross guides
+- `chart.py` — Reference chart (landscape A4, gojūon table with romaji) and stroke order (portrait A4, KanjiVG diagrams split across multiple pages for readability)
 
 ### Configuration (`config.py`)
 All tunables are centralized: paper size, card dimensions, grid layout (auto-computed from card size), font sizes, stroke colors, cut line style, and `BACK_PAGE_OFFSET_Y` for printer duplex alignment compensation. `set_card_size()` validates dimensions and recomputes grid/margins.

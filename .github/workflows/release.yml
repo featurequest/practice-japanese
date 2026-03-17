@@ -33,6 +33,18 @@ jobs:
           python generate.py --practice -o output/practice-hiragana.pdf --hiragana-only
           python generate.py --practice -o output/practice-katakana.pdf --katakana-only
 
+      - name: Generate reference charts
+        run: |
+          python generate.py --chart -o output/chart.pdf
+          python generate.py --chart -o output/chart-hiragana.pdf --hiragana-only
+          python generate.py --chart -o output/chart-katakana.pdf --katakana-only
+
+      - name: Generate stroke order
+        run: |
+          python generate.py --stroke-order -o output/stroke-order.pdf
+          python generate.py --stroke-order -o output/stroke-order-hiragana.pdf --hiragana-only
+          python generate.py --stroke-order -o output/stroke-order-katakana.pdf --katakana-only
+
       - name: Generate example images
         run: |
           sudo apt-get install -y poppler-utils
@@ -62,3 +74,9 @@ jobs:
             output/flashcards-74x105.pdf
             output/practice-hiragana.pdf
             output/practice-katakana.pdf
+            output/chart.pdf
+            output/chart-hiragana.pdf
+            output/chart-katakana.pdf
+            output/stroke-order.pdf
+            output/stroke-order-hiragana.pdf
+            output/stroke-order-katakana.pdf
