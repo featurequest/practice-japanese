@@ -32,16 +32,17 @@ def test_card_position_mirroring():
     front = _card_positions_front()
     back = _card_positions_back()
 
-    # Y positions should differ by exactly BACK_PAGE_OFFSET_Y
-    for row in range(config.ROWS):
-        for col in range(config.COLS):
-            _, fy = front[row * config.COLS + col]
-            _, by = back[row * config.COLS + col]
-            assert abs((fy + config.BACK_PAGE_OFFSET_Y) - by) < 0.01
-
-    # Front col N x should match back col (COLS-1-N) x
+    # X positions match: short-edge flip keeps columns in the same order
     for row in range(config.ROWS):
         for col in range(config.COLS):
             fx, _ = front[row * config.COLS + col]
-            bx, _ = back[row * config.COLS + (config.COLS - 1 - col)]
-            assert abs(fx - bx) < 0.01, f"Front col {col} x should match back col {config.COLS - 1 - col} x"
+            bx, _ = back[row * config.COLS + col]
+            assert abs(fx - bx) < 0.01, f"Col {col} x should match between front and back"
+
+    # Y positions: back row r physically aligns with front row (ROWS-1-r) plus offset
+    for row in range(config.ROWS):
+        for col in range(config.COLS):
+            _, fy_mirror = front[(config.ROWS - 1 - row) * config.COLS + col]
+            _, by = back[row * config.COLS + col]
+            assert abs((fy_mirror + config.BACK_PAGE_OFFSET_Y) - by) < 0.01, \
+                f"Back row {row} y should align with front row {config.ROWS - 1 - row} y"

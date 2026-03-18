@@ -54,7 +54,7 @@ FONT_PATH_KLEE = "fonts/KleeOne-SemiBold.ttf"
 
 # Back page offset — tweak to compensate for printer duplex misalignment
 # Positive = shift back page content up, negative = shift down
-BACK_PAGE_OFFSET_Y = -2.0 * mm
+BACK_PAGE_OFFSET_Y = 2.0 * mm
 
 # Cut lines
 CUT_LINE_WIDTH = 0.2 * mm

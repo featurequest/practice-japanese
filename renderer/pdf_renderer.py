@@ -28,14 +28,17 @@ def _card_positions_front() -> list[tuple[float, float]]:
 
 
 def _card_positions_back() -> list[tuple[float, float]]:
-    """Back page: reverse column order for long-edge flip alignment.
+    """Back page: reverse row order for short-edge flip alignment.
+    Columns stay the same; rows are mirrored vertically so that flipping on the
+    top short edge aligns each back card with its front.
     Includes BACK_PAGE_OFFSET_Y to compensate for printer duplex misalignment.
     """
     positions = []
     for row in range(config.ROWS):
-        for col in range(config.COLS - 1, -1, -1):  # reversed
+        for col in range(config.COLS):
             x = config.MARGIN_X + col * config.CARD_WIDTH
-            y = config.PAGE_HEIGHT - config.MARGIN_Y - (row + 1) * config.CARD_HEIGHT + config.BACK_PAGE_OFFSET_Y
+            back_row = config.ROWS - 1 - row
+            y = config.PAGE_HEIGHT - config.MARGIN_Y - (back_row + 1) * config.CARD_HEIGHT + config.BACK_PAGE_OFFSET_Y
             positions.append((x, y))
     return positions
 
@@ -77,7 +80,7 @@ def generate_pdf(cards: list[KanaCard], output_path: str):
             draw_card_front(c, card, x, y, config.CARD_WIDTH, config.CARD_HEIGHT)
         c.showPage()
 
-        # Back page (mirrored columns)
+        # Back page (rows reversed for short-edge flip alignment)
         _draw_cut_lines(c, offset_y=config.BACK_PAGE_OFFSET_Y)
         for i, card in enumerate(page_cards):
             x, y = back_positions[i]
