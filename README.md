@@ -49,6 +49,10 @@ Download the latest pre-built PDFs:
 
 <img src="docs/example_stroke_order.jpg" width="45%" />
 
+**Vocabulary reference:**
+
+<img src="docs/example_vocabulary.jpg" width="90%" />
+
 ## Coverage
 
 Each script includes:
