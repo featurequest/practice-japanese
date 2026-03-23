@@ -6,3 +6,4 @@ __pycache__/
 .kanjivg_cache/
 docs/superpowers/
 .claude/
+.firecrawl/

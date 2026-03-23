@@ -31,6 +31,9 @@ python generate.py --chart --hiragana-only       # Hiragana only
 python generate.py --stroke-order                       # Both scripts
 python generate.py --stroke-order --hiragana-only       # Hiragana only
 
+# Vocabulary reference (1000 basic words)
+python generate_vocabulary.py            # Generates data/vocabulary.json + output/vocabulary.pdf
+
 # Run tests
 python -m pytest tests/ -v
 python -m pytest tests/test_stroke_diagram.py -v      # Single test file
@@ -67,6 +70,9 @@ All tunables are centralized: paper size, card dimensions, grid layout (auto-com
 
 ### CLI (`generate.py`)
 Single entry point for all operations: PDF generation, stroke data updates (`--update-strokes`), and example image regeneration (`--generate-examples`). The `--generate-examples` flag requires `pdftoppm` (poppler-utils) and writes JPEGs to `docs/`.
+
+### Vocabulary generator (`generate_vocabulary.py`)
+Standalone script that reads `data/vocabulary.json` and produces `output/vocabulary.pdf` — a portrait A4 multi-page table with Word / Romaji / Meaning columns and section headers as colored rows (H2=dark blue, H3=medium blue, H4=light blue). The JSON (~700 entries) is the source of truth and is checked in; section headers are reconstructed from the `section`/`subsection`/`sub_subsection` fields when generating the PDF.
 
 ### Tools (`tools/`)
 - `generate_strokes_from_kanjivg.py` — Library that extracts stroke data from local KanjiVG SVG files. Called by `generate.py --update-strokes`. Fails hard if any character's SVG is missing (no stub data). The `.kanjivg_cache/` directory is gitignored.

@@ -1,0 +1,6932 @@
+[
+  {
+    "kana": "にんげん",
+    "kanji": "人間",
+    "romaji": "ningen",
+    "meaning": "human",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じんるい",
+    "kanji": "人類",
+    "romaji": "jinrui",
+    "meaning": "humanity",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひと",
+    "kanji": "人",
+    "romaji": "hito",
+    "meaning": "person",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おとこ",
+    "kanji": "男",
+    "romaji": "otoko",
+    "meaning": "male",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おとこのひと",
+    "kanji": "男の人",
+    "romaji": "otokonohito",
+    "meaning": "man",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おとこのこ",
+    "kanji": "男の子",
+    "romaji": "otokonoko",
+    "meaning": "boy",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おんな",
+    "kanji": "女",
+    "romaji": "onna",
+    "meaning": "female",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おんなのひと",
+    "kanji": "女の人",
+    "romaji": "onnanohito",
+    "meaning": "woman",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おんなのこ",
+    "kanji": "女の子",
+    "romaji": "onnanoko",
+    "meaning": "girl",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あかちゃん",
+    "kanji": "赤ちゃん",
+    "romaji": "akachan",
+    "meaning": "baby",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わかもの",
+    "kanji": "若者",
+    "romaji": "wakamono",
+    "meaning": "youth, young person",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わたし",
+    "kanji": "私",
+    "romaji": "watashi",
+    "meaning": "I, myself",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わたくし",
+    "kanji": "私",
+    "romaji": "watakushi",
+    "meaning": "I, myself",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ぼく",
+    "kanji": "僕",
+    "romaji": "boku",
+    "meaning": "I, myself",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おれ",
+    "kanji": "俺",
+    "romaji": "ore",
+    "meaning": "I, myself",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あたし",
+    "kanji": "私",
+    "romaji": "atashi",
+    "meaning": "I, myself",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しょうじょ",
+    "kanji": "少女",
+    "romaji": "shoujo",
+    "meaning": "girl",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しょうねん",
+    "kanji": "少年",
+    "romaji": "shounen",
+    "meaning": "boy",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いしゃ",
+    "kanji": "医者",
+    "romaji": "isha",
+    "meaning": "doctor",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "かんごし",
+    "kanji": "看護師",
+    "romaji": "kangoshi",
+    "meaning": "nurse",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "かんごふ",
+    "kanji": "看護婦",
+    "romaji": "kangofu",
+    "meaning": "female nurse",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "しかい",
+    "kanji": "歯科医",
+    "romaji": "shikai, ha-isha",
+    "meaning": "dentist",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "せいじか",
+    "kanji": "政治家",
+    "romaji": "seijika",
+    "meaning": "politician",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "べんごし",
+    "kanji": "弁護士",
+    "romaji": "bengoshi",
+    "meaning": "lawyer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "しょうぼうし",
+    "kanji": "消防士",
+    "romaji": "shouboushi",
+    "meaning": "firefighter",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "けいさつかん",
+    "kanji": "警察官",
+    "romaji": "keisatsukan",
+    "meaning": "police officer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "へいし",
+    "kanji": "兵士",
+    "romaji": "heishi",
+    "meaning": "soldier",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "けんちくか",
+    "kanji": "建築家",
+    "romaji": "kenchikuka",
+    "meaning": "architect",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "せんせい",
+    "kanji": "先生",
+    "romaji": "sensei",
+    "meaning": "teacher",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "きょうし",
+    "kanji": "教師",
+    "romaji": "kyoushi",
+    "meaning": "(academic) teacher",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "かしゅ",
+    "kanji": "歌手",
+    "romaji": "kashu",
+    "meaning": "singer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "エンジニア",
+    "kanji": "",
+    "romaji": "enjinia",
+    "meaning": "engineer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Occupations"
+  },
+  {
+    "kana": "あし",
+    "kanji": "足",
+    "romaji": "ashi",
+    "meaning": "foot, leg",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かかと",
+    "kanji": "踵",
+    "romaji": "kakato",
+    "meaning": "heel",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "すね",
+    "kanji": "脛",
+    "romaji": "sune",
+    "meaning": "shin",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ひざ",
+    "kanji": "膝",
+    "romaji": "hiza",
+    "meaning": "knee",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "もも",
+    "kanji": "腿",
+    "romaji": "momo",
+    "meaning": "thigh",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "あたま",
+    "kanji": "頭",
+    "romaji": "atama",
+    "meaning": "head",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かお",
+    "kanji": "顔",
+    "romaji": "kao",
+    "meaning": "face",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "くち",
+    "kanji": "口",
+    "romaji": "kuchi",
+    "meaning": "mouth",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "くちびる",
+    "kanji": "唇",
+    "romaji": "kuchibiru",
+    "meaning": "lips",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "は",
+    "kanji": "歯",
+    "romaji": "ha",
+    "meaning": "tooth",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "はな",
+    "kanji": "鼻",
+    "romaji": "hana",
+    "meaning": "nose",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "め",
+    "kanji": "目",
+    "romaji": "me",
+    "meaning": "eye",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ひげ",
+    "kanji": "髭",
+    "romaji": "hige",
+    "meaning": "moustache, beard",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かみ",
+    "kanji": "髪",
+    "romaji": "kami",
+    "meaning": "hair",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "みみ",
+    "kanji": "耳",
+    "romaji": "mimi",
+    "meaning": "ear",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "おなか",
+    "kanji": "御腹",
+    "romaji": "onaka",
+    "meaning": "stomach",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "うで",
+    "kanji": "腕",
+    "romaji": "ude",
+    "meaning": "arm",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ひじ",
+    "kanji": "肘",
+    "romaji": "hiji",
+    "meaning": "elbow",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かた",
+    "kanji": "肩",
+    "romaji": "kata",
+    "meaning": "shoulder",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "つめ",
+    "kanji": "爪",
+    "romaji": "tsume",
+    "meaning": "nail",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "て",
+    "kanji": "手",
+    "romaji": "te",
+    "meaning": "hand",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "てくび",
+    "kanji": "手首",
+    "romaji": "tekubi",
+    "meaning": "wrist",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "てのひら",
+    "kanji": "掌",
+    "romaji": "te-no-hira",
+    "meaning": "palm of hand",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ゆび",
+    "kanji": "指",
+    "romaji": "yubi",
+    "meaning": "finger, toe",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "しり",
+    "kanji": "尻",
+    "romaji": "shiri",
+    "meaning": "buttocks",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "おなか",
+    "kanji": "お腹",
+    "romaji": "o-naka",
+    "meaning": "abdomen",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かんぞう",
+    "kanji": "肝臓",
+    "romaji": "kanzō",
+    "meaning": "liver",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "きも",
+    "kanji": "肝",
+    "romaji": "kimo",
+    "meaning": "liver",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "きんにく",
+    "kanji": "筋肉",
+    "romaji": "kin'niku",
+    "meaning": "muscle",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "くび",
+    "kanji": "首",
+    "romaji": "kubi",
+    "meaning": "neck",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "こころ",
+    "kanji": "心",
+    "romaji": "kokoro",
+    "meaning": "heart [as in feelings]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "こし",
+    "kanji": "腰",
+    "romaji": "koshi",
+    "meaning": "waist, hip",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "しんぞう",
+    "kanji": "心臓",
+    "romaji": "shinzō",
+    "meaning": "heart",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "せなか",
+    "kanji": "背中",
+    "romaji": "senaka",
+    "meaning": "back",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ち",
+    "kanji": "血",
+    "romaji": "chi",
+    "meaning": "blood",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "にく",
+    "kanji": "肉",
+    "romaji": "niku",
+    "meaning": "meat",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "はだ",
+    "kanji": "肌",
+    "romaji": "hada",
+    "meaning": "skin",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ひふ",
+    "kanji": "皮膚",
+    "romaji": "hifu",
+    "meaning": "skin",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "ほね",
+    "kanji": "骨",
+    "romaji": "hone",
+    "meaning": "bone",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "むね",
+    "kanji": "胸",
+    "romaji": "mune",
+    "meaning": "chest",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かぜ",
+    "kanji": "風邪",
+    "romaji": "kaze",
+    "meaning": "cold [illness]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "げり",
+    "kanji": "下痢",
+    "romaji": "geri",
+    "meaning": "diarrhea",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "びょうき",
+    "kanji": "病気",
+    "romaji": "byōki",
+    "meaning": "illness",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "People",
+    "sub_subsection": "Body"
+  },
+  {
+    "kana": "かぞく",
+    "kanji": "家族",
+    "romaji": "kazoku",
+    "meaning": "family",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "りょうしん",
+    "kanji": "両親",
+    "romaji": "ryoushin",
+    "meaning": "parents",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こども",
+    "kanji": "子供",
+    "romaji": "kodomo",
+    "meaning": "children, child",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちち",
+    "kanji": "父",
+    "romaji": "chichi",
+    "meaning": "father",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はは",
+    "kanji": "母",
+    "romaji": "haha",
+    "meaning": "mother",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つま",
+    "kanji": "妻",
+    "romaji": "tsuma",
+    "meaning": "wife",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おっと",
+    "kanji": "夫",
+    "romaji": "otto",
+    "meaning": "husband",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あに",
+    "kanji": "兄",
+    "romaji": "ani",
+    "meaning": "older brother",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あね",
+    "kanji": "姉",
+    "romaji": "ane",
+    "meaning": "older sister",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おとうと",
+    "kanji": "弟",
+    "romaji": "otōto",
+    "meaning": "younger brother",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いもうと",
+    "kanji": "妹",
+    "romaji": "imōto",
+    "meaning": "younger sister",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きょうだい",
+    "kanji": "兄弟",
+    "romaji": "kyōdai",
+    "meaning": "brothers, siblings",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しまい",
+    "kanji": "姉妹",
+    "romaji": "shimai",
+    "meaning": "sisters",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そふ",
+    "kanji": "祖父",
+    "romaji": "sofu",
+    "meaning": "grandfather",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そぼ",
+    "kanji": "祖母",
+    "romaji": "sobo",
+    "meaning": "grandmother",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まご",
+    "kanji": "孫",
+    "romaji": "mago",
+    "meaning": "grandchild",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おじ",
+    "kanji": "伯父",
+    "romaji": "oji",
+    "meaning": "uncle",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おば",
+    "kanji": "伯母",
+    "romaji": "oba",
+    "meaning": "aunt",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いとこ",
+    "kanji": "従兄弟",
+    "romaji": "itoko",
+    "meaning": "cousin",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "めい",
+    "kanji": "姪",
+    "romaji": "mei",
+    "meaning": "niece",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おい",
+    "kanji": "甥",
+    "romaji": "oi",
+    "meaning": "nephew",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Family",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いきもの",
+    "kanji": "生き物",
+    "romaji": "ikimono",
+    "meaning": "living creatures",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ばけもの",
+    "kanji": "化け物",
+    "romaji": "bakemono",
+    "meaning": "monster",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どうぶつ",
+    "kanji": "動物",
+    "romaji": "dōbutsu",
+    "meaning": "animal",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "チーター",
+    "kanji": "",
+    "romaji": "chītā",
+    "meaning": "cheetah",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "いぬ",
+    "kanji": "犬",
+    "romaji": "inu",
+    "meaning": "dog",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ねこ",
+    "kanji": "猫",
+    "romaji": "neko",
+    "meaning": "cat",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "うし",
+    "kanji": "牛",
+    "romaji": "ushi",
+    "meaning": "cow",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ぶた",
+    "kanji": "豚",
+    "romaji": "buta",
+    "meaning": "pig",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "うま",
+    "kanji": "馬",
+    "romaji": "uma",
+    "meaning": "horse",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ひつじ",
+    "kanji": "羊",
+    "romaji": "hitsuji",
+    "meaning": "sheep",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "さる",
+    "kanji": "猿",
+    "romaji": "saru",
+    "meaning": "monkey",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ねずみ",
+    "kanji": "鼠",
+    "romaji": "nezumi",
+    "meaning": "mouse, rat",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "とら",
+    "kanji": "虎",
+    "romaji": "tora",
+    "meaning": "tiger",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "オオカミ",
+    "kanji": "狼",
+    "romaji": "ōkami",
+    "meaning": "wolf",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "うさぎ",
+    "kanji": "兎",
+    "romaji": "usagi",
+    "meaning": "rabbit",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "りゅう",
+    "kanji": "竜",
+    "romaji": "ryū",
+    "meaning": "dragon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "しか",
+    "kanji": "鹿",
+    "romaji": "shika",
+    "meaning": "deer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "かえる",
+    "kanji": "蛙",
+    "romaji": "kaeru",
+    "meaning": "frog",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "がま",
+    "kanji": "蟇",
+    "romaji": "gama",
+    "meaning": "toad",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "しし",
+    "kanji": "獅子",
+    "romaji": "shishi",
+    "meaning": "lion",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "キリン",
+    "kanji": "麒麟",
+    "romaji": "kirin",
+    "meaning": "giraffe",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ぞう",
+    "kanji": "象",
+    "romaji": "zō",
+    "meaning": "elephant",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "とり",
+    "kanji": "鳥",
+    "romaji": "tori",
+    "meaning": "bird",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "にわとり",
+    "kanji": "鶏",
+    "romaji": "niwatori",
+    "meaning": "chicken",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "すずめ",
+    "kanji": "雀",
+    "romaji": "suzume",
+    "meaning": "sparrow",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "からす",
+    "kanji": "烏",
+    "romaji": "karasu",
+    "meaning": "crow, raven",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "わし",
+    "kanji": "鷲",
+    "romaji": "washi",
+    "meaning": "eagle",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "たか",
+    "kanji": "鷹",
+    "romaji": "taka",
+    "meaning": "hawk, falcon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "さかな",
+    "kanji": "魚",
+    "romaji": "sakana",
+    "meaning": "fish",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "たい",
+    "kanji": "鯛",
+    "romaji": "tai",
+    "meaning": "red snapper",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "えび",
+    "kanji": "海老",
+    "romaji": "ebi",
+    "meaning": "shrimp, lobster",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "いわし",
+    "kanji": "鰯",
+    "romaji": "iwashi",
+    "meaning": "sardine",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "まぐろ",
+    "kanji": "鮪",
+    "romaji": "maguro",
+    "meaning": "tuna",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "かつお",
+    "kanji": "鰹",
+    "romaji": "katsuo",
+    "meaning": "bonito",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "さんま",
+    "kanji": "秋刀魚",
+    "romaji": "sanma",
+    "meaning": "pike",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "あじ",
+    "kanji": "鰺",
+    "romaji": "aji",
+    "meaning": "horse mackerel",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "さば",
+    "kanji": "鯖",
+    "romaji": "saba",
+    "meaning": "mackerel",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "イカ",
+    "kanji": "烏賊",
+    "romaji": "ika",
+    "meaning": "squid",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "タコ",
+    "kanji": "蛸",
+    "romaji": "tako",
+    "meaning": "octopus",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "むし",
+    "kanji": "虫",
+    "romaji": "mushi",
+    "meaning": "insect",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ちょう",
+    "kanji": "蝶",
+    "romaji": "chō",
+    "meaning": "butterfly",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ガ",
+    "kanji": "蛾",
+    "romaji": "ga",
+    "meaning": "moth",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "せみ",
+    "kanji": "蝉",
+    "romaji": "semi",
+    "meaning": "cicada",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "トンボ",
+    "kanji": "蜻蛉",
+    "romaji": "tonbo",
+    "meaning": "dragonfly",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "バッタ",
+    "kanji": "飛蝗",
+    "romaji": "batta",
+    "meaning": "grasshopper",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "クモ",
+    "kanji": "蜘蛛",
+    "romaji": "kumo",
+    "meaning": "spider",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ホタル",
+    "kanji": "蛍",
+    "romaji": "hotaru",
+    "meaning": "firefly",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ハエ",
+    "kanji": "蝿",
+    "romaji": "hae",
+    "meaning": "housefly",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "カ",
+    "kanji": "蚊",
+    "romaji": "ka",
+    "meaning": "mosquito, gnat",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ゴキブリ",
+    "kanji": "蜚蠊",
+    "romaji": "gokiburi",
+    "meaning": "cockroach",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "カタツムリ",
+    "kanji": "蝸牛",
+    "romaji": "katatsumuri",
+    "meaning": "snail",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ナメクジ",
+    "kanji": "蛞蝓",
+    "romaji": "namekuji",
+    "meaning": "slug",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "ミミズ",
+    "kanji": "蚯蚓",
+    "romaji": "mimizu",
+    "meaning": "earthworm",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "かい",
+    "kanji": "貝",
+    "romaji": "kai",
+    "meaning": "shellfish",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "かいがら",
+    "kanji": "貝殻",
+    "romaji": "kaigara",
+    "meaning": "shell",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "トカゲ",
+    "kanji": "蜥蜴",
+    "romaji": "tokage",
+    "meaning": "lizard",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "へび",
+    "kanji": "蛇",
+    "romaji": "hebi",
+    "meaning": "snake",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "くま",
+    "kanji": "熊",
+    "romaji": "kuma",
+    "meaning": "bear",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Animals"
+  },
+  {
+    "kana": "しょくぶつ",
+    "kanji": "植物",
+    "romaji": "shokubutsu",
+    "meaning": "plants",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "くさ",
+    "kanji": "草",
+    "romaji": "kusa",
+    "meaning": "grass",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "はな",
+    "kanji": "花",
+    "romaji": "hana",
+    "meaning": "flower",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "み",
+    "kanji": "実",
+    "romaji": "mi",
+    "meaning": "fruit",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "き",
+    "kanji": "木",
+    "romaji": "ki",
+    "meaning": "tree",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "は",
+    "kanji": "葉",
+    "romaji": "ha",
+    "meaning": "leaf",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "ね",
+    "kanji": "根",
+    "romaji": "ne",
+    "meaning": "root",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "くき",
+    "kanji": "茎",
+    "romaji": "kuki",
+    "meaning": "stem",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "きのこ",
+    "kanji": "茸",
+    "romaji": "kinoko",
+    "meaning": "mushroom",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "きく",
+    "kanji": "菊",
+    "romaji": "kiku",
+    "meaning": "chrysanthemum",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "さくら",
+    "kanji": "桜",
+    "romaji": "sakura",
+    "meaning": "cherry blossom",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "まつ",
+    "kanji": "松",
+    "romaji": "matsu",
+    "meaning": "pine tree",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "うめ",
+    "kanji": "梅",
+    "romaji": "ume",
+    "meaning": "japanese plum or apricot",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Plants"
+  },
+  {
+    "kana": "こめ",
+    "kanji": "米",
+    "romaji": "kome",
+    "meaning": "uncooked rice",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "いね",
+    "kanji": "稲",
+    "romaji": "ine",
+    "meaning": "rice growing in a field",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "むぎ",
+    "kanji": "麦",
+    "romaji": "mugi",
+    "meaning": "wheat, barley, oats",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "やさい",
+    "kanji": "野菜",
+    "romaji": "yasai",
+    "meaning": "vegetable",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "くだもの",
+    "kanji": "果物",
+    "romaji": "kudamono",
+    "meaning": "fruit for eating",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "いも",
+    "kanji": "芋",
+    "romaji": "imo",
+    "meaning": "yam, potato, taro",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "まめ",
+    "kanji": "豆",
+    "romaji": "mame",
+    "meaning": "beans, peas",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "だいこん",
+    "kanji": "大根",
+    "romaji": "daikon",
+    "meaning": "Japanese white radish",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "にんじん",
+    "kanji": "人参",
+    "romaji": "ninjin",
+    "meaning": "carrot",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "リンゴ",
+    "kanji": "林檎",
+    "romaji": "ringo",
+    "meaning": "apple",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "ミカン",
+    "kanji": "蜜柑",
+    "romaji": "mikan",
+    "meaning": "mandarin orange",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "バナナ",
+    "kanji": "甘蕉",
+    "romaji": "banana",
+    "meaning": "banana",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "ナシ",
+    "kanji": "梨",
+    "romaji": "nashi",
+    "meaning": "pear",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "クリ",
+    "kanji": "栗",
+    "romaji": "kuri",
+    "meaning": "chestnut tree",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "モモ",
+    "kanji": "桃",
+    "romaji": "momo",
+    "meaning": "peach",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "トマト",
+    "kanji": "蕃茄",
+    "romaji": "tomato",
+    "meaning": "tomato",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "スイカ",
+    "kanji": "西瓜",
+    "romaji": "suika",
+    "meaning": "watermelon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Life",
+    "sub_subsection": "Crops"
+  },
+  {
+    "kana": "たべもの",
+    "kanji": "食べ物",
+    "romaji": "tabemono",
+    "meaning": "food",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちょうしょく",
+    "kanji": "朝食",
+    "romaji": "chōshoku",
+    "meaning": "breakfast",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひるごはん",
+    "kanji": "昼御飯",
+    "romaji": "hirugohan",
+    "meaning": "lunch",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ばんごはん",
+    "kanji": "晩御飯",
+    "romaji": "bangohan",
+    "meaning": "dinner",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ごはん",
+    "kanji": "御飯",
+    "romaji": "gohan",
+    "meaning": "cooked rice or meal",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みそ",
+    "kanji": "味噌",
+    "romaji": "miso",
+    "meaning": "miso",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "りょうり",
+    "kanji": "料理",
+    "romaji": "ryōri",
+    "meaning": "cooking",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "サラダ",
+    "kanji": "",
+    "romaji": "sarada",
+    "meaning": "salad",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "デザート",
+    "kanji": "",
+    "romaji": "dezāto",
+    "meaning": "dessert",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "パン",
+    "kanji": "",
+    "romaji": "pan",
+    "meaning": "bread",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "サンドイッチ",
+    "kanji": "",
+    "romaji": "sandoitchi",
+    "meaning": "sandwich",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おやつ",
+    "kanji": "間食",
+    "romaji": "oyatsu",
+    "meaning": "snack",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "アイスクリーム",
+    "kanji": "",
+    "romaji": "aisukurīmu",
+    "meaning": "ice cream",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たこやき",
+    "kanji": "たこ焼き",
+    "romaji": "takoyaki",
+    "meaning": "octopus dumpling",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Food",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "のみもの",
+    "kanji": "飲み物",
+    "romaji": "nomimono",
+    "meaning": "drink/beverage",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちゃ",
+    "kanji": "茶",
+    "romaji": "cha",
+    "meaning": "tea",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おちゃ",
+    "kanji": "お茶",
+    "romaji": "ocha",
+    "meaning": "green tea",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "コーヒー",
+    "kanji": "珈琲",
+    "romaji": "kōhī",
+    "meaning": "coffee",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ぎゅうにゅう",
+    "kanji": "牛乳",
+    "romaji": "gyūnyū",
+    "meaning": "milk",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みず",
+    "kanji": "水",
+    "romaji": "mizu",
+    "meaning": "water",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ビール",
+    "kanji": "",
+    "romaji": "bīru",
+    "meaning": "beer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ワイン",
+    "kanji": "",
+    "romaji": "wain",
+    "meaning": "wine",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Drink",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さとう",
+    "kanji": "砂糖",
+    "romaji": "satō",
+    "meaning": "sugar",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Seasoning",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しお",
+    "kanji": "塩",
+    "romaji": "shio",
+    "meaning": "salt",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Seasoning",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しょうゆ",
+    "kanji": "醤油",
+    "romaji": "shōyu",
+    "meaning": "soy sauce",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Seasoning",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じかん",
+    "kanji": "時間",
+    "romaji": "jikan",
+    "meaning": "time",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とき",
+    "kanji": "時",
+    "romaji": "toki",
+    "meaning": "~hours",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こよみ",
+    "kanji": "暦",
+    "romaji": "koyomi",
+    "meaning": "calendar",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふん",
+    "kanji": "分",
+    "romaji": "fun",
+    "meaning": "minute",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "びょう",
+    "kanji": "秒",
+    "romaji": "byō",
+    "meaning": "second",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひ",
+    "kanji": "日",
+    "romaji": "hi",
+    "meaning": "day",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つき",
+    "kanji": "月",
+    "romaji": "tsuki",
+    "meaning": "month",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とし",
+    "kanji": "年",
+    "romaji": "toshi",
+    "meaning": "year",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きのう",
+    "kanji": "昨日",
+    "romaji": "kinō",
+    "meaning": "yesterday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きょう",
+    "kanji": "今日",
+    "romaji": "kyō",
+    "meaning": "today",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あした",
+    "kanji": "明日",
+    "romaji": "ashita",
+    "meaning": "tomorrow",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あさ",
+    "kanji": "朝",
+    "romaji": "asa",
+    "meaning": "morning",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひる",
+    "kanji": "昼",
+    "romaji": "hiru",
+    "meaning": "afternoon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ゆうがた",
+    "kanji": "夕方",
+    "romaji": "yūgata",
+    "meaning": "evening",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ばん",
+    "kanji": "晩",
+    "romaji": "ban",
+    "meaning": "evening",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "よる",
+    "kanji": "夜",
+    "romaji": "yoru",
+    "meaning": "evening, night",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ようび",
+    "kanji": "曜日",
+    "romaji": "yōbi",
+    "meaning": "~day",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しゅう",
+    "kanji": "週",
+    "romaji": "shū",
+    "meaning": "week",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いっしゅうかん",
+    "kanji": "一週間",
+    "romaji": "isshūkan",
+    "meaning": "one week",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Time",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "にちようび",
+    "kanji": "日曜日",
+    "romaji": "nichi-yōbi",
+    "meaning": "Sunday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "げつようび",
+    "kanji": "月曜日",
+    "romaji": "getsu-yōbi",
+    "meaning": "Monday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かようび",
+    "kanji": "火曜日",
+    "romaji": "ka-yōbi",
+    "meaning": "Tuesday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すいようび",
+    "kanji": "水曜日",
+    "romaji": "sui-yōbi",
+    "meaning": "Wednesday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "もくようび",
+    "kanji": "木曜日",
+    "romaji": "moku-yōbi",
+    "meaning": "Thursday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きんようび",
+    "kanji": "金曜日",
+    "romaji": "kin-yōbi",
+    "meaning": "Friday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どようび",
+    "kanji": "土曜日",
+    "romaji": "do-yōbi",
+    "meaning": "Saturday",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Week Days",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たいよう",
+    "kanji": "太陽",
+    "romaji": "taiyō",
+    "meaning": "sun",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つき",
+    "kanji": "月",
+    "romaji": "tsuki",
+    "meaning": "moon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ほし",
+    "kanji": "星",
+    "romaji": "hoshi",
+    "meaning": "star",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "てんき",
+    "kanji": "天気",
+    "romaji": "tenki",
+    "meaning": "weather",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はれ",
+    "kanji": "晴れ",
+    "romaji": "hare",
+    "meaning": "clear weather",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あめ",
+    "kanji": "雨",
+    "romaji": "ame",
+    "meaning": "rain",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "くもり",
+    "kanji": "曇り",
+    "romaji": "kumori",
+    "meaning": "cloudy",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ゆき",
+    "kanji": "雪",
+    "romaji": "yuki",
+    "meaning": "snow",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かぜ",
+    "kanji": "風",
+    "romaji": "kaze",
+    "meaning": "wind",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かみなり",
+    "kanji": "雷",
+    "romaji": "kaminari",
+    "meaning": "thunder, lightning",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たいふう",
+    "kanji": "台風",
+    "romaji": "taifū",
+    "meaning": "typhoon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あらし",
+    "kanji": "嵐",
+    "romaji": "arashi",
+    "meaning": "storm",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そら",
+    "kanji": "空",
+    "romaji": "sora",
+    "meaning": "sky",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weather",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きた",
+    "kanji": "北",
+    "romaji": "kita",
+    "meaning": "north",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひがし",
+    "kanji": "東",
+    "romaji": "higashi",
+    "meaning": "east",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みなみ",
+    "kanji": "南",
+    "romaji": "minami",
+    "meaning": "south",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "にし",
+    "kanji": "西",
+    "romaji": "nishi",
+    "meaning": "west",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ここ",
+    "kanji": "",
+    "romaji": "koko",
+    "meaning": "here",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そこ",
+    "kanji": "",
+    "romaji": "soko",
+    "meaning": "there",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あそこ",
+    "kanji": "",
+    "romaji": "asoko",
+    "meaning": "over there",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みぎ",
+    "kanji": "右",
+    "romaji": "migi",
+    "meaning": "right",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひだり",
+    "kanji": "左",
+    "romaji": "hidari",
+    "meaning": "left",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うえ",
+    "kanji": "上",
+    "romaji": "ue",
+    "meaning": "above, up",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "した",
+    "kanji": "下",
+    "romaji": "shita",
+    "meaning": "below, down",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まえ",
+    "kanji": "前",
+    "romaji": "mae",
+    "meaning": "front",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うしろ",
+    "kanji": "後",
+    "romaji": "ushiro",
+    "meaning": "behind",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "むこう",
+    "kanji": "向こう",
+    "romaji": "mukō",
+    "meaning": "the other side, opposite side",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ななめ",
+    "kanji": "斜め",
+    "romaji": "naname",
+    "meaning": "diagonal",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "てまえ",
+    "kanji": "手前",
+    "romaji": "temae",
+    "meaning": "nearer, more in front",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とおい",
+    "kanji": "遠い",
+    "romaji": "tooi",
+    "meaning": "far",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちかい",
+    "kanji": "近い",
+    "romaji": "chikai",
+    "meaning": "near, close",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Directions and positions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みず",
+    "kanji": "水",
+    "romaji": "mizu",
+    "meaning": "water",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ゆ",
+    "kanji": "湯",
+    "romaji": "yu",
+    "meaning": "hot water",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こおり",
+    "kanji": "氷",
+    "romaji": "kōri",
+    "meaning": "ice",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ゆげ",
+    "kanji": "湯気",
+    "romaji": "yuge",
+    "meaning": "steam",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひ",
+    "kanji": "火",
+    "romaji": "hi",
+    "meaning": "fire",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ガス",
+    "kanji": "",
+    "romaji": "gasu",
+    "meaning": "gas",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "くうき",
+    "kanji": "空気",
+    "romaji": "kūki",
+    "meaning": "air, atmosphere",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つち",
+    "kanji": "土",
+    "romaji": "tsuchi",
+    "meaning": "earth, ground",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きんぞく",
+    "kanji": "金属",
+    "romaji": "kinzoku",
+    "meaning": "metal, metallic",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どろ",
+    "kanji": "泥",
+    "romaji": "doro",
+    "meaning": "mud, mire, clay, plaster",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "けむり",
+    "kanji": "煙",
+    "romaji": "kemuri",
+    "meaning": "smoke, tobacco, opium",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "てつ",
+    "kanji": "鉄",
+    "romaji": "tetsu",
+    "meaning": "iron [Fe]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どう",
+    "kanji": "銅",
+    "romaji": "dō",
+    "meaning": "copper [Cu]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きん",
+    "kanji": "金",
+    "romaji": "kin",
+    "meaning": "gold [Au]; money",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ぎん",
+    "kanji": "銀",
+    "romaji": "gin",
+    "meaning": "silver [Ag]; wealth",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なまり",
+    "kanji": "鉛",
+    "romaji": "namari",
+    "meaning": "lead [Pb]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しお",
+    "kanji": "塩",
+    "romaji": "shio",
+    "meaning": "salt [NaCl]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Materials",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "メートル",
+    "kanji": "",
+    "romaji": "mētoru",
+    "meaning": "meter",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "リットル",
+    "kanji": "",
+    "romaji": "rittoru",
+    "meaning": "litre",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "グラム",
+    "kanji": "",
+    "romaji": "guramu",
+    "meaning": "gram",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "キロ",
+    "kanji": "",
+    "romaji": "kiro",
+    "meaning": "kilo-",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ミリ",
+    "kanji": "",
+    "romaji": "miri",
+    "meaning": "milli-",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "センチメートル",
+    "kanji": "",
+    "romaji": "senchi",
+    "meaning": "centimeter",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "インチ",
+    "kanji": "",
+    "romaji": "inchi",
+    "meaning": "inch",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Weights and measures",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しゃかい",
+    "kanji": "社会",
+    "romaji": "shakai",
+    "meaning": "society",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "けいざい",
+    "kanji": "経済",
+    "romaji": "keizai",
+    "meaning": "economy, economics",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かいしゃ",
+    "kanji": "会社",
+    "romaji": "kaisha",
+    "meaning": "company",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かいぎ",
+    "kanji": "会議",
+    "romaji": "kaigi",
+    "meaning": "meeting",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "がっこう",
+    "kanji": "学校",
+    "romaji": "gakkō",
+    "meaning": "school",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やくしょ",
+    "kanji": "役所",
+    "romaji": "yakusho",
+    "meaning": "local government office",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みせ",
+    "kanji": "店",
+    "romaji": "mise",
+    "meaning": "store",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ホテル",
+    "kanji": "",
+    "romaji": "hoteru",
+    "meaning": "hotel",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こうじょう",
+    "kanji": "工場",
+    "romaji": "kōjō",
+    "meaning": "factory",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かね",
+    "kanji": "金",
+    "romaji": "kane",
+    "meaning": "money",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さつ",
+    "kanji": "札",
+    "romaji": "satsu",
+    "meaning": "bill [of money, e.g., a thousand-yen bill]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こぜに",
+    "kanji": "小銭",
+    "romaji": "kozeni",
+    "meaning": "small change",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つりせん",
+    "kanji": "釣り銭",
+    "romaji": "tsurisen",
+    "meaning": "change",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じどうはんばいき",
+    "kanji": "自動販売機",
+    "romaji": "jidōhanbaiki",
+    "meaning": "vending machine, slot machine",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きっぷ",
+    "kanji": "切符",
+    "romaji": "public transport, fine",
+    "meaning": "ticket",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きって",
+    "kanji": "切手",
+    "romaji": "kitte",
+    "meaning": "stamp",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Society",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つくえ",
+    "kanji": "机",
+    "romaji": "tsukue",
+    "meaning": "desk",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "いす",
+    "kanji": "椅子",
+    "romaji": "isu",
+    "meaning": "chair, position",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "たたみ",
+    "kanji": "畳",
+    "romaji": "tatami",
+    "meaning": "a tatami mat",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "と",
+    "kanji": "戸",
+    "romaji": "to",
+    "meaning": "door, family",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "とびら",
+    "kanji": "扉",
+    "romaji": "tobira",
+    "meaning": "door panel",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "ドア",
+    "kanji": "",
+    "romaji": "doa",
+    "meaning": "door",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "まど",
+    "kanji": "窓",
+    "romaji": "mado",
+    "meaning": "window",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "ふとん",
+    "kanji": "布団",
+    "romaji": "futon",
+    "meaning": "futon",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "げんかん",
+    "kanji": "玄関",
+    "romaji": "genkan",
+    "meaning": "entrance",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "いえ",
+    "kanji": "家",
+    "romaji": "ie",
+    "meaning": "house, home",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "エレベーター",
+    "kanji": "",
+    "romaji": "erebētā",
+    "meaning": "elevator",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "エスカレーター",
+    "kanji": "",
+    "romaji": "esukarētā",
+    "meaning": "escalator",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "でんき",
+    "kanji": "電気",
+    "romaji": "denki",
+    "meaning": "electricity",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Home"
+  },
+  {
+    "kana": "くぎ",
+    "kanji": "釘",
+    "romaji": "kugi",
+    "meaning": "nail, spike",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "ひも",
+    "kanji": "紐",
+    "romaji": "himo",
+    "meaning": "string, cord",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "なわ",
+    "kanji": "縄",
+    "romaji": "nawa",
+    "meaning": "rope, string",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "ふくろ",
+    "kanji": "袋",
+    "romaji": "fukuro",
+    "meaning": "pocket, bag",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "かばん",
+    "kanji": "鞄",
+    "romaji": "kaban",
+    "meaning": "leather bag",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "かさ",
+    "kanji": "傘",
+    "romaji": "kasa",
+    "meaning": "umbrella, parasol",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "かぎ",
+    "kanji": "鍵",
+    "romaji": "kagi",
+    "meaning": "door bolt, key",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "ちょうこく",
+    "kanji": "彫刻",
+    "romaji": "chōkoku",
+    "meaning": "sculpture, engraving",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Tools"
+  },
+  {
+    "kana": "ぶんぼうぐ",
+    "kanji": "文房具",
+    "romaji": "bunbōgu",
+    "meaning": "stationery ​",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "インク",
+    "kanji": "",
+    "romaji": "inku",
+    "meaning": "ink",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ペン",
+    "kanji": "",
+    "romaji": "pen",
+    "meaning": "pen",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ボールペン",
+    "kanji": "",
+    "romaji": "bōrupen",
+    "meaning": "ball-point pen",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "まんねんひつ",
+    "kanji": "万年筆",
+    "romaji": "mannenhitsu",
+    "meaning": "fountain pen",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "えんぴつ",
+    "kanji": "鉛筆",
+    "romaji": "enpitsu",
+    "meaning": "pencil",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ふで",
+    "kanji": "筆",
+    "romaji": "fude",
+    "meaning": "brush for writing or painting",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "チョーク",
+    "kanji": "",
+    "romaji": "chōku",
+    "meaning": "chalk",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "けしゴム",
+    "kanji": "消しゴム",
+    "romaji": "keshigomu",
+    "meaning": "eraser",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "えんぴつけずり",
+    "kanji": "鉛筆削り",
+    "romaji": "enpitsu-kezuri",
+    "meaning": "pencil sharpener",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "じょうぎ",
+    "kanji": "定規",
+    "romaji": "jōgi",
+    "meaning": "ruler",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ノート",
+    "kanji": "",
+    "romaji": "nōto",
+    "meaning": "notebook",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "にっき",
+    "kanji": "日記",
+    "romaji": "nikki",
+    "meaning": "diary",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "カバー",
+    "kanji": "",
+    "romaji": "kabā",
+    "meaning": "book cover",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ふうとう",
+    "kanji": "封筒",
+    "romaji": "fūtō",
+    "meaning": "envelope",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "はさみ",
+    "kanji": "鋏",
+    "romaji": "hasami",
+    "meaning": "scissors",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ホッチキス",
+    "kanji": "",
+    "romaji": "hotchikisu",
+    "meaning": "stapler",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Stationery"
+  },
+  {
+    "kana": "ふく",
+    "kanji": "服",
+    "romaji": "fuku",
+    "meaning": "clothes",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "ようふく",
+    "kanji": "洋服",
+    "romaji": "yōfuku",
+    "meaning": "western clothing",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "きもの",
+    "kanji": "着物",
+    "romaji": "kimono",
+    "meaning": "kimono",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "わふく",
+    "kanji": "和服",
+    "romaji": "wafuku",
+    "meaning": "Japanese clothing",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "そで",
+    "kanji": "袖",
+    "romaji": "sode",
+    "meaning": "sleeve",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "えり",
+    "kanji": "襟",
+    "romaji": "eri",
+    "meaning": "lapel, collar",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "ボタン",
+    "kanji": "",
+    "romaji": "botan",
+    "meaning": "button",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "チャック",
+    "kanji": "",
+    "romaji": "chakku, fasunā, jippā",
+    "meaning": "zipper, zipper fastener",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "ベルト",
+    "kanji": "",
+    "romaji": "beruto",
+    "meaning": "belt",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "くつ",
+    "kanji": "靴",
+    "romaji": "kutsu",
+    "meaning": "shoe",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "くつした",
+    "kanji": "靴下",
+    "romaji": "kutsushita",
+    "meaning": "sock",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "めがね",
+    "kanji": "眼鏡",
+    "romaji": "megane",
+    "meaning": "glasses",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Clothes"
+  },
+  {
+    "kana": "てつどう",
+    "kanji": "鉄道",
+    "romaji": "tetsudō",
+    "meaning": "railway",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "えき",
+    "kanji": "駅",
+    "romaji": "eki",
+    "meaning": "station",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "ひこうき",
+    "kanji": "飛行機",
+    "romaji": "hikōki",
+    "meaning": "airplane",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "くうこう",
+    "kanji": "空港",
+    "romaji": "kūkō",
+    "meaning": "airport",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "みち",
+    "kanji": "道",
+    "romaji": "michi",
+    "meaning": "street, way, road",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "どうろ",
+    "kanji": "道路",
+    "romaji": "dōro",
+    "meaning": "road",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "バスてい",
+    "kanji": "バス停",
+    "romaji": "basutei",
+    "meaning": "bus-stop",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "とおり",
+    "kanji": "通り",
+    "romaji": "tōri",
+    "meaning": "avenue",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "でんしゃ",
+    "kanji": "電車",
+    "romaji": "densha",
+    "meaning": "train",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "くるま",
+    "kanji": "車",
+    "romaji": "kuruma",
+    "meaning": "car",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "じてんしゃ",
+    "kanji": "自転車",
+    "romaji": "Jitensha",
+    "meaning": "bicycle",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Human made objects",
+    "sub_subsection": "Transport"
+  },
+  {
+    "kana": "もじ",
+    "kanji": "文字",
+    "romaji": "moji",
+    "meaning": "letter, character, script",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じ",
+    "kanji": "字",
+    "romaji": "ji",
+    "meaning": "a letter, character",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かんじ",
+    "kanji": "漢字",
+    "romaji": "kanji",
+    "meaning": "Chinese character",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひらがな",
+    "kanji": "平仮名",
+    "romaji": "hiragana",
+    "meaning": "hiragana syllabary characters",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "カタカナ",
+    "kanji": "片仮名",
+    "romaji": "katakana",
+    "meaning": "katakana syllabary characters",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すうじ",
+    "kanji": "数字",
+    "romaji": "sūji",
+    "meaning": "numbers",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "アルファベット",
+    "kanji": "",
+    "romaji": "arufabetto",
+    "meaning": "alphabet",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "",
+    "kanji": "ローマ字",
+    "romaji": "rōmaji",
+    "meaning": "Roman characters, Latin script",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "がいこくご",
+    "kanji": "外国語",
+    "romaji": "gaikokugo",
+    "meaning": "foreign language",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "にほんご",
+    "kanji": "日本語",
+    "romaji": "nihongo",
+    "meaning": "Japanese [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "えいご",
+    "kanji": "英語",
+    "romaji": "eigo",
+    "meaning": "English [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちゅうごくご",
+    "kanji": "中国語",
+    "romaji": "chūgokugo",
+    "meaning": "Chinese [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どいつご",
+    "kanji": "ドイツ語",
+    "romaji": "doitsugo",
+    "meaning": "German [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すぺいんご",
+    "kanji": "スペイン語",
+    "romaji": "supeingo",
+    "meaning": "Spanish [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふらんすご",
+    "kanji": "フランス語",
+    "romaji": "furansugo",
+    "meaning": "French [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちょうせんご",
+    "kanji": "朝鮮語",
+    "romaji": "chōsengo",
+    "meaning": "Korean [language], South Korean [language]",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Language",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ほん",
+    "kanji": "本",
+    "romaji": "hon",
+    "meaning": "book",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Media",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かみ",
+    "kanji": "紙",
+    "romaji": "kami",
+    "meaning": "paper",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Media",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "てがみ",
+    "kanji": "手紙",
+    "romaji": "tegami",
+    "meaning": "letter",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Media",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しんぶん",
+    "kanji": "新聞",
+    "romaji": "shinbun",
+    "meaning": "newspaper",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Media",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じしょ",
+    "kanji": "辞書",
+    "romaji": "jisho",
+    "meaning": "dictionary",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Media",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "パソコン",
+    "kanji": "",
+    "romaji": "pasokon",
+    "meaning": "personal computer",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Media",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いろ",
+    "kanji": "色",
+    "romaji": "iro",
+    "meaning": "color",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あか",
+    "kanji": "赤",
+    "romaji": "aka",
+    "meaning": "red",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きいろ",
+    "kanji": "黄色",
+    "romaji": "kiiro",
+    "meaning": "yellow",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みどり",
+    "kanji": "緑",
+    "romaji": "midori",
+    "meaning": "green",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あお",
+    "kanji": "青",
+    "romaji": "ao",
+    "meaning": "blue",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "むらさき",
+    "kanji": "紫",
+    "romaji": "murasaki",
+    "meaning": "purple",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しろ",
+    "kanji": "白",
+    "romaji": "shiro",
+    "meaning": "white",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "くろ",
+    "kanji": "黒",
+    "romaji": "kuro",
+    "meaning": "black",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ピンク",
+    "kanji": "",
+    "romaji": "pinku",
+    "meaning": "pink",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちゃいろ",
+    "kanji": "茶色",
+    "romaji": "chairo",
+    "meaning": "brown",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はいいろ",
+    "kanji": "灰色",
+    "romaji": "haiiro",
+    "meaning": "grey",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "オレンジ",
+    "kanji": "",
+    "romaji": "orenji",
+    "meaning": "orange",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Colors",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "え",
+    "kanji": "絵",
+    "romaji": "e",
+    "meaning": "picture",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おんがく",
+    "kanji": "音楽",
+    "romaji": "ongaku",
+    "meaning": "music",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "りか",
+    "kanji": "理科",
+    "romaji": "rika",
+    "meaning": "science",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さんすう",
+    "kanji": "算数",
+    "romaji": "sansū",
+    "meaning": "arithmetic",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "れきし",
+    "kanji": "歴史",
+    "romaji": "rekishi",
+    "meaning": "history",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちり",
+    "kanji": "地理",
+    "romaji": "chiri",
+    "meaning": "geography",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たいいく",
+    "kanji": "体育",
+    "romaji": "taiiku",
+    "meaning": "physical education",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "スポーツ",
+    "kanji": "",
+    "romaji": "supōtsu",
+    "meaning": "sport",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "システム",
+    "kanji": "",
+    "romaji": "shisutemu",
+    "meaning": "system",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じょうほう",
+    "kanji": "情報",
+    "romaji": "jōhō",
+    "meaning": "information, news",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひつよう",
+    "kanji": "必要",
+    "romaji": "hitsuyō",
+    "meaning": "necessity",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "べんきょう",
+    "kanji": "勉強",
+    "romaji": "benkyō",
+    "meaning": "study",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いらい",
+    "kanji": "依頼",
+    "romaji": "irai",
+    "meaning": "request",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Others",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "れい",
+    "kanji": "零",
+    "romaji": "rei, zero",
+    "meaning": "zero",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いち",
+    "kanji": "一",
+    "romaji": "ichi",
+    "meaning": "one",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "に",
+    "kanji": "二",
+    "romaji": "ni",
+    "meaning": "two",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さん",
+    "kanji": "三",
+    "romaji": "san",
+    "meaning": "three",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "よん",
+    "kanji": "四",
+    "romaji": "yon",
+    "meaning": "four",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ご",
+    "kanji": "五",
+    "romaji": "go",
+    "meaning": "five",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ろく",
+    "kanji": "六",
+    "romaji": "roku",
+    "meaning": "six",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なな",
+    "kanji": "七",
+    "romaji": "nana",
+    "meaning": "seven",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はち",
+    "kanji": "八",
+    "romaji": "hachi",
+    "meaning": "eight",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きゅう",
+    "kanji": "九",
+    "romaji": "kyū",
+    "meaning": "nine",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じゅう",
+    "kanji": "十",
+    "romaji": "jū",
+    "meaning": "ten",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひゃく",
+    "kanji": "百",
+    "romaji": "hyaku",
+    "meaning": "hundred",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "せん",
+    "kanji": "千",
+    "romaji": "sen",
+    "meaning": "thousand",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まん",
+    "kanji": "万",
+    "romaji": "man",
+    "meaning": "ten thousand",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おく",
+    "kanji": "億",
+    "romaji": "oku",
+    "meaning": "one hundred million",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひとつ",
+    "kanji": "一つ",
+    "romaji": "hitotsu",
+    "meaning": "one, one thing",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふたつ",
+    "kanji": "二つ",
+    "romaji": "futatsu",
+    "meaning": "two, two things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みっつ",
+    "kanji": "三つ",
+    "romaji": "mittsu",
+    "meaning": "three, three things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "よっつ",
+    "kanji": "四つ",
+    "romaji": "yottsu",
+    "meaning": "four, four things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いつつ",
+    "kanji": "五つ",
+    "romaji": "itsutsu",
+    "meaning": "five, five things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "むっつ",
+    "kanji": "六つ",
+    "romaji": "muttsu",
+    "meaning": "six, six things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ななつ",
+    "kanji": "七つ",
+    "romaji": "nanatsu",
+    "meaning": "seven, seven things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やっつ",
+    "kanji": "八つ",
+    "romaji": "yattsu",
+    "meaning": "eight, eight things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ここのつ",
+    "kanji": "九つ",
+    "romaji": "kokonotsu",
+    "meaning": "nine, nine things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とお",
+    "kanji": "十",
+    "romaji": "tō",
+    "meaning": "ten, ten things",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Numbers",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "これ",
+    "kanji": "",
+    "romaji": "kore",
+    "meaning": "this, it",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "それ",
+    "kanji": "",
+    "romaji": "sore",
+    "meaning": "that",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あれ",
+    "kanji": "",
+    "romaji": "are",
+    "meaning": "that over there",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どれ",
+    "kanji": "",
+    "romaji": "dore",
+    "meaning": "which",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こちら",
+    "kanji": "",
+    "romaji": "kochira",
+    "meaning": "this direction, thing, person, or place",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そちら",
+    "kanji": "",
+    "romaji": "sochira",
+    "meaning": "that direction, thing, person, or place",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あちら",
+    "kanji": "",
+    "romaji": "achira",
+    "meaning": "that direction, thing, person, or place over there",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どちら",
+    "kanji": "",
+    "romaji": "dochira",
+    "meaning": "which direction, thing, person, or place",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひみつ",
+    "kanji": "秘密",
+    "romaji": "himitsu",
+    "meaning": "secret",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "じどう",
+    "kanji": "自動",
+    "romaji": "jidō",
+    "meaning": "automatic",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ないよう",
+    "kanji": "内容",
+    "romaji": "naiyō",
+    "meaning": "content",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はば",
+    "kanji": "幅",
+    "romaji": "haba",
+    "meaning": "width, breadth, free room, difference (between two substances)",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "せいしき",
+    "kanji": "正式",
+    "romaji": "seishiki",
+    "meaning": "formality",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "けっこん",
+    "kanji": "結婚",
+    "romaji": "kekkon",
+    "meaning": "marriage",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "げんざい",
+    "kanji": "現在",
+    "romaji": "genzai",
+    "meaning": "now",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いま",
+    "kanji": "今",
+    "romaji": "ima",
+    "meaning": "now",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かこ",
+    "kanji": "過去",
+    "romaji": "kako",
+    "meaning": "past",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みらい",
+    "kanji": "未来",
+    "romaji": "mirai",
+    "meaning": "future",
+    "type": "word",
+    "section": "Nouns",
+    "subsection": "Abstract nouns",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いい",
+    "kanji": "良い",
+    "romaji": "ii",
+    "meaning": "good",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すごい",
+    "kanji": "凄い",
+    "romaji": "sugoi",
+    "meaning": "amazing",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すばらしい",
+    "kanji": "素晴らしい",
+    "romaji": "subarashii",
+    "meaning": "wonderful",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わるい",
+    "kanji": "悪い",
+    "romaji": "warui",
+    "meaning": "bad, inferior",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たかい",
+    "kanji": "高い",
+    "romaji": "takai",
+    "meaning": "expensive, high",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひくい",
+    "kanji": "低い",
+    "romaji": "hikui",
+    "meaning": "low",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やすい",
+    "kanji": "安い",
+    "romaji": "yasui",
+    "meaning": "cheap",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おおきい",
+    "kanji": "大きい",
+    "romaji": "ōkii",
+    "meaning": "big",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ちいさい",
+    "kanji": "小さい",
+    "romaji": "chiisai",
+    "meaning": "small",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ほそい",
+    "kanji": "細い",
+    "romaji": "hosoi",
+    "meaning": "thin",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふとい",
+    "kanji": "太い",
+    "romaji": "futoi",
+    "meaning": "thick",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふるい",
+    "kanji": "古い",
+    "romaji": "furui",
+    "meaning": "old",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あたらしい",
+    "kanji": "新しい",
+    "romaji": "atarashii",
+    "meaning": "new",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わかい",
+    "kanji": "若い",
+    "romaji": "wakai",
+    "meaning": "young",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かるい",
+    "kanji": "軽い",
+    "romaji": "karui",
+    "meaning": "light, easy",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おもい",
+    "kanji": "重い",
+    "romaji": "omoi",
+    "meaning": "heavy",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やさしい",
+    "kanji": "易しい",
+    "romaji": "yasashii",
+    "meaning": "easy, simple",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "むずかしい",
+    "kanji": "難しい",
+    "romaji": "muzukashii",
+    "meaning": "difficult",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やわらかい",
+    "kanji": "柔らかい",
+    "romaji": "yawarakai",
+    "meaning": "soft",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かたい",
+    "kanji": "硬い",
+    "romaji": "katai",
+    "meaning": "hard",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あつい",
+    "kanji": "熱い",
+    "romaji": "atsui",
+    "meaning": "hot",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つめたい",
+    "kanji": "冷たい",
+    "romaji": "tsumetai",
+    "meaning": "cold",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さむい",
+    "kanji": "寒い",
+    "romaji": "samui",
+    "meaning": "cold",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おいしい",
+    "kanji": "美味しい",
+    "romaji": "oishii",
+    "meaning": "delicious",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うまい",
+    "kanji": "美味い",
+    "romaji": "umai",
+    "meaning": "delicious, appetizing",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まずい",
+    "kanji": "不味い",
+    "romaji": "mazui",
+    "meaning": "tastes awful",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あまい",
+    "kanji": "甘い",
+    "romaji": "amai",
+    "meaning": "sweet",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "からい",
+    "kanji": "辛い",
+    "romaji": "karai",
+    "meaning": "hot [spicy]",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しょっぱい",
+    "kanji": "塩っぱい",
+    "romaji": "shoppai",
+    "meaning": "salty",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "にがい",
+    "kanji": "苦い",
+    "romaji": "nigai",
+    "meaning": "bitter",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うつくしい",
+    "kanji": "美しい",
+    "romaji": "utsukushii",
+    "meaning": "beautiful",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Forms",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うれしい",
+    "kanji": "嬉しい",
+    "romaji": "ureshii",
+    "meaning": "happy",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たのしい",
+    "kanji": "楽しい",
+    "romaji": "tanoshii",
+    "meaning": "fun",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かなしい",
+    "kanji": "悲しい",
+    "romaji": "kanashii",
+    "meaning": "sad",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さびしい",
+    "kanji": "寂しい",
+    "romaji": "sabishii",
+    "meaning": "lonely",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さみしい",
+    "kanji": "寂しい",
+    "romaji": "samishii",
+    "meaning": "sad, lonely",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こわい",
+    "kanji": "怖い",
+    "romaji": "kowai",
+    "meaning": "scary",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いたい",
+    "kanji": "痛い",
+    "romaji": "itai",
+    "meaning": "painful",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かゆい",
+    "kanji": "痒い",
+    "romaji": "kayui",
+    "meaning": "itchy",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "くさい",
+    "kanji": "臭い",
+    "romaji": "kusai",
+    "meaning": "stinky",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つらい",
+    "kanji": "辛い",
+    "romaji": "tsurai",
+    "meaning": "painful, heart-breaking",
+    "type": "word",
+    "section": "Adjectives",
+    "subsection": "Feelings",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "する",
+    "kanji": "",
+    "romaji": "suru",
+    "meaning": "to do",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やる",
+    "kanji": "",
+    "romaji": "yaru",
+    "meaning": "to do",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いる",
+    "kanji": "",
+    "romaji": "iru",
+    "meaning": "to exist [for animate objects]",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ある",
+    "kanji": "",
+    "romaji": "aru",
+    "meaning": "to exist [for inanimate objects]",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なる",
+    "kanji": "",
+    "romaji": "naru",
+    "meaning": "to become",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おこる",
+    "kanji": "起こる",
+    "romaji": "okoru",
+    "meaning": "to happen",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あらわれる",
+    "kanji": "現れる",
+    "romaji": "arawareru",
+    "meaning": "to appear",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いきる",
+    "kanji": "生きる",
+    "romaji": "ikiru",
+    "meaning": "to live",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うむ",
+    "kanji": "生む",
+    "romaji": "umu",
+    "meaning": "to give birth",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しぬ",
+    "kanji": "死ぬ",
+    "romaji": "shinu",
+    "meaning": "to die",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こわれる",
+    "kanji": "壊れる",
+    "romaji": "kowareru",
+    "meaning": "to breakin",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Existence",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いく",
+    "kanji": "行く",
+    "romaji": "iku",
+    "meaning": "to go",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Movement",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "くる",
+    "kanji": "来る",
+    "romaji": "kuru",
+    "meaning": "to come",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Movement",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かえる",
+    "kanji": "帰る",
+    "romaji": "kaeru",
+    "meaning": "to return",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Movement",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あるく",
+    "kanji": "歩く",
+    "romaji": "aruku",
+    "meaning": "to walk",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Movement",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とぶ",
+    "kanji": "飛ぶ",
+    "romaji": "tobu",
+    "meaning": "to jump, to fly",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Movement",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "およぐ",
+    "kanji": "泳ぐ",
+    "romaji": "oyogu",
+    "meaning": "to swim",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Movement",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うごく",
+    "kanji": "動く",
+    "romaji": "ugoku",
+    "meaning": "to movein",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おどる",
+    "kanji": "踊る",
+    "romaji": "odoru",
+    "meaning": "to dance",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ねる",
+    "kanji": "寝る",
+    "romaji": "neru",
+    "meaning": "to sleep",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うたう",
+    "kanji": "歌う",
+    "romaji": "utau",
+    "meaning": "to sing",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かむ",
+    "kanji": "噛む",
+    "romaji": "kamu",
+    "meaning": "to bite",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たべる",
+    "kanji": "食べる",
+    "romaji": "taberu",
+    "meaning": "to eat",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "のむ",
+    "kanji": "飲む",
+    "romaji": "nomu",
+    "meaning": "to drink",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さわる",
+    "kanji": "触る",
+    "romaji": "sawaru",
+    "meaning": "to touch",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なげる",
+    "kanji": "投げる",
+    "romaji": "nageru",
+    "meaning": "to throw",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "もつ",
+    "kanji": "持つ",
+    "romaji": "motsu",
+    "meaning": "to hold",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うつ",
+    "kanji": "打つ",
+    "romaji": "utsu",
+    "meaning": "to hit, to strike",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なぐる",
+    "kanji": "殴る",
+    "romaji": "naguru",
+    "meaning": "to hit, to strike",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さす",
+    "kanji": "指す",
+    "romaji": "sasu",
+    "meaning": "to point",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さす",
+    "kanji": "刺す",
+    "romaji": "sasu",
+    "meaning": "to stab",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さす",
+    "kanji": "差す",
+    "romaji": "sasu",
+    "meaning": "to raise or extend one's hands",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ける",
+    "kanji": "蹴る",
+    "romaji": "keru",
+    "meaning": "to kick",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すわる",
+    "kanji": "座る",
+    "romaji": "suwaru",
+    "meaning": "to sit",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たつ",
+    "kanji": "立つ",
+    "romaji": "tatsu",
+    "meaning": "to stand",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はしる",
+    "kanji": "走る",
+    "romaji": "hashiru",
+    "meaning": "to run",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Actions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あく",
+    "kanji": "空く",
+    "romaji": "aku",
+    "meaning": "to become unoccupied",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こむ",
+    "kanji": "込む",
+    "romaji": "komu",
+    "meaning": "to be crowded",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いる",
+    "kanji": "要る",
+    "romaji": "iru",
+    "meaning": "to need",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かわく",
+    "kanji": "乾く",
+    "romaji": "kawaku",
+    "meaning": "to become dry",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みだす",
+    "kanji": "乱す",
+    "romaji": "midasu",
+    "meaning": "to disturb, to disarrange",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みだれる",
+    "kanji": "乱れる",
+    "romaji": "midareru",
+    "meaning": "to be disturbed, to become confused",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つかえる",
+    "kanji": "仕える",
+    "romaji": "tsukaeru",
+    "meaning": "to serve, to work for",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そなわる",
+    "kanji": "備わる",
+    "romaji": "sonawaru",
+    "meaning": "to be furnished with",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すぐれる",
+    "kanji": "優れる",
+    "romaji": "sugureru",
+    "meaning": "to excel, to surpass",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ひえる",
+    "kanji": "冷える",
+    "romaji": "hieru",
+    "meaning": "to grow cold, to get chilly, to cool down",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さめる",
+    "kanji": "覚める",
+    "romaji": "sameru",
+    "meaning": "to wake, to become sober, to be disillusioned",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さめる",
+    "kanji": "冷める",
+    "romaji": "sameru",
+    "meaning": "to cool down",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "むく",
+    "kanji": "向く",
+    "romaji": "muku",
+    "meaning": "to face, to turn toward",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たおれる",
+    "kanji": "倒れる",
+    "romaji": "taoreru",
+    "meaning": "to fall, to collapse",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かたまる",
+    "kanji": "固まる",
+    "romaji": "katamaru",
+    "meaning": "to harden, to solidify, to become firm",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うまる",
+    "kanji": "埋まる",
+    "romaji": "umaru",
+    "meaning": "to be filled, to be surrounded, to overflow",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うもれる",
+    "kanji": "埋もれる",
+    "romaji": "umoreru",
+    "meaning": "to be buried, to be covered",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ます",
+    "kanji": "増す",
+    "romaji": "masu",
+    "meaning": "to increase, to grow",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふえる",
+    "kanji": "増える",
+    "romaji": "fueru",
+    "meaning": "to increase, to multiply",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "へる",
+    "kanji": "減る",
+    "romaji": "heru",
+    "meaning": "to decrease",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はずれる",
+    "kanji": "外れる",
+    "romaji": "hazureru",
+    "meaning": "to deviate",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ふとる",
+    "kanji": "太る",
+    "romaji": "futoru",
+    "meaning": "to grow fat",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はじまる",
+    "kanji": "始まる",
+    "romaji": "hajimaru",
+    "meaning": "to begin",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おわる",
+    "kanji": "終わる",
+    "romaji": "owaru",
+    "meaning": "to finish, to close",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きめる",
+    "kanji": "決める",
+    "romaji": "kimeru",
+    "meaning": "to decide",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Changes of state",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "みる",
+    "kanji": "見る",
+    "romaji": "miru",
+    "meaning": "to see",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Senses",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きく",
+    "kanji": "聞く",
+    "romaji": "kiku",
+    "meaning": "to hear, to listen",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Senses",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さわる",
+    "kanji": "触る",
+    "romaji": "sawaru",
+    "meaning": "to touch, to feel",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Senses",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かぐ",
+    "kanji": "嗅ぐ",
+    "romaji": "kagu",
+    "meaning": "to smell",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Senses",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いう",
+    "kanji": "言う",
+    "romaji": "iu",
+    "meaning": "to say",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Speech",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はなす",
+    "kanji": "話す",
+    "romaji": "hanasu",
+    "meaning": "to speak",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Speech",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かたる",
+    "kanji": "語る",
+    "romaji": "kataru",
+    "meaning": "to tell",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Speech",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かく",
+    "kanji": "書く",
+    "romaji": "kaku",
+    "meaning": "to write",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Speech",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "よむ",
+    "kanji": "読む",
+    "romaji": "yomu",
+    "meaning": "to read",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Speech",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つかう",
+    "kanji": "使う",
+    "romaji": "tsukau",
+    "meaning": "to use",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Work",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つくる",
+    "kanji": "作る",
+    "romaji": "tsukuru",
+    "meaning": "to make",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Work",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なおす",
+    "kanji": "直す",
+    "romaji": "naosu",
+    "meaning": "to fix, repair",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Work",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すてる",
+    "kanji": "捨てる",
+    "romaji": "suteru",
+    "meaning": "to discard, throw away",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Work",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とる",
+    "kanji": "取る",
+    "romaji": "toru",
+    "meaning": "to take",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Work",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おく",
+    "kanji": "置く",
+    "romaji": "oku",
+    "meaning": "to put",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Work",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かなしむ",
+    "kanji": "悲しむ",
+    "romaji": "kanashimu",
+    "meaning": "to be sad",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なく",
+    "kanji": "泣く",
+    "romaji": "naku",
+    "meaning": "to cry",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わらう",
+    "kanji": "笑う",
+    "romaji": "warau",
+    "meaning": "to laugh",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おこる",
+    "kanji": "怒る",
+    "romaji": "okoru",
+    "meaning": "to be angry",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ほめる",
+    "kanji": "褒める",
+    "romaji": "homeru",
+    "meaning": "to encourage",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しかる",
+    "kanji": "叱る",
+    "romaji": "shikaru",
+    "meaning": "to scold",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "よろこぶ",
+    "kanji": "喜ぶ",
+    "romaji": "yorokobu",
+    "meaning": "to celebrate, to be jubilant, to have joy, to have delight, to have rapture",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "よろこび",
+    "kanji": "喜び",
+    "romaji": "yorokobi",
+    "meaning": "joy, delight, rapture",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なぐさめる",
+    "kanji": "慰める",
+    "romaji": "nagusameru",
+    "meaning": "to console, to consolate, to provide empathy",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あきる",
+    "kanji": "飽きる",
+    "romaji": "akiru",
+    "meaning": "to be disinterested, to be bored, to be tired of, to be weary",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おどろく",
+    "kanji": "驚く",
+    "romaji": "odoroku",
+    "meaning": "to be astonished, to be surprised, to be scared",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Emotions",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あう",
+    "kanji": "会う",
+    "romaji": "au",
+    "meaning": "to meet, to interview",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あける",
+    "kanji": "開ける",
+    "romaji": "akeru",
+    "meaning": "to opentr, to unwraptr",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あそぶ",
+    "kanji": "遊ぶ",
+    "romaji": "asobu",
+    "meaning": "to play",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あつまる",
+    "kanji": "集まる",
+    "romaji": "atsumaru",
+    "meaning": "to gatherin",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "うる",
+    "kanji": "売る",
+    "romaji": "uru",
+    "meaning": "to sell",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "える",
+    "kanji": "得る",
+    "romaji": "eru",
+    "meaning": "to obtain [some benefit or knowledge]",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "おる",
+    "kanji": "折る",
+    "romaji": "oru",
+    "meaning": "to breaktr, to foldtr",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かう",
+    "kanji": "買う",
+    "romaji": "kau",
+    "meaning": "to buy",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きる",
+    "kanji": "切る",
+    "romaji": "kiru",
+    "meaning": "to cut",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "きる",
+    "kanji": "着る",
+    "romaji": "kiru",
+    "meaning": "to wear [on the upper body]",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はく",
+    "kanji": "履く",
+    "romaji": "haku",
+    "meaning": "to wear [on the lower body]",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かえる",
+    "kanji": "変える",
+    "romaji": "kaeru",
+    "meaning": "to changetr",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かえる",
+    "kanji": "代える",
+    "romaji": "kaeru",
+    "meaning": "to exchange, to substitute, to replace",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しめる",
+    "kanji": "閉める",
+    "romaji": "shimeru",
+    "meaning": "to closetr",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しめる",
+    "kanji": "締める",
+    "romaji": "shimeru",
+    "meaning": "to tie, to fasten",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しめる",
+    "kanji": "占める",
+    "romaji": "shimeru",
+    "meaning": "to comprise, to account for",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しる",
+    "kanji": "知る",
+    "romaji": "shiru",
+    "meaning": "to know",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つかれる",
+    "kanji": "疲れる",
+    "romaji": "tsukareru",
+    "meaning": "to get tired",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "でかける",
+    "kanji": "出掛ける",
+    "romaji": "dekakeru",
+    "meaning": "to go out, to depart",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はたらく",
+    "kanji": "働く",
+    "romaji": "hataraku",
+    "meaning": "to work [e.g., at a job]",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はなす",
+    "kanji": "放す",
+    "romaji": "hanasu",
+    "meaning": "to let go of",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "やすむ",
+    "kanji": "休む",
+    "romaji": "yasumu",
+    "meaning": "to rest, to take a break, to go to bed",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わかれる",
+    "kanji": "分かれる",
+    "romaji": "wakareru",
+    "meaning": "to split intoin, to be divided",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "わかれる",
+    "kanji": "別れる",
+    "romaji": "wakareru",
+    "meaning": "to partin, to separatein, to break upin",
+    "type": "word",
+    "section": "Verbs",
+    "subsection": "Activities",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "もう",
+    "kanji": "",
+    "romaji": "mō",
+    "meaning": "already",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まだ",
+    "kanji": "",
+    "romaji": "mada",
+    "meaning": "still, yet",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ずっと",
+    "kanji": "",
+    "romaji": "zutto",
+    "meaning": "always",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "とても",
+    "kanji": "",
+    "romaji": "totemo",
+    "meaning": "very",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こう",
+    "kanji": "",
+    "romaji": "kō",
+    "meaning": "like this",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そう",
+    "kanji": "",
+    "romaji": "sō",
+    "meaning": "like that",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ああ",
+    "kanji": "",
+    "romaji": "ā",
+    "meaning": "in that other way",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どう",
+    "kanji": "",
+    "romaji": "dō",
+    "meaning": "how",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しばしば",
+    "kanji": "",
+    "romaji": "shibashiba",
+    "meaning": "often",
+    "type": "word",
+    "section": "Adverbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "この",
+    "kanji": "",
+    "romaji": "kono",
+    "meaning": "this",
+    "type": "word",
+    "section": "Pre-noun adjectival",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "その",
+    "kanji": "",
+    "romaji": "sono",
+    "meaning": "that",
+    "type": "word",
+    "section": "Pre-noun adjectival",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "あの",
+    "kanji": "",
+    "romaji": "ano",
+    "meaning": "that",
+    "type": "word",
+    "section": "Pre-noun adjectival",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どの",
+    "kanji": "",
+    "romaji": "dono",
+    "meaning": "which",
+    "type": "word",
+    "section": "Pre-noun adjectival",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "はい",
+    "kanji": "",
+    "romaji": "hai",
+    "meaning": "yes",
+    "type": "word",
+    "section": "Interjections",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "いいえ",
+    "kanji": "",
+    "romaji": "iie",
+    "meaning": "no",
+    "type": "word",
+    "section": "Interjections",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "でも",
+    "kanji": "",
+    "romaji": "demo",
+    "meaning": "but",
+    "type": "word",
+    "section": "Conjunctions",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しかし",
+    "kanji": "",
+    "romaji": "shikashi",
+    "meaning": "but, however",
+    "type": "word",
+    "section": "Conjunctions",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そして",
+    "kanji": "",
+    "romaji": "soshite",
+    "meaning": "and then, Then…",
+    "type": "word",
+    "section": "Conjunctions",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "それに",
+    "kanji": "",
+    "romaji": "soreni",
+    "meaning": "besides",
+    "type": "word",
+    "section": "Conjunctions",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なぜなら",
+    "kanji": "",
+    "romaji": "nazenara",
+    "meaning": "that is because, being because",
+    "type": "word",
+    "section": "Conjunctions",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "う",
+    "kanji": "",
+    "romaji": "u",
+    "meaning": "volitional ending [う for _u_-verbs, よう for _ru_-verbs]: \"Let's…\" or \"I will\"",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "せる",
+    "kanji": "",
+    "romaji": "u",
+    "meaning": "causative ending [せる for _u_-verbs, させる for _ru_-verbs]: to make [someone do something], to allow",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "れる",
+    "kanji": "e.g., 食べられる, \"to be eaten\"\\",
+    "romaji": "u",
+    "meaning": "passive verb ending [れる for _u_-verbs, られる for _ru_-verbs]: to be <verbed> [e.g., 食べられる, \"to be eaten\"]",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そうだ",
+    "kanji": "",
+    "romaji": "seems",
+    "meaning": "indicates that it _seems_ the verb occurs [e.g., \"It seems he ate\"]",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "た",
+    "kanji": "",
+    "romaji": "ta",
+    "meaning": "informal past-tense",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "たい",
+    "kanji": "",
+    "romaji": "tai",
+    "meaning": "indicates desire to perform verb",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "だろう",
+    "kanji": "",
+    "romaji": "seems",
+    "meaning": "indicates that it _seems_ the verb occurs; also used to ask whether the verb occurs",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ない",
+    "kanji": "",
+    "romaji": "nai",
+    "meaning": "informal negative",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ぬ",
+    "kanji": "",
+    "romaji": "nu",
+    "meaning": "archaic informal negative [\"he hath\", \"thou didst\", etc.]",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ます",
+    "kanji": "",
+    "romaji": "masu",
+    "meaning": "formal non-past ending",
+    "type": "word",
+    "section": "Terminations of verbs",
+    "subsection": "",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "が",
+    "kanji": "",
+    "romaji": "ga",
+    "meaning": "subject marker, but",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "で",
+    "kanji": "",
+    "romaji": "de",
+    "meaning": "at, by",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "と",
+    "kanji": "",
+    "romaji": "to",
+    "meaning": "and, with",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "に",
+    "kanji": "",
+    "romaji": "ni",
+    "meaning": "indirect object marker",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "の",
+    "kanji": "",
+    "romaji": "no",
+    "meaning": "possession marker, of",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "へ",
+    "kanji": "",
+    "romaji": "e",
+    "meaning": "to",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まで",
+    "kanji": "",
+    "romaji": "made",
+    "meaning": "to",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "から",
+    "kanji": "",
+    "romaji": "kara",
+    "meaning": "from",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "より",
+    "kanji": "",
+    "romaji": "yori",
+    "meaning": "than",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "を",
+    "kanji": "",
+    "romaji": "o",
+    "meaning": "direct object marker",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Case",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "および",
+    "kanji": "及び",
+    "romaji": "oyobi",
+    "meaning": "and; as well as",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "か",
+    "kanji": "",
+    "romaji": "ka",
+    "meaning": "whether",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かも",
+    "kanji": "",
+    "romaji": "kamo",
+    "meaning": "might be, possible that",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "そして",
+    "kanji": "",
+    "romaji": "sosh ~~i~~ te",
+    "meaning": "and then",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "それとも",
+    "kanji": "",
+    "romaji": "soretomo",
+    "meaning": "or",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "だの",
+    "kanji": "",
+    "romaji": "dano",
+    "meaning": "things like <list of things>, including, such things as",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "つつ",
+    "kanji": "",
+    "romaji": "tsutsu",
+    "meaning": "ongoing occurrence",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "て",
+    "kanji": "",
+    "romaji": "te",
+    "meaning": "_te_ form of verb or adjective [see [explanation](https://en.wikipedia.org/wiki/Japanese_verb_conjugations_and_adjective_declensions#Te_form \"wikipedia:Japanese verb conjugations and adjective declensions\")]",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "と",
+    "kanji": "",
+    "romaji": "to",
+    "meaning": "when, if, that",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ながら",
+    "kanji": "",
+    "romaji": "nagara",
+    "meaning": "while, though, both",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ならびに",
+    "kanji": "",
+    "romaji": "narabini",
+    "meaning": "as well as",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なり",
+    "kanji": "",
+    "romaji": "nari",
+    "meaning": "whether or not",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "に",
+    "kanji": "",
+    "romaji": "ni",
+    "meaning": "to <somewhere>, by <someone>",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "の",
+    "kanji": "",
+    "romaji": "no",
+    "meaning": "possession",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ので",
+    "kanji": "",
+    "romaji": "node",
+    "meaning": "so",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "また",
+    "kanji": "又",
+    "romaji": "mata",
+    "meaning": "also, again",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "または",
+    "kanji": "又は",
+    "romaji": "matawa",
+    "meaning": "or alternatively",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "も",
+    "kanji": "",
+    "romaji": "mo",
+    "meaning": "also, too",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "や",
+    "kanji": "",
+    "romaji": "ya",
+    "meaning": "and",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Conjunctive",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ね",
+    "kanji": "",
+    "romaji": "ne",
+    "meaning": "emphasis and question marker, equivalent to \"right?\"",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Final",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "か",
+    "kanji": "",
+    "romaji": "ka",
+    "meaning": "question marker",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Final",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "な",
+    "kanji": "",
+    "romaji": "na",
+    "meaning": "the copula particle used after quasi-adjectives",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Final",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "かしら",
+    "kanji": "",
+    "romaji": "kashira",
+    "meaning": "I wonder",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Final",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さ",
+    "kanji": "",
+    "romaji": "sa",
+    "meaning": "-ness",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Final",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "っけ",
+    "kanji": "",
+    "romaji": "-kke",
+    "meaning": "particle indicating that the speaker is trying to recall some information [\"What class is next _-kke_?\"]",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Final",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "こそ",
+    "kanji": "",
+    "romaji": "koso",
+    "meaning": "emphasis",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "さえ",
+    "kanji": "",
+    "romaji": "sae",
+    "meaning": "even",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "しか",
+    "kanji": "",
+    "romaji": "shika",
+    "meaning": "only",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "すら",
+    "kanji": "",
+    "romaji": "sura",
+    "meaning": "even",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "くらい",
+    "kanji": "",
+    "romaji": "kurai",
+    "meaning": "approximately, about",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "だけ",
+    "kanji": "",
+    "romaji": "dake",
+    "meaning": "only, as much as",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "だって",
+    "kanji": "",
+    "romaji": "datte",
+    "meaning": "however",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ったら",
+    "kanji": "",
+    "romaji": "ttara",
+    "meaning": "casual topic marker",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "って",
+    "kanji": "",
+    "romaji": "tte",
+    "meaning": "said that",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "でも",
+    "kanji": "",
+    "romaji": "demo",
+    "meaning": "also, or",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "どころ",
+    "kanji": "",
+    "romaji": "particle used to indicate that what precedes it is an extreme example and strongly negates it",
+    "meaning": "( _particle used to indicate that what precedes it is an extreme example and strongly negates it_)",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "など",
+    "kanji": "",
+    "romaji": "nado",
+    "meaning": "for example",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なら",
+    "kanji": "",
+    "romaji": "nara",
+    "meaning": "if [for verbs]; subject marker [for nouns]",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なんか",
+    "kanji": "",
+    "romaji": "nanka",
+    "meaning": "casual undervalue, dislike, lack",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "なんて",
+    "kanji": "",
+    "romaji": "nante",
+    "meaning": "casual undervalue, dislike, lack",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "は",
+    "kanji": "",
+    "romaji": "wa",
+    "meaning": "topic marker",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "ばかり",
+    "kanji": "",
+    "romaji": "bakari",
+    "meaning": "just, full of, only",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "まで",
+    "kanji": "",
+    "romaji": "made",
+    "meaning": "until",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  },
+  {
+    "kana": "も",
+    "kanji": "",
+    "romaji": "mo",
+    "meaning": "too, also",
+    "type": "word",
+    "section": "Particles",
+    "subsection": "Adverbial",
+    "sub_subsection": ""
+  }
+]

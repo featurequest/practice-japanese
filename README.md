@@ -1,12 +1,16 @@
 # Japanese Kana Practice
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Data: CC BY-SA 4.0](https://img.shields.io/badge/Data-CC%20BY--SA%204.0-lightblue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 Generate printable flash cards, handwriting practice sheets, reference charts, and stroke order guides for all hiragana and katakana characters.
 
-Produces four types of PDF:
+Produces five types of PDF:
 - **Flash cards** — 208 double-sided cards (104 hiragana + 104 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
 - **Practice sheets** — Landscape A4 pages with 2cm grid boxes. Each character gets 3 rows: the first box shows the KanjiVG stroke-order character, the rest are empty for handwriting practice. Boxes include dashed cross guides for centering.
 - **Reference charts** — Landscape A4 pages with the standard gojūon table layout: basic characters, dakuten/handakuten, and yōon combinations with romaji labels.
 - **Stroke order** — Portrait A4 pages with KanjiVG stroke diagrams and numbered indicators for each character, split into basic, dakuten, and combination sections for readability.
+- **Vocabulary reference** — Portrait A4 table of ~700 basic Japanese words sourced from the Wiktionary 1000 basic words list, with Word (kanji + kana), Romaji, and Meaning columns, grouped by category (Nouns, Verbs, Adjectives, etc.).
 
 ## Downloads
 
@@ -100,9 +104,12 @@ python generate.py --card-width 60 --card-height 90
 # Maintenance
 python generate.py --update-strokes      # Re-download KanjiVG and regenerate stroke data
 python generate.py --generate-examples   # Regenerate example images in docs/
+
+# Vocabulary reference (1000 basic words)
+python generate_vocabulary.py            # Generates data/vocabulary.json + output/vocabulary.pdf
 ```
 
-Default output paths: `output/kana_flashcards.pdf`, `output/kana_practice.pdf`, `output/kana_chart.pdf`, `output/kana_stroke_order.pdf`.
+Default output paths: `output/kana_flashcards.pdf`, `output/kana_practice.pdf`, `output/kana_chart.pdf`, `output/kana_stroke_order.pdf`, `output/vocabulary.pdf`.
 
 ## Printing
 
@@ -140,6 +147,12 @@ Grid layout (`COLS`, `ROWS`, `MARGIN_X`, `MARGIN_Y`) is auto-computed from the c
 Stroke order data derived from [KanjiVG](https://kanjivg.tagaini.net/) by Ulrich Apel, licensed under [Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 Adaptations: SVG stroke paths extracted, dakuten/handakuten/yōon variants composed from base characters for flash card and practice sheet rendering.
+
+### Vocabulary Data — Wiktionary
+
+`data/vocabulary.json` is derived from [Appendix:1000 Japanese basic words](https://en.wiktionary.org/wiki/Appendix:1000_Japanese_basic_words) on Wiktionary, contributed by Wiktionary editors and licensed under [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Adaptations: words extracted and structured as JSON with kana, kanji, romaji, meaning, and category fields.
 
 ### Fonts
 

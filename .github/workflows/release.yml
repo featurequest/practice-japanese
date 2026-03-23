@@ -45,6 +45,9 @@ jobs:
           python generate.py --stroke-order -o output/stroke-order-hiragana.pdf --hiragana-only
           python generate.py --stroke-order -o output/stroke-order-katakana.pdf --katakana-only
 
+      - name: Generate vocabulary reference
+        run: python generate_vocabulary.py
+
       - name: Generate example images
         run: |
           sudo apt-get install -y poppler-utils
@@ -54,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/example_flashcards_front.jpg docs/example_flashcards_back.jpg docs/example_practice.jpg docs/example_chart.jpg docs/example_stroke_order.jpg
+          git add docs/example_flashcards_front.jpg docs/example_flashcards_back.jpg docs/example_practice.jpg docs/example_chart.jpg docs/example_stroke_order.jpg docs/example_vocabulary.jpg
           git diff --staged --quiet || git commit -m "docs: update example images [skip ci]"
           git push
 
@@ -80,3 +83,4 @@ jobs:
             output/stroke-order.pdf
             output/stroke-order-hiragana.pdf
             output/stroke-order-katakana.pdf
+            output/vocabulary.pdf

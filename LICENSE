@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2025 featurequest
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Exceptions — the following files are NOT under the MIT License:
+
+data/vocabulary.json, data/vocabulary.LICENSE
+  Derived from Wiktionary (https://en.wiktionary.org/wiki/Appendix:1000_Japanese_basic_words).
+  Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+data/strokes/ (KanjiVG stroke data)
+  Derived from KanjiVG by Ulrich Apel (https://kanjivg.tagaini.net/).
+  Licensed under Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0).
+  https://creativecommons.org/licenses/by-sa/3.0/
+
+fonts/KleeOne-SemiBold.ttf, fonts/OFL-KleeOne.txt
+  Klee One by Fontworks (https://github.com/fontworks-fonts/Klee).
+  Licensed under the SIL Open Font License 1.1.
+  See fonts/OFL-KleeOne.txt for the full license text.

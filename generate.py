@@ -111,6 +111,14 @@ def _generate_examples():
         generate_chart_pdf(kana_types, chart_pdf)
         generate_stroke_order_pdf(kana_types, stroke_order_pdf)
 
+        # Generate vocabulary PDF
+        import json
+        from generate_vocabulary import build_pdf as build_vocabulary_pdf, JSON_FILE as VOCAB_JSON
+        vocabulary_pdf = os.path.join(tmp, "vocabulary.pdf")
+        with open(VOCAB_JSON, encoding="utf-8") as f:
+            words = json.load(f)
+        build_vocabulary_pdf(words, vocabulary_pdf)
+
         # Extract pages as JPEG
         import glob
         for label, pdf, page in [
@@ -119,6 +127,7 @@ def _generate_examples():
             ("practice", practice_pdf, 1),
             ("chart", chart_pdf, 1),
             ("stroke-order", stroke_order_pdf, 1),
+            ("vocabulary", vocabulary_pdf, 1),
         ]:
             prefix = os.path.join(tmp, label)
             subprocess.run([
