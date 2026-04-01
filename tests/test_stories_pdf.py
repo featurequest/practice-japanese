@@ -1,0 +1,45 @@
+# tests/test_stories_pdf.py
+import tempfile
+from pathlib import Path
+
+from data.stories import Story, Sentence
+from tools.stories_pdf import generate_story_pdf, _to_romaji
+
+
+SAMPLE_STORY = Story(
+    slug="test",
+    title_en="Test Story",
+    title_ja="てすとすとーりー",
+    sentences=[
+        Sentence(japanese="むかしむかし、おじいさんがいました。",
+                 english="Long ago there was an old man."),
+        Sentence(japanese="おじいさんはやまへいきました。",
+                 english="The old man went to the mountain."),
+    ],
+)
+
+
+def test_to_romaji_basic():
+    result = _to_romaji("あいうえお")
+    assert result.strip() != ""
+    assert "a" in result.lower()
+
+
+def test_to_romaji_hiragana_words():
+    result = _to_romaji("むかしむかし")
+    assert "mukashi" in result.lower()
+
+
+def test_generate_story_pdf_creates_file():
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "test.pdf"
+        generate_story_pdf(SAMPLE_STORY, out)
+        assert out.exists()
+        assert out.stat().st_size > 1000
+
+
+def test_generate_story_pdf_creates_parent_dirs():
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "subdir" / "story.pdf"
+        generate_story_pdf(SAMPLE_STORY, out)
+        assert out.exists()
