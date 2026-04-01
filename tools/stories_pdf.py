@@ -73,11 +73,11 @@ def generate_story_pdf(story: Story, output_path: Path) -> None:
         "jp", fontName="KleeOne", fontSize=13, leading=19, spaceAfter=1 * mm,
     )
     romaji_style = ParagraphStyle(
-        "romaji", fontName="Helvetica", fontSize=9, leading=13,
+        "romaji", fontName="KleeOne", fontSize=9, leading=13,
         spaceAfter=1 * mm, textColor=COLOR_ROMAJI,
     )
     en_style = ParagraphStyle(
-        "en", fontName="Helvetica", fontSize=10, leading=14, spaceAfter=2 * mm,
+        "en", fontName="KleeOne", fontSize=10, leading=14, spaceAfter=2 * mm,
     )
 
     flowables = [
