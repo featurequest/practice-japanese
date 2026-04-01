@@ -46,8 +46,7 @@ def _parse_story(path: Path) -> Story:
     pending: str | None = None
     for line in sentence_lines:
         if not line or line.startswith("#"):
-            pending = None
-            continue
+            continue  # skip blank/comment lines; leave pending untouched
         if pending is None:
             pending = line
         else:

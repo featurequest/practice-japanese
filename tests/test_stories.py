@@ -75,6 +75,32 @@ def test_load_stories_returns_sorted(tmp_path):
     assert stories[1].slug == "beta"
 
 
+def test_load_stories_empty_when_dir_missing(tmp_path):
+    import data.stories as stories_mod
+    original = stories_mod.STORIES_DIR
+    try:
+        stories_mod.STORIES_DIR = tmp_path / "nonexistent"
+        result = stories_mod.load_stories()
+        assert result == []
+    finally:
+        stories_mod.STORIES_DIR = original
+
+
+def test_parse_story_blank_line_between_pair(tmp_path):
+    md = textwrap.dedent("""\
+        # Test · てすと
+
+        あいうえお。
+
+        AEIOU.
+    """)
+    p = _write_md(str(tmp_path), "test.md", md)
+    story = _parse_story(p)
+    assert len(story.sentences) == 1
+    assert story.sentences[0].japanese == "あいうえお。"
+    assert story.sentences[0].english == "AEIOU."
+
+
 def _load_from_dir(directory: Path):
     from data.stories import _parse_story
     return [_parse_story(p) for p in sorted(directory.glob("*.md"))]
