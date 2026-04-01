@@ -1,7 +1,10 @@
 import os
+import shutil
 import tempfile
 import subprocess
 import sys
+from pathlib import Path
+from unittest.mock import patch
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -48,8 +51,6 @@ def test_generate_katakana_only():
 
 
 def test_stories_flag(tmp_path, monkeypatch):
-    from unittest.mock import patch
-    import shutil
     monkeypatch.chdir(tmp_path)
     shutil.copytree(os.path.join(PROJECT_ROOT, 'data'), str(tmp_path / 'data'))
     shutil.copytree(os.path.join(PROJECT_ROOT, 'fonts'), str(tmp_path / 'fonts'))
@@ -58,4 +59,5 @@ def test_stories_flag(tmp_path, monkeypatch):
         from generate import main
         main()
     pdfs = list((tmp_path / 'output').glob('story_*.pdf'))
-    assert len(pdfs) == 5
+    story_files = list(Path(PROJECT_ROOT, 'data', 'stories').glob('*.md'))
+    assert len(pdfs) == len(story_files)

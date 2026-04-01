@@ -157,10 +157,8 @@ Examples:
     if args.stories:
         from data.stories import load_stories
         from tools.stories_pdf import generate_story_pdf
-        from pathlib import Path as _Path
-        _Path("output").mkdir(exist_ok=True)
         for story in load_stories():
-            out = _Path(f"output/story_{story.slug}.pdf")
+            out = Path(f"output/story_{story.slug}.pdf")
             print(f"Generating {story.title_en} → {out}")
             generate_story_pdf(story, out)
             print(f"Saved to {out}")
