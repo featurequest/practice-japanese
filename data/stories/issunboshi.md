@@ -1,67 +1,67 @@
 # Issun Bōshi · いっすんぼうし
 
-むかしむかし、こどものいないおじいさんとおばあさんがいました。
+むかしむかし、 こどものいない おじいさんと おばあさんが いました。
 Long ago there lived an old man and an old woman who had no children.
 
-「どうかこどもをさずけてください。たとえおやゆびほどのちいさなこでも。」とふたりはいのりました。
+「どうか こどもを さずけてください。 たとえ おやゆびほどの ちいさな こでも。」と ふたりは いのりました。
 "Please grant us a child, even one no bigger than a thumb," the two prayed.
 
-やがて、おやゆびほどのちいさなあかちゃんがうまれました。
+やがて、 おやゆびほどの ちいさな あかちゃんが うまれました。
 In time a tiny baby was born, no bigger than a thumb.
 
-ふたりはそのこをいっすんぼうしとよびました。
+ふたりは そのこを いっすんぼうしと よびました。
 The two called him Issun Bōshi.
 
-いっすんぼうしはなんねんたってもちいさいままでした。
+いっすんぼうしは なんねん たっても ちいさい ままでした。
 But no matter how many years passed, Issun Bōshi stayed small.
 
-あるひ、いっすんぼうしはおじいさんとおばあさんにいいました。
+あるひ、 いっすんぼうしは おじいさんと おばあさんに いいました。
 One day Issun Bōshi said to the old man and old woman:
 
-「みやこへでて、りっぱなさむらいになります。」
+「みやこへ でて、 りっぱな さむらいに なります。」
 "I am going to the capital to become a great samurai."
 
-おばあさんはおわんをふねに、はしをかいにして、いっすんぼうしにわたしました。
+おばあさんは おわんを ふねに、 はしを かいにして、 いっすんぼうしに わたしました。
 The old woman gave him a bowl for a boat and a chopstick for an oar.
 
-いっすんぼうしはかわをくだって、みやこへつきました。
+いっすんぼうしは かわを くだって、 みやこへ つきました。
 Issun Bōshi paddled down the river and arrived at the capital.
 
-かれはおおきなおやしきをみつけて、なかへはいりました。
+かれは おおきな おやしきを みつけて、 なかへ はいりました。
 He found a great mansion and entered it.
 
-「どうかつかえさせてください。」といっすんぼうしはいいました。
+「どうか つかえさせてください。」と いっすんぼうしは いいました。
 "Please let me serve you," said Issun Bōshi.
 
-おとのさまはおもしろいとおもって、いっすんぼうしをおひめさまのおともにしました。
+おとのさまは おもしろいと おもって、 いっすんぼうしを おひめさまの おともに しました。
 The lord found him amusing and made Issun Bōshi an attendant to the princess.
 
-あるひ、おひめさまとでかけると、おにがあらわれました。
+あるひ、 おひめさまと でかけると、 おにが あらわれました。
 One day while out with the princess, an ogre appeared.
 
-おにはおひめさまをさらおうとしました。
+おには おひめさまを さらおうと しました。
 The ogre tried to seize the princess.
 
-いっすんぼうしはゆうかんにおにのまえにたちました。
+いっすんぼうしは ゆうかんに おにの まえに たちました。
 Issun Bōshi bravely stood before the ogre.
 
-おには「こんなちいさなやつが」とわらって、いっすんぼうしをのみこみました。
+おには 「こんな ちいさな やつが」と わらって、 いっすんぼうしを のみこみました。
 The ogre laughed, "Such a tiny thing!" and swallowed Issun Bōshi.
 
-いっすんぼうしはおなかのなかでちいさなかたなでつついてまわりました。
+いっすんぼうしは おなかのなかで ちいさな かたなで つついてまわりました。
 Inside the ogre's belly, Issun Bōshi poked about with his tiny sword.
 
-おには「いたい、いたい！」といってげっぷをして、いっすんぼうしをはきだしました。
+おには 「いたい、 いたい！」と いって げっぷをして、 いっすんぼうしを はきだしました。
 The ogre cried "Ow, ow!" and belched Issun Bōshi out.
 
-おにはうちでのこづちをおとして、にげていきました。
+おには うちでのこづちを おとして、 にげていきました。
 The ogre dropped his magic mallet and fled.
 
-おひめさまはうちでのこづちをふりました。「おおきくなれ！」
+おひめさまは うちでのこづちを ふりました。 「おおきくなれ！」
 The princess waved the magic mallet. "Grow big!"
 
-いっすんぼうしはたちまちりっぱなわかものになりました。
+いっすんぼうしは たちまち りっぱな わかものに なりました。
 Issun Bōshi instantly became a fine young man.
 
-やがてふたりはけっこんして、しあわせにくらしました。
+やがて ふたりは けっこんして、 しあわせに くらしました。
 In time the two married and lived happily ever after.

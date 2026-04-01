@@ -26,8 +26,15 @@ def test_to_romaji_basic():
 
 
 def test_to_romaji_hiragana_words():
-    result = _to_romaji("むかしむかし")
+    result = _to_romaji("むかし むかし")  # add explicit space
     assert "mukashi" in result.lower()
+
+
+def test_to_romaji_preserves_spaces():
+    result = _to_romaji("むかしむかし おじいさんが いました。")
+    # spaces in input should appear as spaces in romaji output
+    parts = result.split()
+    assert len(parts) >= 2  # at least one space preserved
 
 
 def test_generate_story_pdf_creates_file():

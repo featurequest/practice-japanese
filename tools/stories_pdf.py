@@ -27,8 +27,8 @@ _KAKASI = pykakasi.kakasi()
 
 def _to_romaji(text: str) -> str:
     result = _KAKASI.convert(text)
-    raw = " ".join(item["hepburn"] for item in result if item["hepburn"])
-    return re.sub(r' ([,\.!\?;:）」』\)])', r'\1', raw)
+    raw = "".join(item["hepburn"] for item in result)
+    return re.sub(r' ([,\.!\?;:）」』\)])', r'\1', raw).strip()
 
 
 def _register_font() -> None:
