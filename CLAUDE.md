@@ -56,6 +56,8 @@ The Klee One SemiBold font is bundled in `fonts/` (SIL OFL licensed).
 - `models.py` — `Stroke` (normalized 0-1 polyline + SVG path) and `KanaCard` dataclasses
 - `kana.py` — All 208 card definitions (HIRAGANA, KATAKANA lists)
 - `strokes/` — Stroke order data from KanjiVG. Base characters and dakuten/handakuten are fetched directly from KanjiVG SVGs. Yōon variants are composed via `make_yoon()` in `helpers.py`.
+- `stories.py` — `Sentence` and `Story` dataclasses; markdown parser for `data/stories/*.md`
+- `stories/` — Markdown source files for folk tales (CC0)
 
 ### Rendering Layer (`renderer/`)
 - `pdf_renderer.py` — Flash card page layout, auto-computed grid, front/back page pairing with column mirroring for duplex
@@ -72,6 +74,7 @@ All tunables are centralized: paper size, card dimensions, grid layout (auto-com
 Single entry point for all operations. Run without arguments to see help. Dispatches to `tools/` modules:
 - `--kana` — kana PDF generation (flash cards, practice, chart, stroke order)
 - `--vocabulary` — vocabulary PDFs via `tools/vocabulary_pdf.py`
+- `--stories` — folk tale PDFs via `tools/stories_pdf.py`
 - `--setup` — prerequisite check via `tools/setup.py`
 - `--build-vocabulary` — vocabulary data build via `tools/build_jlpt_vocabulary.py`
 - `--update-strokes` — KanjiVG update via `tools/update_strokes.py`
@@ -80,6 +83,7 @@ Single entry point for all operations. Run without arguments to see help. Dispat
 ### Tools (`tools/`)
 - `build_jlpt_vocabulary.py` — Downloads JLPT word lists + JMdict; builds `data/vocabulary.json`
 - `vocabulary_pdf.py` — PDF rendering logic for vocabulary reference sheets
+- `stories_pdf.py` — PDF rendering for folk tale reading-practice sheets
 - `anki_export.py` — Builds Anki `.apkg` decks from vocabulary data
 - `setup.py` — Checks prerequisites; auto-builds vocabulary data if absent
 - `update_strokes.py` — Downloads latest KanjiVG release; regenerates `data/strokes/*.py`

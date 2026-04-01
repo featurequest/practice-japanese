@@ -45,3 +45,17 @@ def test_generate_katakana_only():
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr
+
+
+def test_stories_flag(tmp_path, monkeypatch):
+    from unittest.mock import patch
+    import shutil
+    monkeypatch.chdir(tmp_path)
+    shutil.copytree(os.path.join(PROJECT_ROOT, 'data'), str(tmp_path / 'data'))
+    shutil.copytree(os.path.join(PROJECT_ROOT, 'fonts'), str(tmp_path / 'fonts'))
+    (tmp_path / 'output').mkdir()
+    with patch('sys.argv', ['generate.py', '--stories']):
+        from generate import main
+        main()
+    pdfs = list((tmp_path / 'output').glob('story_*.pdf'))
+    assert len(pdfs) == 5

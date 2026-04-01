@@ -48,6 +48,14 @@ Download the latest pre-built PDFs:
 - [Vocabulary N1 (EN)](https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_n1.pdf)
 - [Vocabulary N1 (SV)](https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_n1.pdf)
 
+### Reading practice
+
+- [Momotarō](https://github.com/featurequest/practice-japanese/releases/latest/download/story_momotaro.pdf)
+- [Urashima Tarō](https://github.com/featurequest/practice-japanese/releases/latest/download/story_urashima.pdf)
+- [Kaguya-hime](https://github.com/featurequest/practice-japanese/releases/latest/download/story_kaguya.pdf)
+- [Tsuru no Ongaeshi](https://github.com/featurequest/practice-japanese/releases/latest/download/story_tsuru.pdf)
+- [Issun Bōshi](https://github.com/featurequest/practice-japanese/releases/latest/download/story_issunboshi.pdf)
+
 ## Examples
 
 **Flash cards — front (character) and back (romaji + stroke order):**
@@ -122,6 +130,13 @@ python generate.py --vocabulary --jlpt n5 --lang sv    # N5 Swedish  → output/
 python generate.py --vocabulary --jlpt n3              # N3 English  → output/vocabulary_n3.pdf
 python generate.py --anki --jlpt n5                    # N5 Anki deck  → output/anki_n5.apkg
 python generate.py --anki                              # All levels     → output/anki_n5.apkg … anki_n1.apkg + anki_all.apkg
+```
+
+### Stories
+
+```bash
+# Generate story PDFs
+python generate.py --stories                           # All folk tales → output/story_*.pdf
 ```
 
 ### Maintenance

@@ -36,6 +36,14 @@ data/strokes/ (KanjiVG stroke data)
   Licensed under Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0).
   https://creativecommons.org/licenses/by-sa/3.0/
 
+data/stories/
+  Original simplified Japanese folk tale texts and English adaptations.
+  The underlying folk tales (Momotarō, Urashima Tarō, Kaguya-hime, Tsuru no Ongaeshi,
+  Issun Bōshi) are ancient works in the public domain in all jurisdictions.
+  English text adapted from Yei Theodora Ozaki's translations (1908), also public domain.
+  These story files are released under Creative Commons Zero (CC0 1.0).
+  https://creativecommons.org/publicdomain/zero/1.0/
+
 fonts/KleeOne-SemiBold.ttf, fonts/OFL-KleeOne.txt
   Klee One by Fontworks (https://github.com/fontworks-fonts/Klee).
   Licensed under the SIL Open Font License 1.1.

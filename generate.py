@@ -73,6 +73,10 @@ Examples:
     vocab_grp.add_argument("--anki", action="store_true",
                            help="Generate Anki deck(s) (.apkg) for vocabulary")
 
+    stories_grp = parser.add_argument_group("Stories")
+    stories_grp.add_argument("--stories", action="store_true",
+                             help="Generate reading-practice PDFs for all folk tales")
+
     maint_grp = parser.add_argument_group("Maintenance")
     maint_grp.add_argument("--setup", action="store_true",
                            help="Check prerequisites and download missing data")
@@ -148,6 +152,18 @@ Examples:
             for level in ["N5", "N4", "N3", "N2", "N1"]:
                 run_anki_export(level)
             run_anki_export_all()
+        return
+
+    if args.stories:
+        from data.stories import load_stories
+        from tools.stories_pdf import generate_story_pdf
+        from pathlib import Path as _Path
+        _Path("output").mkdir(exist_ok=True)
+        for story in load_stories():
+            out = _Path(f"output/story_{story.slug}.pdf")
+            print(f"Generating {story.title_en} → {out}")
+            generate_story_pdf(story, out)
+            print(f"Saved to {out}")
         return
 
     if args.kana:
