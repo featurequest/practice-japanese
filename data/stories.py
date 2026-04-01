@@ -53,11 +53,17 @@ def _parse_story(path: Path) -> Story:
             sentences.append(Sentence(japanese=pending, english=line))
             pending = None
 
+    if pending is not None:
+        raise ValueError(f"Unpaired Japanese line in {path}: {pending!r}")
+
     return Story(slug=slug, title_en=title_en, title_ja=title_ja, sentences=sentences)
 
 
 def load_story(slug: str) -> Story:
-    return _parse_story(STORIES_DIR / f"{slug}.md")
+    path = STORIES_DIR / f"{slug}.md"
+    if not path.exists():
+        raise ValueError(f"Unknown story: {slug!r}")
+    return _parse_story(path)
 
 
 def load_stories() -> list[Story]:
