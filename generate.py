@@ -1,218 +1,200 @@
 #!/usr/bin/env python3
-"""Generate printable kana flash cards and practice sheets."""
+"""Generate Japanese study materials: flash cards, practice sheets, vocabulary PDFs."""
 import argparse
+import json
 import os
+import subprocess
 import sys
-import config
-from data.kana import HIRAGANA, KATAKANA
-from renderer.pdf_renderer import generate_pdf
-from renderer.practice_sheet import generate_practice_pdf
-from renderer.chart import generate_chart_pdf, generate_stroke_order_pdf
+from pathlib import Path
 
 
-def _update_strokes():
-    """Download latest KanjiVG release and regenerate stroke data."""
-    import json
-    import shutil
-    import tempfile
-    import urllib.request
-    import zipfile
-
-    api_url = "https://api.github.com/repos/KanjiVG/kanjivg/releases/latest"
-    cache_dir = os.path.join(os.path.dirname(__file__), ".kanjivg_cache")
-
-    print("Finding latest KanjiVG release...")
-    try:
-        req = urllib.request.Request(api_url, headers={"Accept": "application/vnd.github+json"})
-        with urllib.request.urlopen(req) as resp:
-            release = json.loads(resp.read())
-        url = None
-        for asset in release.get("assets", []):
-            if asset["name"].endswith("-all.zip"):
-                url = asset["browser_download_url"]
-                break
-        if not url:
-            print("Error: No '-all.zip' asset found in latest KanjiVG release")
-            sys.exit(1)
-    except Exception as e:
-        print(f"Error finding KanjiVG release: {e}")
-        sys.exit(1)
-
-    print(f"Downloading {url}...")
-    with tempfile.NamedTemporaryFile(suffix=".zip", delete=False) as tmp:
-        tmp_path = tmp.name
-    try:
-        urllib.request.urlretrieve(url, tmp_path)
-    except Exception as e:
-        print(f"Error downloading KanjiVG: {e}")
-        os.unlink(tmp_path)
-        sys.exit(1)
-
-    print(f"Extracting to {cache_dir}...")
-    if os.path.exists(cache_dir):
-        shutil.rmtree(cache_dir)
-    os.makedirs(cache_dir)
-    with zipfile.ZipFile(tmp_path) as zf:
-        for member in zf.namelist():
-            if member.endswith(".svg"):
-                filename = os.path.basename(member)
-                with zf.open(member) as src, open(os.path.join(cache_dir, filename), "wb") as dst:
-                    dst.write(src.read())
-    os.unlink(tmp_path)
-
-    print("Regenerating stroke data...")
-    from tools.generate_strokes_from_kanjivg import (
-        HIRAGANA_CHARS, KATAKANA_CHARS, SMALL_HIRAGANA, SMALL_KATAKANA,
-        generate_stroke_file,
-    )
-
-    hiragana_code = generate_stroke_file(HIRAGANA_CHARS, SMALL_HIRAGANA, "hiragana", cache_dir)
-    out_h = os.path.join("data", "strokes", "hiragana.py")
-    with open(out_h, "w") as f:
-        f.write(hiragana_code)
-    print(f"  Written to {out_h}")
-
-    katakana_code = generate_stroke_file(KATAKANA_CHARS, SMALL_KATAKANA, "katakana", cache_dir)
-    out_k = os.path.join("data", "strokes", "katakana.py")
-    with open(out_k, "w") as f:
-        f.write(katakana_code)
-    print(f"  Written to {out_k}")
-
-    print("Done! Run 'python -m pytest tests/test_strokes.py -v' to verify.")
-
-
-def _generate_examples():
-    """Generate example JPEG images from the first pages of flashcards and practice PDFs."""
-    import shutil
-    import subprocess
-    import tempfile
-
-    if not subprocess.run(["which", "pdftoppm"], capture_output=True).returncode == 0:
-        print("Error: pdftoppm not found. Install poppler-utils:")
-        print("  sudo apt install poppler-utils  (Debian/Ubuntu)")
-        print("  brew install poppler             (macOS)")
-        sys.exit(1)
-
-    out_dir = "docs"
-    os.makedirs(out_dir, exist_ok=True)
-
-    with tempfile.TemporaryDirectory() as tmp:
-        # Generate temporary PDFs
-        flashcards_pdf = os.path.join(tmp, "flashcards.pdf")
-        practice_pdf = os.path.join(tmp, "practice.pdf")
-        chart_pdf = os.path.join(tmp, "chart.pdf")
-        stroke_order_pdf = os.path.join(tmp, "stroke_order.pdf")
-
-        cards = HIRAGANA + KATAKANA
-        generate_pdf(cards, flashcards_pdf)
-        generate_practice_pdf(cards, practice_pdf)
-
-        kana_types = ["hiragana", "katakana"]
-        generate_chart_pdf(kana_types, chart_pdf)
-        generate_stroke_order_pdf(kana_types, stroke_order_pdf)
-
-        # Generate vocabulary PDF
-        import json
-        from generate_vocabulary import build_pdf as build_vocabulary_pdf, JSON_FILE as VOCAB_JSON
-        vocabulary_pdf = os.path.join(tmp, "vocabulary.pdf")
-        with open(VOCAB_JSON, encoding="utf-8") as f:
-            words = json.load(f)
-        build_vocabulary_pdf(words, vocabulary_pdf)
-
-        # Extract pages as JPEG
-        import glob
-        for label, pdf, page in [
-            ("flashcards-front", flashcards_pdf, 1),
-            ("flashcards-back", flashcards_pdf, 2),
-            ("practice", practice_pdf, 1),
-            ("chart", chart_pdf, 1),
-            ("stroke-order", stroke_order_pdf, 1),
-            ("vocabulary", vocabulary_pdf, 1),
-        ]:
-            prefix = os.path.join(tmp, label)
-            subprocess.run([
-                "pdftoppm", "-jpeg", "-f", str(page), "-l", str(page),
-                "-r", "200", pdf, prefix,
-            ], check=True)
-            # pdftoppm zero-pads based on total pages; find the output file
-            matches = glob.glob(f"{prefix}-*.jpg")
-            tmp_jpg = matches[0]
-            dest = os.path.join(out_dir, f"example_{label.replace('-', '_')}.jpg")
-            shutil.move(tmp_jpg, dest)
-            print(f"  Written to {dest}")
-
-    print("Done! Example images updated in docs/.")
+def _default_output(args) -> str:
+    """Return the default output path for the active mode."""
+    if args.vocabulary:
+        level = (args.jlpt or "n5").lower()
+        if args.lang and args.lang != "en":
+            return f"output/vocabulary_{args.lang}_{level}.pdf"
+        return f"output/vocabulary_{level}.pdf"
+    # kana modes
+    if args.practice:
+        return "output/kana_practice.pdf"
+    if args.chart:
+        return "output/kana_chart.pdf"
+    if args.stroke_order:
+        return "output/kana_stroke_order.pdf"
+    return "output/kana_flashcards.pdf"
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate kana flash cards and practice sheets")
-    parser.add_argument("-o", "--output", default="output/kana_flashcards.pdf",
-                        help="Output PDF path")
-    parser.add_argument("--hiragana-only", action="store_true",
-                        help="Only include hiragana")
-    parser.add_argument("--katakana-only", action="store_true",
-                        help="Only include katakana")
-    parser.add_argument("--card-width", type=float, default=None,
-                        help="Card width in mm (default: 55)")
-    parser.add_argument("--card-height", type=float, default=None,
-                        help="Card height in mm (default: 82)")
-    parser.add_argument("--practice", action="store_true",
-                        help="Generate practice worksheet instead of flash cards")
-    parser.add_argument("--chart", action="store_true",
-                        help="Generate reference chart instead of flash cards")
-    parser.add_argument("--stroke-order", action="store_true",
-                        help="Generate stroke order reference instead of flash cards")
-    parser.add_argument("--update-strokes", action="store_true",
-                        help="Download latest KanjiVG and regenerate stroke data")
-    parser.add_argument("--generate-examples", action="store_true",
-                        help="Regenerate example JPEG images in docs/")
+    parser = argparse.ArgumentParser(
+        description="Generate Japanese study materials",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""\
+Examples:
+  python generate.py --kana                             Flash cards (208 cards)
+  python generate.py --kana --practice                  Practice sheets
+  python generate.py --kana --chart --hiragana-only     Hiragana reference chart
+  python generate.py --kana --stroke-order              Stroke order guide
+  python generate.py --vocabulary --jlpt n5             N5 vocabulary PDF (English)
+  python generate.py --vocabulary --jlpt n3 --lang sv   N3 vocabulary PDF (Swedish)
+  python generate.py --anki --jlpt n5                   N5 Anki deck → output/anki_n5.apkg
+  python generate.py --anki                             All 5 levels (N5–N1)
+  python generate.py --setup                            Check/download prerequisites
+  python generate.py --build-vocabulary                 Rebuild vocabulary data from source
+""",
+    )
+
+    kana_grp = parser.add_argument_group("Kana")
+    kana_grp.add_argument("--kana", action="store_true",
+                          help="Generate kana PDF (flash cards by default)")
+    kana_grp.add_argument("--practice", action="store_true",
+                          help="Practice sheets (use with --kana)")
+    kana_grp.add_argument("--chart", action="store_true",
+                          help="Reference chart (use with --kana)")
+    kana_grp.add_argument("--stroke-order", action="store_true", dest="stroke_order",
+                          help="Stroke order guide (use with --kana)")
+    kana_grp.add_argument("--hiragana-only", action="store_true",
+                          help="Hiragana only (use with --kana)")
+    kana_grp.add_argument("--katakana-only", action="store_true",
+                          help="Katakana only (use with --kana)")
+    kana_grp.add_argument("--card-width", type=float, metavar="MM",
+                          help="Card width in mm, default 55 (use with --kana)")
+    kana_grp.add_argument("--card-height", type=float, metavar="MM",
+                          help="Card height in mm, default 82 (use with --kana)")
+
+    vocab_grp = parser.add_argument_group("Vocabulary")
+    vocab_grp.add_argument("--vocabulary", action="store_true",
+                           help="Generate vocabulary PDF")
+    vocab_grp.add_argument("--jlpt", choices=["n5", "n4", "n3", "n2", "n1"],
+                           metavar="{n5,n4,n3,n2,n1}",
+                           help="JLPT level (required with --vocabulary)")
+    vocab_grp.add_argument("--lang", choices=["en", "sv"], default="en",
+                           help="Language, default en (use with --vocabulary)")
+    vocab_grp.add_argument("--anki", action="store_true",
+                           help="Generate Anki deck(s) (.apkg) for vocabulary")
+
+    maint_grp = parser.add_argument_group("Maintenance")
+    maint_grp.add_argument("--setup", action="store_true",
+                           help="Check prerequisites and download missing data")
+    maint_grp.add_argument("--build-vocabulary", action="store_true", dest="build_vocabulary",
+                           help="Force rebuild data/vocabulary.json from source")
+
+    dev_grp = parser.add_argument_group("Developer")
+    dev_grp.add_argument("--update-strokes", action="store_true", dest="update_strokes",
+                         help="Re-download KanjiVG and regenerate stroke data")
+    dev_grp.add_argument("--generate-examples", action="store_true", dest="generate_examples",
+                         help="Regenerate example images in docs/ (requires poppler-utils)")
+
+    parser.add_argument("-o", "--output", default=None,
+                        help="Output PDF path (applies to --kana and --vocabulary)")
+
+    if len(sys.argv) == 1:
+        parser.print_help()
+        return
+
     args = parser.parse_args()
 
+    if args.setup:
+        from tools.setup import run_setup
+        run_setup()
+        return
+
+    if args.build_vocabulary:
+        result = subprocess.run(
+            [sys.executable, "tools/build_jlpt_vocabulary.py"],
+            cwd=os.path.dirname(os.path.abspath(__file__)),
+        )
+        sys.exit(result.returncode)
+
+
     if args.update_strokes:
-        _update_strokes()
+        from tools.update_strokes import run_update_strokes
+        run_update_strokes()
         return
 
     if args.generate_examples:
-        _generate_examples()
+        from tools.generate_examples import run_generate_examples
+        run_generate_examples()
         return
 
-    if args.card_width is not None or args.card_height is not None:
-        config.set_card_size(
-            args.card_width if args.card_width is not None else 55,
-            args.card_height if args.card_height is not None else 82,
+    if args.vocabulary:
+        if not args.jlpt:
+            parser.error("--vocabulary requires --jlpt {n5,n4,n3,n2,n1}")
+        from tools.vocabulary_pdf import build_pdf, JSON_FILE
+        if not Path(JSON_FILE).exists():
+            print(f"Error: {JSON_FILE} not found. Run: python generate.py --setup",
+                  file=sys.stderr)
+            sys.exit(1)
+        with open(JSON_FILE, encoding="utf-8") as f:
+            all_words = json.load(f)
+        level = args.jlpt.upper()
+        words = sorted(
+            [w for w in all_words if w.get("jlpt") == level],
+            key=lambda w: w.get("frequency_rank", 9999),
         )
+        out = Path(args.output) if args.output else Path(_default_output(args))
+        print(f"Generating {level} vocabulary ({len(words)} words, lang={args.lang}) → {out}")
+        build_pdf(words, level, args.lang, out)
+        print(f"Saved to {out}")
+        return
 
-    cards = []
-    if not args.katakana_only:
-        cards.extend(HIRAGANA)
-    if not args.hiragana_only:
-        cards.extend(KATAKANA)
+    if args.anki:
+        from tools.anki_export import run_anki_export, run_anki_export_all
+        if args.jlpt:
+            run_anki_export(args.jlpt.upper(), args.output)
+        else:
+            if args.output:
+                print("Warning: -o ignored when generating all levels", file=sys.stderr)
+            for level in ["N5", "N4", "N3", "N2", "N1"]:
+                run_anki_export(level)
+            run_anki_export_all()
+        return
 
-    os.makedirs(os.path.dirname(args.output) or ".", exist_ok=True)
-    kana_types = []
-    if not args.katakana_only:
-        kana_types.append("hiragana")
-    if not args.hiragana_only:
-        kana_types.append("katakana")
+    if args.kana:
+        if args.hiragana_only and args.katakana_only:
+            parser.error("--hiragana-only and --katakana-only are mutually exclusive")
+        import config
+        from data.kana import HIRAGANA, KATAKANA
+        from renderer.pdf_renderer import generate_pdf
+        from renderer.practice_sheet import generate_practice_pdf
+        from renderer.chart import generate_chart_pdf, generate_stroke_order_pdf
 
-    if args.chart:
-        if args.output == "output/kana_flashcards.pdf":
-            args.output = "output/kana_chart.pdf"
-        generate_chart_pdf(kana_types, args.output)
-        print(f"Generated chart ({', '.join(kana_types)}) → {args.output}")
-    elif args.stroke_order:
-        if args.output == "output/kana_flashcards.pdf":
-            args.output = "output/kana_stroke_order.pdf"
-        generate_stroke_order_pdf(kana_types, args.output)
-        print(f"Generated stroke order ({', '.join(kana_types)}) → {args.output}")
-    elif args.practice:
-        if args.output == "output/kana_flashcards.pdf":
-            args.output = "output/kana_practice.pdf"
-        generate_practice_pdf(cards, args.output)
-    else:
-        generate_pdf(cards, args.output)
-    if not args.chart and not args.stroke_order:
-        print(f"Generated {len(cards)} cards → {args.output}")
+        if args.card_width is not None or args.card_height is not None:
+            config.set_card_size(
+                args.card_width if args.card_width is not None else 55,
+                args.card_height if args.card_height is not None else 82,
+            )
+
+        cards = []
+        if not args.katakana_only:
+            cards.extend(HIRAGANA)
+        if not args.hiragana_only:
+            cards.extend(KATAKANA)
+
+        kana_types = []
+        if not args.katakana_only:
+            kana_types.append("hiragana")
+        if not args.hiragana_only:
+            kana_types.append("katakana")
+
+        out = args.output or _default_output(args)
+        os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+
+        if args.chart:
+            generate_chart_pdf(kana_types, out)
+            print(f"Generated chart ({', '.join(kana_types)}) → {out}")
+        elif args.stroke_order:
+            generate_stroke_order_pdf(kana_types, out)
+            print(f"Generated stroke order ({', '.join(kana_types)}) → {out}")
+        elif args.practice:
+            generate_practice_pdf(cards, out)
+            print(f"Generated {len(cards)} cards → {out}")
+        else:
+            generate_pdf(cards, out)
+            print(f"Generated {len(cards)} cards → {out}")
+        return
+
+    parser.print_help()
 
 
 if __name__ == "__main__":

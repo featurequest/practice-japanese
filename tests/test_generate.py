@@ -6,11 +6,20 @@ import sys
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+def test_no_args_shows_help():
+    result = subprocess.run(
+        [sys.executable, "generate.py"],
+        capture_output=True, text=True, cwd=PROJECT_ROOT,
+    )
+    assert result.returncode == 0
+    assert "usage" in result.stdout.lower() or "kana" in result.stdout.lower()
+
+
 def test_generate_creates_pdf():
     with tempfile.TemporaryDirectory() as tmpdir:
         out = os.path.join(tmpdir, "test.pdf")
         result = subprocess.run(
-            [sys.executable, "generate.py", "-o", out],
+            [sys.executable, "generate.py", "--kana", "-o", out],
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr
@@ -22,7 +31,7 @@ def test_generate_hiragana_only():
     with tempfile.TemporaryDirectory() as tmpdir:
         out = os.path.join(tmpdir, "test.pdf")
         result = subprocess.run(
-            [sys.executable, "generate.py", "--hiragana-only", "-o", out],
+            [sys.executable, "generate.py", "--kana", "--hiragana-only", "-o", out],
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr
@@ -32,7 +41,7 @@ def test_generate_katakana_only():
     with tempfile.TemporaryDirectory() as tmpdir:
         out = os.path.join(tmpdir, "test.pdf")
         result = subprocess.run(
-            [sys.executable, "generate.py", "--katakana-only", "-o", out],
+            [sys.executable, "generate.py", "--kana", "--katakana-only", "-o", out],
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr

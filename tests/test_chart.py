@@ -84,7 +84,7 @@ def test_generate_chart_cli():
     with tempfile.TemporaryDirectory() as tmpdir:
         out = os.path.join(tmpdir, "test_chart.pdf")
         result = subprocess.run(
-            [sys.executable, "generate.py", "--chart", "-o", out],
+            [sys.executable, "generate.py", "--kana", "--chart", "-o", out],
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr
@@ -106,7 +106,7 @@ def test_generate_stroke_order_cli():
     with tempfile.TemporaryDirectory() as tmpdir:
         out = os.path.join(tmpdir, "test_stroke.pdf")
         result = subprocess.run(
-            [sys.executable, "generate.py", "--stroke-order", "-o", out],
+            [sys.executable, "generate.py", "--kana", "--stroke-order", "-o", out],
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr
@@ -117,7 +117,7 @@ def test_generate_chart_cli_hiragana_only():
     with tempfile.TemporaryDirectory() as tmpdir:
         out = os.path.join(tmpdir, "test_chart.pdf")
         result = subprocess.run(
-            [sys.executable, "generate.py", "--chart", "--hiragana-only", "-o", out],
+            [sys.executable, "generate.py", "--kana", "--chart", "--hiragana-only", "-o", out],
             capture_output=True, text=True, cwd=PROJECT_ROOT,
         )
         assert result.returncode == 0, result.stderr

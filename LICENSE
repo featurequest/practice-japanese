@@ -25,9 +25,11 @@ SOFTWARE.
 Exceptions — the following files are NOT under the MIT License:
 
 data/vocabulary.json, data/vocabulary.LICENSE
-  Derived from Wiktionary (https://en.wiktionary.org/wiki/Appendix:1000_Japanese_basic_words).
-  Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
-  https://creativecommons.org/licenses/by-sa/4.0/
+  Built from JLPT word lists by Jonathan Waller (https://www.tanos.co.uk/jlpt/, used with permission)
+  and JMdict by the Electronic Dictionary Research and Development Group (https://www.edrdg.org/).
+  JMdict is licensed under Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0).
+  https://creativecommons.org/licenses/by-sa/3.0/
+  See data/vocabulary.LICENSE for full details.
 
 data/strokes/ (KanjiVG stroke data)
   Derived from KanjiVG by Ulrich Apel (https://kanjivg.tagaini.net/).

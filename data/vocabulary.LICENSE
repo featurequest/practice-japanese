@@ -1,14 +1,19 @@
-vocabulary.json is derived from:
+vocabulary.json is built from two sources:
 
-  Appendix:1000 Japanese basic words — Wiktionary
-  https://en.wiktionary.org/wiki/Appendix:1000_Japanese_basic_words
+1. JLPT word lists by Jonathan Waller
+   https://www.tanos.co.uk/jlpt/
+   Used with permission. Lists cover vocabulary for JLPT levels N5–N1.
 
-Original content by Wiktionary contributors, licensed under
-Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
-https://creativecommons.org/licenses/by-sa/4.0/
+2. JMdict by the Electronic Dictionary Research and Development Group (EDRDG)
+   https://www.edrdg.org/
+   Licensed under Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0).
+   https://creativecommons.org/licenses/by-sa/3.0/
 
 Adaptations made in this project:
-- Words extracted from wiki markup and structured as JSON
-- Fields: kana, kanji, romaji, meaning, section, subsection, sub_subsection
+- Words matched against JMdict entries by kana/kanji reading
+- Fields extracted: kana, kanji, romaji, meanings (with English and Swedish glosses),
+  part of speech, register tags, antonyms, usage notes, JLPT level, frequency rank
+- Romaji generated using pykakasi
 
-This file and any derivative works must be distributed under the same CC BY-SA 4.0 license.
+This file and any derivative works incorporating the JMdict data must be distributed
+under the same CC BY-SA 3.0 license.

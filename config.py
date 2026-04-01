@@ -43,11 +43,17 @@ ROMAJI_FONT_SIZE = 8 * mm  # romaji on back
 LABEL_FONT_SIZE = 3 * mm  # corner label on front
 STROKE_NUMBER_FONT_SIZE = 2.5 * mm  # stroke order numbers
 
-# Stroke diagram
+# Stroke diagram — colors match the web app (kana.js STROKE_COLORS)
 STROKE_LINE_WIDTH = 0.8 * mm
 STROKE_DOT_RADIUS = 1.0 * mm
-STROKE_COLOR = (0.2, 0.2, 0.2)  # dark gray
-STROKE_NUMBER_COLOR = (0.8, 0.1, 0.1)  # red for visibility
+STROKE_COLORS = [
+    (0.310, 0.275, 0.898),  # indigo  #4f46e5
+    (0.020, 0.588, 0.412),  # emerald #059669
+    (0.863, 0.149, 0.149),  # red     #dc2626
+    (0.851, 0.467, 0.024),  # amber   #d97706
+    (0.486, 0.227, 0.929),  # violet  #7c3aed
+    (0.031, 0.569, 0.698),  # cyan    #0891b2
+]
 
 # Font path
 FONT_PATH_KLEE = "fonts/KleeOne-SemiBold.ttf"

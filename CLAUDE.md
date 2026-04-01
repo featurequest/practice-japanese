@@ -12,38 +12,38 @@ A Python tool that generates printable flash cards and handwriting practice shee
 # Install dependencies
 pip install -r requirements.txt
 
-# Generate flash cards
-python generate.py                     # Full deck (208 cards)
-python generate.py --hiragana-only     # Hiragana only
-python generate.py --katakana-only     # Katakana only
-python generate.py -o path/to/out.pdf  # Custom output path
-python generate.py --card-width 63 --card-height 88  # Custom card size (mm)
+# Check prerequisites (font, vocabulary data, packages)
+python generate.py --setup
 
-# Generate practice sheets
-python generate.py --practice                    # Full set
-python generate.py --practice --hiragana-only    # Hiragana only
+# Generate kana PDFs
+python generate.py --kana                              # Flash cards (208 cards)
+python generate.py --kana --hiragana-only              # Hiragana only
+python generate.py --kana --katakana-only              # Katakana only
+python generate.py --kana -o path/to/out.pdf           # Custom output path
+python generate.py --kana --card-width 63 --card-height 88  # Custom size (mm)
+python generate.py --kana --practice                   # Practice sheets
+python generate.py --kana --chart                      # Reference chart
+python generate.py --kana --stroke-order               # Stroke order guide
 
-# Generate reference charts (landscape A4)
-python generate.py --chart                       # Both scripts
-python generate.py --chart --hiragana-only       # Hiragana only
+# Vocabulary data
+python generate.py --build-vocabulary                  # Download JMdict + JLPT lists (~50MB), build vocabulary.json
+python tools/build_jlpt_vocabulary.py --dry-run        # Preview stats, no write
+python tools/build_jlpt_vocabulary.py --cache-only     # Use cached downloads
 
-# Generate stroke order (portrait A4)
-python generate.py --stroke-order                       # Both scripts
-python generate.py --stroke-order --hiragana-only       # Hiragana only
-
-# Vocabulary reference (1000 basic words)
-python generate_vocabulary.py            # Generates data/vocabulary.json + output/vocabulary.pdf
+# Generate vocabulary PDFs
+python generate.py --vocabulary --jlpt n5              # N5 English → output/vocabulary_n5.pdf
+python generate.py --vocabulary --jlpt n5 --lang sv    # N5 Swedish → output/vocabulary_sv_n5.pdf
+python generate.py --anki --jlpt n5                    # N5 Anki deck → output/anki_n5.apkg
+python generate.py --anki                              # All 5 levels + combined output/anki_all.apkg
 
 # Run tests
 python -m pytest tests/ -v
 python -m pytest tests/test_stroke_diagram.py -v      # Single test file
 python -m pytest tests/test_kana.py::test_name -v     # Single test
 
-# Download latest KanjiVG and regenerate stroke data
-python generate.py --update-strokes
-
-# Regenerate example images in docs/ (requires poppler-utils)
-python generate.py --generate-examples
+# Maintenance (developer)
+python generate.py --update-strokes       # Re-download KanjiVG and regenerate stroke data
+python generate.py --generate-examples    # Regenerate example images in docs/
 ```
 
 The Klee One SemiBold font is bundled in `fonts/` (SIL OFL licensed).
@@ -69,13 +69,22 @@ The Klee One SemiBold font is bundled in `fonts/` (SIL OFL licensed).
 All tunables are centralized: paper size, card dimensions, grid layout (auto-computed from card size), font sizes, stroke colors, cut line style, and `BACK_PAGE_OFFSET_Y` for printer duplex alignment compensation. `set_card_size()` validates dimensions and recomputes grid/margins.
 
 ### CLI (`generate.py`)
-Single entry point for all operations: PDF generation, stroke data updates (`--update-strokes`), and example image regeneration (`--generate-examples`). The `--generate-examples` flag requires `pdftoppm` (poppler-utils) and writes JPEGs to `docs/`.
-
-### Vocabulary generator (`generate_vocabulary.py`)
-Standalone script that reads `data/vocabulary.json` and produces `output/vocabulary.pdf` — a portrait A4 multi-page table with Word / Romaji / Meaning columns and section headers as colored rows (H2=dark blue, H3=medium blue, H4=light blue). The JSON (~700 entries) is the source of truth and is checked in; section headers are reconstructed from the `section`/`subsection`/`sub_subsection` fields when generating the PDF.
+Single entry point for all operations. Run without arguments to see help. Dispatches to `tools/` modules:
+- `--kana` — kana PDF generation (flash cards, practice, chart, stroke order)
+- `--vocabulary` — vocabulary PDFs via `tools/vocabulary_pdf.py`
+- `--setup` — prerequisite check via `tools/setup.py`
+- `--build-vocabulary` — vocabulary data build via `tools/build_jlpt_vocabulary.py`
+- `--update-strokes` — KanjiVG update via `tools/update_strokes.py`
+- `--generate-examples` — example image generation via `tools/generate_examples.py`
 
 ### Tools (`tools/`)
-- `generate_strokes_from_kanjivg.py` — Library that extracts stroke data from local KanjiVG SVG files. Called by `generate.py --update-strokes`. Fails hard if any character's SVG is missing (no stub data). The `.kanjivg_cache/` directory is gitignored.
+- `build_jlpt_vocabulary.py` — Downloads JLPT word lists + JMdict; builds `data/vocabulary.json`
+- `vocabulary_pdf.py` — PDF rendering logic for vocabulary reference sheets
+- `anki_export.py` — Builds Anki `.apkg` decks from vocabulary data
+- `setup.py` — Checks prerequisites; auto-builds vocabulary data if absent
+- `update_strokes.py` — Downloads latest KanjiVG release; regenerates `data/strokes/*.py`
+- `generate_examples.py` — Renders example JPEGs for `docs/`; requires poppler-utils
+- `generate_strokes_from_kanjivg.py` — Library for extracting stroke paths from KanjiVG SVGs
 
 ## Coordinate Systems
 
@@ -95,7 +104,9 @@ Three coordinate spaces in use — mixing them up is the most common source of b
 
 ## Documentation
 
-When adding new functionality or changing existing behavior, update both `CLAUDE.md` and `README.md` to reflect the changes. This includes new CLI flags, architecture changes, new files/modules, and configuration options.
+When adding new CLI flags, new commands, or changing existing behavior: update **both** the `README.md` Usage section and the argparse help text in `generate.py` in the same commit. The README and `--help` output are the primary user-facing docs and must stay in sync with the code.
+
+When adding new modules or changing architecture, update the Architecture section of this file and `README.md`.
 
 ## Licenses
 

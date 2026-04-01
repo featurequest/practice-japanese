@@ -5,5 +5,7 @@ __pycache__/
 .pytest_cache/
 .kanjivg_cache/
 docs/superpowers/
+.jlpt_cache/
+.superpowers/
 .claude/
 .firecrawl/

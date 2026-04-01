@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Practice — Free Kana Flash Cards, Vocabulary Sheets &amp; Anki Decks</title>
+  <meta name="description" content="Free printable Japanese study materials: 208 hiragana and katakana flash cards, handwriting practice sheets, stroke order guides, and JLPT N5–N1 vocabulary PDFs and Anki decks.">
+  <meta name="keywords" content="Japanese flash cards printable, hiragana flash cards, katakana practice sheets, JLPT vocabulary Anki deck, kana stroke order, Japanese study materials free download">
+  <meta property="og:title" content="Japanese Practice — Free Kana &amp; Vocabulary Study Materials">
+  <meta property="og:description" content="208 kana flash cards, handwriting practice sheets, stroke order guides, and JLPT N5–N1 vocabulary Anki decks — free to download and print.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/featurequest/practice-japanese/main/docs/example_flashcards_front.jpg">
+  <link rel="canonical" href="https://featurequest.github.io/practice-japanese/">
+
+  <style>
+    @font-face {
+      font-family: 'KleeOne';
+      font-style: normal;
+      font-weight: 400 900;
+      font-display: swap;
+      src: url('fonts/klee-one-subset.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url('fonts/outfit-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url('fonts/outfit-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:    #F5F1E8;
+      --ink:      #1A1815;
+      --ink-2:    #48443E;
+      --ink-3:    #9A958F;
+      --red:      #C0382A;
+      --red-pale: #F8EDEB;
+      --white:    #FFFEF9;
+      --border:   rgba(26,24,21,0.10);
+      --border-s: rgba(26,24,21,0.06);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background-color: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      background-image:
+        linear-gradient(rgba(26,24,21,0.033) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26,24,21,0.033) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* ── Ghost kanji watermarks ── */
+    .wm {
+      position: fixed; inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .wm span {
+      position: absolute;
+      font-family: 'Zen Old Mincho', serif;
+      font-weight: 900;
+      color: var(--ink);
+      opacity: 0.018;
+      line-height: 1;
+      user-select: none;
+    }
+    .wm span:nth-child(1) { font-size: 340px; top: -80px;  right: -50px; animation: drift 100s ease-in-out infinite alternate; }
+    .wm span:nth-child(2) { font-size: 240px; bottom: 4%;  left:  -40px; animation: drift  80s ease-in-out infinite alternate-reverse; }
+    .wm span:nth-child(3) { font-size: 190px; top:   42%;  right:  9%;   animation: drift  90s ease-in-out infinite alternate; }
+
+    @keyframes drift { to { transform: rotate(3deg) translateY(22px); } }
+
+    /* ── Layout ── */
+    .wrap {
+      position: relative; z-index: 1;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ── Nav ── */
+    header { padding: 20px 0; }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-brand {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .nav-brand .jp { color: var(--red); margin-right: 7px; }
+    .gh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-2);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      padding: 7px 16px;
+      background: var(--white);
+      transition: border-color .2s, color .2s, box-shadow .2s;
+    }
+    .gh-btn:hover { color: var(--ink); border-color: rgba(26,24,21,.28); box-shadow: 0 2px 8px rgba(26,24,21,.08); }
+    .gh-btn svg { width: 15px; height: 15px; }
+
+    /* ── Hero ── */
+    .hero { padding: 52px 0 68px; }
+    .eyebrow {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 20px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .eyebrow::after { content: ''; width: 36px; height: 1px; background: var(--red); opacity: .5; }
+    .hero h1 {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: clamp(54px, 9.5vw, 104px);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -.025em;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .hero-sub {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: clamp(15px, 2.2vw, 20px);
+      font-weight: 400;
+      color: var(--ink-3);
+      letter-spacing: .06em;
+      margin-bottom: 26px;
+    }
+    .hero-desc {
+      max-width: 560px;
+      font-size: 17px; font-weight: 300;
+      color: var(--ink-2);
+      line-height: 1.75;
+      margin-bottom: 42px;
+    }
+    .stats { display: flex; flex-wrap: wrap; gap: 0; }
+    .stat {
+      padding-right: 28px; margin-right: 28px;
+      border-right: 1px solid var(--border);
+    }
+    .stat:last-child { border: none; padding: 0; margin: 0; }
+    .stat-n {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 34px; font-weight: 700;
+      line-height: 1; color: var(--ink);
+    }
+    .stat-l {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      color: var(--ink-3); margin-top: 3px;
+    }
+
+    /* ── Preview ── */
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding-bottom: 60px;
+    }
+    .pv-wrap { }
+    .pv-img {
+      border-radius: 3px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 18px rgba(26,24,21,.08);
+      aspect-ratio: 4/3;
+      background: var(--white);
+    }
+    .pv-img img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform .4s ease;
+    }
+    .pv-img:hover img { transform: scale(1.04); }
+    .pv-cap {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      margin-top: 7px; text-align: center;
+    }
+
+    /* ── Section ── */
+    .section {
+      padding: 52px 0;
+      border-top: 1px solid var(--border);
+    }
+    .sec-head {
+      display: flex; align-items: flex-start;
+      gap: 18px; margin-bottom: 34px;
+    }
+    .sec-glyph {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 54px; font-weight: 900;
+      line-height: 1; color: var(--red);
+      opacity: .22; flex-shrink: 0;
+      transform: translateY(-3px);
+    }
+    .sec-title {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 26px; font-weight: 700;
+      color: var(--ink); line-height: 1.2;
+    }
+    .sec-desc {
+      font-size: 14px; color: var(--ink-3);
+      margin-top: 4px; line-height: 1.55;
+    }
+
+    /* ── Download items ── */
+    .dl-group { margin-bottom: 26px; }
+    .dl-group:last-child { margin-bottom: 0; }
+    .dl-label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--ink-3); margin-bottom: 8px;
+    }
+    .dl-grid { display: grid; gap: 8px; }
+    .dl-3 { grid-template-columns: repeat(3, 1fr); }
+    .dl-2 { grid-template-columns: repeat(2, 1fr); }
+
+    a.dli {
+      display: flex; align-items: center; gap: 13px;
+      text-decoration: none;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 13px 16px;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      box-shadow: 0 1px 3px rgba(26,24,21,.04);
+    }
+    a.dli:hover {
+      border-color: var(--red);
+      transform: translateY(-1px);
+      box-shadow: 0 5px 18px rgba(26,24,21,.09);
+    }
+    a.dli:hover .dli-arr { background: var(--red); color: var(--white); border-color: var(--red); }
+    .dli-text { flex: 1; min-width: 0; }
+    .dli-name { font-size: 14px; font-weight: 500; color: var(--ink); }
+    .dli-hint { font-size: 11px; color: var(--ink-3); margin-top: 1px; }
+    .dli-badge {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: .04em;
+      padding: 2px 8px; border-radius: 99px;
+      background: var(--red-pale); color: var(--red);
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .dli-arr {
+      width: 30px; height: 30px; border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; color: var(--ink-3);
+      transition: background .2s, color .2s, border-color .2s;
+    }
+    .dli-arr svg { width: 13px; height: 13px; }
+
+    /* ── Vocabulary grid ── */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+    .vc {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(26,24,21,.04);
+    }
+    .vc-top {
+      padding: 14px 14px 10px;
+      border-bottom: 1px solid var(--border-s);
+    }
+    .vc-level {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 30px; font-weight: 700;
+      line-height: 1; color: var(--ink);
+    }
+    .vc-body { padding: 10px; display: flex; flex-direction: column; gap: 5px; }
+    a.vc-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none;
+      font-size: 12px; font-weight: 500;
+      color: var(--ink-2);
+      padding: 6px 8px; border-radius: 2px;
+      border: 1px solid transparent;
+      transition: all .18s;
+    }
+    a.vc-link:hover { color: var(--red); border-color: var(--red); background: var(--red-pale); }
+    .flag { font-size: 14px; line-height: 1; }
+
+    /* ── Anki grid ── */
+    .anki-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    a.ak {
+      display: block; text-decoration: none;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 3px; overflow: hidden;
+      box-shadow: 0 1px 3px rgba(26,24,21,.04);
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    a.ak:hover { border-color: var(--red); transform: translateY(-2px); box-shadow: 0 7px 22px rgba(26,24,21,.10); }
+    .ak-top {
+      background: var(--ink); padding: 18px 14px 14px;
+      text-align: center; transition: background .2s;
+    }
+    a.ak:hover .ak-top { background: var(--red); }
+    .ak-lvl {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 28px; font-weight: 700;
+      color: white; line-height: 1;
+    }
+    .ak-body { padding: 10px 12px; }
+    .ak-sub {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--ink-3);
+    }
+    .ak-format {
+      font-size: 11px; font-weight: 500;
+      color: var(--ink-2); margin-top: 1px;
+    }
+
+    a.ak-all {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+      text-decoration: none;
+      background: var(--ink);
+      border-radius: 3px; padding: 22px 28px;
+      box-shadow: 0 4px 18px rgba(26,24,21,.14);
+      transition: background .2s, transform .2s, box-shadow .2s;
+    }
+    a.ak-all:hover { background: var(--red); transform: translateY(-2px); box-shadow: 0 8px 26px rgba(192,56,42,.26); }
+    .ak-all-title {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 20px; font-weight: 700;
+      color: white; line-height: 1.2;
+    }
+    .ak-all-sub { font-size: 13px; color: rgba(255,255,255,.5); margin-top: 3px; }
+    .ak-all-badge {
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 99px; padding: 7px 18px;
+      font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,.85); white-space: nowrap;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0 60px;
+      margin-top: 16px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px; margin-bottom: 36px;
+    }
+    .ft-title {
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 15px; font-weight: 700;
+      color: var(--ink); margin-bottom: 12px;
+    }
+    .ft-p { font-size: 13px; font-weight: 300; color: var(--ink-2); line-height: 1.7; }
+    .ft-ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .ft-ul li { font-size: 13px; color: var(--ink-2); display: flex; align-items: baseline; gap: 6px; }
+    .ft-ul li::before { content: '—'; color: var(--ink-3); flex-shrink: 0; }
+    .ft-ul a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(26,24,21,.12); transition: color .15s, border-color .15s; }
+    .ft-ul a:hover { color: var(--red); border-color: var(--red); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 22px;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    }
+    .ft-copy { font-size: 12px; color: var(--ink-3); }
+    .ft-copy a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(154,149,143,.35); }
+    .ft-copy a:hover { color: var(--red); }
+
+    /* ── Scroll reveal ── */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .vocab-grid, .anki-row { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .preview { grid-template-columns: 1fr 1fr; }
+      .preview .pv-wrap:last-child { display: none; }
+      .dl-3 { grid-template-columns: 1fr; }
+      .dl-2 { grid-template-columns: 1fr; }
+      .vocab-grid { grid-template-columns: repeat(2, 1fr); }
+      .anki-row { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .stat { padding-right: 20px; margin-right: 20px; }
+      .ak-all { flex-direction: column; align-items: flex-start; gap: 12px; }
+    }
+    @media (max-width: 400px) {
+      .preview { grid-template-columns: 1fr; }
+      .preview .pv-wrap:nth-child(n+2) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wm" aria-hidden="true">
+  <span>練</span>
+  <span>習</span>
+  <span>語</span>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <div class="nav">
+      <a href="#" class="nav-brand"><span class="jp">日本語</span>Practice</a>
+      <a href="https://github.com/featurequest/practice-japanese" class="gh-btn" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <p class="eyebrow">Open source · Free to download</p>
+    <h1>Japanese<br>Practice</h1>
+    <p class="hero-sub">日本語の練習</p>
+    <p class="hero-desc">
+      Printable flash cards, handwriting practice sheets, stroke order guides, JLPT vocabulary PDFs and Anki decks for hiragana, katakana and N5–N1 vocabulary — generated from open-licensed sources and free to use.
+    </p>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-n">208</div>
+        <div class="stat-l">Kana cards</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">7,500+</div>
+        <div class="stat-l">JLPT words</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">N5–N1</div>
+        <div class="stat-l">All levels</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">PDF+apkg</div>
+        <div class="stat-l">Formats</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Preview images ── -->
+  <div class="preview" aria-hidden="true">
+    <div class="pv-wrap">
+      <div class="pv-img">
+        <img src="https://raw.githubusercontent.com/featurequest/practice-japanese/main/docs/example_flashcards_front.jpg" alt="Hiragana flash card front side" loading="eager">
+      </div>
+      <p class="pv-cap">Flash cards</p>
+    </div>
+    <div class="pv-wrap">
+      <div class="pv-img">
+        <img src="https://raw.githubusercontent.com/featurequest/practice-japanese/main/docs/example_vocabulary.jpg" alt="JLPT N5 vocabulary reference sheet" loading="lazy">
+      </div>
+      <p class="pv-cap">Vocabulary PDF</p>
+    </div>
+    <div class="pv-wrap">
+      <div class="pv-img">
+        <img src="https://raw.githubusercontent.com/featurequest/practice-japanese/main/docs/example_stroke_order.jpg" alt="Kana stroke order diagram guide" loading="lazy">
+      </div>
+      <p class="pv-cap">Stroke order</p>
+    </div>
+  </div>
+
+  <!-- ── Kana Flash Cards & Practice ── -->
+  <section class="section reveal" id="kana">
+    <div class="sec-head">
+      <div class="sec-glyph" aria-hidden="true">あ</div>
+      <div>
+        <h2 class="sec-title">Kana Flash Cards &amp; Practice</h2>
+        <p class="sec-desc">208 double-sided cards — 104 hiragana + 104 katakana. Print duplex on A4 and cut. Character on the front, romaji and stroke order on the back.</p>
+      </div>
+    </div>
+
+    <div class="dl-group">
+      <p class="dl-label">Flash Cards — choose your size</p>
+      <div class="dl-grid dl-3">
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-55x82.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">55 × 82 mm</div>
+            <div class="dli-hint">Standard playing card</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-63x88.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">63 × 88 mm</div>
+            <div class="dli-hint">Euro / sleeve size</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/flashcards-74x105.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">74 × 105 mm</div>
+            <div class="dli-hint">A7 / pocket size</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="dl-group">
+      <p class="dl-label">Practice Sheets — 2 cm grid boxes with dashed guides</p>
+      <div class="dl-grid dl-2">
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/practice-hiragana.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Hiragana Practice</div>
+            <div class="dli-hint">Landscape A4, all 104 characters</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/practice-katakana.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Katakana Practice</div>
+            <div class="dli-hint">Landscape A4, all 104 characters</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="dl-group">
+      <p class="dl-label">Reference Charts — gojūon table layout</p>
+      <div class="dl-grid dl-3">
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/chart.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Full Chart</div>
+            <div class="dli-hint">Hiragana + katakana</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/chart-hiragana.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Hiragana Chart</div>
+            <div class="dli-hint">Hiragana only</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/chart-katakana.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Katakana Chart</div>
+            <div class="dli-hint">Katakana only</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="dl-group">
+      <p class="dl-label">Stroke Order Guides — KanjiVG diagrams with numbered strokes</p>
+      <div class="dl-grid dl-3">
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/stroke-order.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Full Stroke Order</div>
+            <div class="dli-hint">All kana</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/stroke-order-hiragana.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Hiragana Strokes</div>
+            <div class="dli-hint">Hiragana only</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+        <a class="dli" href="https://github.com/featurequest/practice-japanese/releases/latest/download/stroke-order-katakana.pdf" download>
+          <div class="dli-text">
+            <div class="dli-name">Katakana Strokes</div>
+            <div class="dli-hint">Katakana only</div>
+          </div>
+          <span class="dli-badge">PDF</span>
+          <span class="dli-arr" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8M4 7l3 3 3-3M2 12h10"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Vocabulary PDFs ── -->
+  <section class="section reveal" id="vocabulary">
+    <div class="sec-head">
+      <div class="sec-glyph" aria-hidden="true">語</div>
+      <div>
+        <h2 class="sec-title">JLPT Vocabulary PDFs</h2>
+        <p class="sec-desc">Per-level reference sheets with meanings, part of speech, register tags and antonyms. Sourced from JMdict and Jonathan Waller's JLPT lists. English and Swedish.</p>
+      </div>
+    </div>
+
+    <div class="vocab-grid">
+      <div class="vc">
+        <div class="vc-top"><div class="vc-level">N5</div></div>
+        <div class="vc-body">
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_n5.pdf" download><span class="flag">🇬🇧</span> English</a>
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_n5.pdf" download><span class="flag">🇸🇪</span> Swedish</a>
+        </div>
+      </div>
+      <div class="vc">
+        <div class="vc-top"><div class="vc-level">N4</div></div>
+        <div class="vc-body">
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_n4.pdf" download><span class="flag">🇬🇧</span> English</a>
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_n4.pdf" download><span class="flag">🇸🇪</span> Swedish</a>
+        </div>
+      </div>
+      <div class="vc">
+        <div class="vc-top"><div class="vc-level">N3</div></div>
+        <div class="vc-body">
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_n3.pdf" download><span class="flag">🇬🇧</span> English</a>
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_n3.pdf" download><span class="flag">🇸🇪</span> Swedish</a>
+        </div>
+      </div>
+      <div class="vc">
+        <div class="vc-top"><div class="vc-level">N2</div></div>
+        <div class="vc-body">
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_n2.pdf" download><span class="flag">🇬🇧</span> English</a>
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_n2.pdf" download><span class="flag">🇸🇪</span> Swedish</a>
+        </div>
+      </div>
+      <div class="vc">
+        <div class="vc-top"><div class="vc-level">N1</div></div>
+        <div class="vc-body">
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_n1.pdf" download><span class="flag">🇬🇧</span> English</a>
+          <a class="vc-link" href="https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_n1.pdf" download><span class="flag">🇸🇪</span> Swedish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Anki Decks ── -->
+  <section class="section reveal" id="anki">
+    <div class="sec-head">
+      <div class="sec-glyph" aria-hidden="true">習</div>
+      <div>
+        <h2 class="sec-title">Anki Decks</h2>
+        <p class="sec-desc">Bidirectional cards — Japanese → English and English → Japanese. One deck per JLPT level, or download everything in a single bundle. Import directly into Anki.</p>
+      </div>
+    </div>
+
+    <div class="anki-row">
+      <a class="ak" href="https://github.com/featurequest/practice-japanese/releases/latest/download/anki_n5.apkg" download>
+        <div class="ak-top"><div class="ak-lvl">N5</div></div>
+        <div class="ak-body"><div class="ak-sub">Vocabulary</div><div class="ak-format">.apkg</div></div>
+      </a>
+      <a class="ak" href="https://github.com/featurequest/practice-japanese/releases/latest/download/anki_n4.apkg" download>
+        <div class="ak-top"><div class="ak-lvl">N4</div></div>
+        <div class="ak-body"><div class="ak-sub">Vocabulary</div><div class="ak-format">.apkg</div></div>
+      </a>
+      <a class="ak" href="https://github.com/featurequest/practice-japanese/releases/latest/download/anki_n3.apkg" download>
+        <div class="ak-top"><div class="ak-lvl">N3</div></div>
+        <div class="ak-body"><div class="ak-sub">Vocabulary</div><div class="ak-format">.apkg</div></div>
+      </a>
+      <a class="ak" href="https://github.com/featurequest/practice-japanese/releases/latest/download/anki_n2.apkg" download>
+        <div class="ak-top"><div class="ak-lvl">N2</div></div>
+        <div class="ak-body"><div class="ak-sub">Vocabulary</div><div class="ak-format">.apkg</div></div>
+      </a>
+      <a class="ak" href="https://github.com/featurequest/practice-japanese/releases/latest/download/anki_n1.apkg" download>
+        <div class="ak-top"><div class="ak-lvl">N1</div></div>
+        <div class="ak-body"><div class="ak-sub">Vocabulary</div><div class="ak-format">.apkg</div></div>
+      </a>
+    </div>
+
+    <a class="ak-all" href="https://github.com/featurequest/practice-japanese/releases/latest/download/anki_all.apkg" download>
+      <div>
+        <div class="ak-all-title">All Levels Bundle</div>
+        <div class="ak-all-sub">N5–N1 in a single file — import once, get everything</div>
+      </div>
+      <span class="ak-all-badge">anki_all.apkg</span>
+    </a>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="ft-title">About</p>
+        <p class="ft-p">All materials are generated from open-licensed sources. PDFs and Anki decks are rebuilt automatically on every release. The source code is MIT-licensed and available on GitHub.</p>
+      </div>
+      <div>
+        <p class="ft-title">Data Sources</p>
+        <ul class="ft-ul">
+          <li><a href="https://www.edrdg.org/" target="_blank" rel="noopener">JMdict</a> — CC BY-SA 3.0</li>
+          <li><a href="https://www.tanos.co.uk/jlpt/" target="_blank" rel="noopener">Jonathan Waller JLPT lists</a></li>
+          <li><a href="https://kanjivg.tagaini.net/" target="_blank" rel="noopener">KanjiVG</a> — CC BY-SA 3.0</li>
+          <li><a href="https://github.com/fontworks-fonts/Klee" target="_blank" rel="noopener">Klee One font</a> — SIL OFL 1.1</li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft-title">Project</p>
+        <ul class="ft-ul">
+          <li><a href="https://github.com/featurequest/practice-japanese" target="_blank" rel="noopener">Source code</a></li>
+          <li><a href="https://github.com/featurequest/practice-japanese/releases" target="_blank" rel="noopener">All releases</a></li>
+          <li><a href="https://github.com/featurequest/practice-japanese/issues" target="_blank" rel="noopener">Report an issue</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="ft-copy">Code &copy; 2025 featurequest — <a href="https://github.com/featurequest/practice-japanese/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>. Vocabulary data CC BY-SA 3.0.</p>
+      <p class="ft-copy">Generated from <a href="https://github.com/featurequest/practice-japanese" target="_blank" rel="noopener">featurequest/practice-japanese</a></p>
+    </div>
+  </footer>
+
+</div><!-- /wrap -->
+
+<script>
+  const io = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    { threshold: 0.07, rootMargin: '0px 0px -28px 0px' }
+  );
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

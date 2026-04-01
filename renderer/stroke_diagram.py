@@ -224,16 +224,16 @@ def draw_stroke_diagram(c: Canvas, character: str, strokes: list[Stroke],
         has_svg = any(s.svg_d for s in strokes)
 
         if has_svg:
-            # Draw each stroke as actual KanjiVG path or synthetic mark
-            for stroke in strokes:
-                c.setStrokeColorRGB(0.75, 0.75, 0.75)
+            # Draw each stroke in its own color (cycles through STROKE_COLORS)
+            for i, stroke in enumerate(strokes):
+                color = config.STROKE_COLORS[i % len(config.STROKE_COLORS)]
+                c.setStrokeColorRGB(*color)
                 c.setLineWidth(config.STROKE_LINE_WIDTH * 1.5)
                 c.setLineCap(1)  # round caps
                 c.setLineJoin(1)  # round joins
                 if stroke.svg_d:
                     _draw_svg_path(c, stroke.svg_d, x, y, width, height)
                 elif len(stroke.path) >= 2:
-                    # Synthetic stroke (dakuten/handakuten): draw as gray line
                     _draw_synthetic_mark(c, stroke, x, y, width, height)
         else:
             # Fallback: draw the font character in light gray
@@ -248,14 +248,15 @@ def draw_stroke_diagram(c: Canvas, character: str, strokes: list[Stroke],
         def to_pdf(nx: float, ny: float) -> tuple[float, float]:
             return x + nx * width, y + height - ny * height
 
-        for stroke in strokes:
+        for i, stroke in enumerate(strokes):
             if not stroke.path:
                 continue
 
             sx, sy = to_pdf(*stroke.path[0])
+            color = config.STROKE_COLORS[i % len(config.STROKE_COLORS)]
 
-            # Circled number at start
-            c.setFillColorRGB(*config.STROKE_NUMBER_COLOR)
+            # Circled number at start — same color as the stroke
+            c.setFillColorRGB(*color)
             c.circle(sx, sy, config.STROKE_DOT_RADIUS, fill=1, stroke=0)
 
             # White number

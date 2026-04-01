@@ -24,29 +24,36 @@ jobs:
 
       - name: Generate flash cards
         run: |
-          python generate.py -o output/flashcards-55x82.pdf
-          python generate.py -o output/flashcards-63x88.pdf --card-width 63 --card-height 88
-          python generate.py -o output/flashcards-74x105.pdf --card-width 74 --card-height 105
+          python generate.py --kana -o output/flashcards-55x82.pdf
+          python generate.py --kana -o output/flashcards-63x88.pdf --card-width 63 --card-height 88
+          python generate.py --kana -o output/flashcards-74x105.pdf --card-width 74 --card-height 105
 
       - name: Generate practice sheets
         run: |
-          python generate.py --practice -o output/practice-hiragana.pdf --hiragana-only
-          python generate.py --practice -o output/practice-katakana.pdf --katakana-only
+          python generate.py --kana --practice -o output/practice-hiragana.pdf --hiragana-only
+          python generate.py --kana --practice -o output/practice-katakana.pdf --katakana-only
 
       - name: Generate reference charts
         run: |
-          python generate.py --chart -o output/chart.pdf
-          python generate.py --chart -o output/chart-hiragana.pdf --hiragana-only
-          python generate.py --chart -o output/chart-katakana.pdf --katakana-only
+          python generate.py --kana --chart -o output/chart.pdf
+          python generate.py --kana --chart -o output/chart-hiragana.pdf --hiragana-only
+          python generate.py --kana --chart -o output/chart-katakana.pdf --katakana-only
 
       - name: Generate stroke order
         run: |
-          python generate.py --stroke-order -o output/stroke-order.pdf
-          python generate.py --stroke-order -o output/stroke-order-hiragana.pdf --hiragana-only
-          python generate.py --stroke-order -o output/stroke-order-katakana.pdf --katakana-only
+          python generate.py --kana --stroke-order -o output/stroke-order.pdf
+          python generate.py --kana --stroke-order -o output/stroke-order-hiragana.pdf --hiragana-only
+          python generate.py --kana --stroke-order -o output/stroke-order-katakana.pdf --katakana-only
 
-      - name: Generate vocabulary reference
-        run: python generate_vocabulary.py
+      - name: Generate vocabulary PDFs
+        run: |
+          for level in n5 n4 n3 n2 n1; do
+            python generate.py --vocabulary --jlpt $level
+            python generate.py --vocabulary --jlpt $level --lang sv
+          done
+
+      - name: Generate Anki decks
+        run: python generate.py --anki
 
       - name: Generate example images
         run: |
@@ -72,15 +79,5 @@ jobs:
           name: ${{ steps.version.outputs.tag }}
           make_latest: true
           files: |
-            output/flashcards-55x82.pdf
-            output/flashcards-63x88.pdf
-            output/flashcards-74x105.pdf
-            output/practice-hiragana.pdf
-            output/practice-katakana.pdf
-            output/chart.pdf
-            output/chart-hiragana.pdf
-            output/chart-katakana.pdf
-            output/stroke-order.pdf
-            output/stroke-order-hiragana.pdf
-            output/stroke-order-katakana.pdf
-            output/vocabulary.pdf
+            output/*.pdf
+            output/*.apkg
