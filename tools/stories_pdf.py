@@ -1,4 +1,5 @@
 """tools/stories_pdf.py — PDF renderer for Japanese folk tale reading practice."""
+import re
 from pathlib import Path
 
 import pykakasi
@@ -16,19 +17,23 @@ from data.stories import Story
 
 FONT_PATH = "fonts/KleeOne-SemiBold.ttf"
 
-COLOR_ROMAJI = colors.HexColor("#888888")
-COLOR_TITLE  = colors.HexColor("#1a3a5c")
-COLOR_RULE   = colors.HexColor("#dddddd")
+COLOR_SUBTITLE = colors.HexColor("#888888")
+COLOR_ROMAJI   = colors.HexColor("#888888")
+COLOR_TITLE    = colors.HexColor("#1a3a5c")
+COLOR_RULE     = colors.HexColor("#dddddd")
+
+_KAKASI = pykakasi.kakasi()
 
 
 def _to_romaji(text: str) -> str:
-    kks = pykakasi.kakasi()
-    result = kks.convert(text)
-    return " ".join(item["hepburn"] for item in result if item["hepburn"])
+    result = _KAKASI.convert(text)
+    raw = " ".join(item["hepburn"] for item in result if item["hepburn"])
+    return re.sub(r' ([,\.!\?;:）」』\)])', r'\1', raw)
 
 
 def _register_font() -> None:
-    pdfmetrics.registerFont(TTFont("KleeOne", FONT_PATH))
+    if "KleeOne" not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont("KleeOne", FONT_PATH))
 
 
 def generate_story_pdf(story: Story, output_path: Path) -> None:
@@ -62,7 +67,7 @@ def generate_story_pdf(story: Story, output_path: Path) -> None:
     )
     title_ja_style = ParagraphStyle(
         "story_title_ja", fontName="KleeOne", fontSize=13, leading=18,
-        spaceAfter=6 * mm, textColor=COLOR_ROMAJI,
+        spaceAfter=6 * mm, textColor=COLOR_SUBTITLE,
     )
     jp_style = ParagraphStyle(
         "jp", fontName="KleeOne", fontSize=13, leading=19, spaceAfter=1 * mm,

@@ -38,6 +38,12 @@ def test_generate_story_pdf_creates_file():
         assert out.stat().st_size > 1000
 
 
+def test_to_romaji_no_space_before_punctuation():
+    result = _to_romaji("むかしむかし、おじいさんがいました。")
+    assert " ," not in result
+    assert " ." not in result
+
+
 def test_generate_story_pdf_creates_parent_dirs():
     with tempfile.TemporaryDirectory() as tmp:
         out = Path(tmp) / "subdir" / "story.pdf"
