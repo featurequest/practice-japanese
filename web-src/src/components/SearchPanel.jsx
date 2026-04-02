@@ -42,7 +42,7 @@ export default function SearchPanel({
           <WordRow
             key={`${w.kanji}|${w.kana}|${w.romaji}`}
             word={w}
-            selected={selectedKeys.has(`${w.kanji}|${w.kana}`)}
+            selected={selectedKeys.has(`${w.kanji}|${w.kana}|${w.jlpt}`)}
             language={language}
             onToggle={onToggleWord}
           />

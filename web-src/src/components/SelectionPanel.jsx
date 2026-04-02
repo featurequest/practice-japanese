@@ -60,7 +60,7 @@ export default function SelectionPanel({
 
       <div className="selected-list">
         {selectedWords.map(w => (
-          <div key={`${w.kanji}|${w.kana}`} className="selected-row">
+          <div key={`${w.kanji}|${w.kana}|${w.jlpt}`} className="selected-row">
             <div className="selected-word-label">
               <span className="sel-primary">{w.kanji || w.kana}</span>
               {w.kanji && <span className="sel-reading">{w.kana}</span>}

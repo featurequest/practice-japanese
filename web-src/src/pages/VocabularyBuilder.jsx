@@ -58,8 +58,10 @@ export default function VocabularyBuilder() {
     return fuse.search(searchText).map(r => r.item).filter(jlptFilter)
   }, [vocab, fuse, activeJlpt, searchText])
 
+  const wordKey = w => `${w.kanji}|${w.kana}|${w.jlpt}`
+
   const selectedKeys = useMemo(
-    () => new Set(selectedWords.map(w => `${w.kanji}|${w.kana}`)),
+    () => new Set(selectedWords.map(wordKey)),
     [selectedWords]
   )
 
@@ -73,17 +75,17 @@ export default function VocabularyBuilder() {
   }
 
   function toggleWord(word) {
-    const key = `${word.kanji}|${word.kana}`
+    const key = wordKey(word)
     if (selectedKeys.has(key)) {
-      setSelectedWords(prev => prev.filter(w => `${w.kanji}|${w.kana}` !== key))
+      setSelectedWords(prev => prev.filter(w => wordKey(w) !== key))
     } else {
       setSelectedWords(prev => [...prev, word])
     }
   }
 
   function removeWord(word) {
-    const key = `${word.kanji}|${word.kana}`
-    setSelectedWords(prev => prev.filter(w => `${w.kanji}|${w.kana}` !== key))
+    const key = wordKey(word)
+    setSelectedWords(prev => prev.filter(w => wordKey(w) !== key))
   }
 
   function clearWords() {
@@ -92,23 +94,23 @@ export default function VocabularyBuilder() {
 
   function handleImport(ids) {
     if (!Array.isArray(ids)) return
-    const vocabMap = new Map(vocab.map(w => [`${w.kanji}|${w.kana}|${w.jlpt}`, w]))
+    const vocabMap = new Map(vocab.map(w => [wordKey(w), w]))
     const toAdd = ids
       .filter(id => id && typeof id === 'object')
       .map(id => vocabMap.get(`${id.kanji}|${id.kana}|${id.jlpt}`))
       .filter(Boolean)
     if (toAdd.length === 0) return
     setSelectedWords(prev => {
-      const existing = new Set(prev.map(w => `${w.kanji}|${w.kana}`))
-      return [...prev, ...toAdd.filter(w => !existing.has(`${w.kanji}|${w.kana}`))]
+      const existing = new Set(prev.map(wordKey))
+      return [...prev, ...toAdd.filter(w => !existing.has(wordKey(w)))]
     })
   }
 
   function handleAddLevel(level) {
     const toAdd = vocab.filter(w => w.jlpt === level)
     setSelectedWords(prev => {
-      const existing = new Set(prev.map(w => `${w.kanji}|${w.kana}`))
-      return [...prev, ...toAdd.filter(w => !existing.has(`${w.kanji}|${w.kana}`))]
+      const existing = new Set(prev.map(wordKey))
+      return [...prev, ...toAdd.filter(w => !existing.has(wordKey(w)))]
     })
   }
 
