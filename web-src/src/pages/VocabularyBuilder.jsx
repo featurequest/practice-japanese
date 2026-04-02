@@ -92,10 +92,10 @@ export default function VocabularyBuilder() {
 
   function handleImport(ids) {
     if (!Array.isArray(ids)) return
-    const vocabMap = new Map(vocab.map(w => [`${w.kanji}|${w.kana}`, w]))
+    const vocabMap = new Map(vocab.map(w => [`${w.kanji}|${w.kana}|${w.jlpt}`, w]))
     const toAdd = ids
       .filter(id => id && typeof id === 'object')
-      .map(id => vocabMap.get(`${id.kanji}|${id.kana}`))
+      .map(id => vocabMap.get(`${id.kanji}|${id.kana}|${id.jlpt}`))
       .filter(Boolean)
     if (toAdd.length === 0) return
     setSelectedWords(prev => {

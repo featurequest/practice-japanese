@@ -8,7 +8,7 @@ export default function SelectionPanel({
   const fileInputRef = useRef(null)
 
   function handleExport() {
-    const ids = selectedWords.map(w => ({ kanji: w.kanji, kana: w.kana }))
+    const ids = selectedWords.map(w => ({ kanji: w.kanji, kana: w.kana, jlpt: w.jlpt }))
     const blob = new Blob([JSON.stringify(ids, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
