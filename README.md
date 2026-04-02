@@ -5,6 +5,8 @@
 
 Generate printable flash cards, handwriting practice sheets, reference charts, and stroke order guides for all hiragana and katakana characters. Also includes a web-based vocabulary builder for creating custom JLPT vocabulary PDFs.
 
+> **Educational use only.** All materials are intended for personal study and practice. Vocabulary data is sourced from community-maintained dictionaries and may contain errors or omissions. Always verify with authoritative references when accuracy matters.
+
 Produces five types of PDF:
 - **Flash cards** — 208 double-sided cards (104 hiragana + 104 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
 - **Practice sheets** — Landscape A4 pages with 2cm grid boxes. Each character gets 3 rows: the first box shows the KanjiVG stroke-order character, the rest are empty for handwriting practice. Boxes include dashed cross guides for centering.

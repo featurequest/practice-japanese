@@ -215,6 +215,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="footer-bottom">
+            <p className="ft-disclaimer">For educational use only. Content is sourced from community-maintained dictionaries and may contain errors. Verify with authoritative references when accuracy matters.</p>
             <p className="ft-copy">Code &copy; 2025 featurequest — <a href="https://github.com/featurequest/practice-japanese/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>. Vocabulary data CC BY-SA 3.0.</p>
             <p className="ft-copy">Generated from <a href="https://github.com/featurequest/practice-japanese" target="_blank" rel="noopener">featurequest/practice-japanese</a></p>
           </div>
