@@ -111,6 +111,7 @@ export async function generatePdf(words, language) {
         // Render meaning text in INK and notes in lighter, smaller INK_3
         const { x } = data.cell.getTextPos()
         let y = data.cell.getTextPos().y + BASELINE_OFFSET
+        const contentWidth = data.cell.width - data.cell.padding('horizontal')
 
         word.meanings.forEach((m, i) => {
           const prefix = word.meanings.length > 1 ? `${CIRCLE[i] ?? `(${i+1})`} ` : ''
@@ -118,14 +119,18 @@ export async function generatePdf(words, language) {
           doc.setFont('KleeOne')
           doc.setFontSize(10)
           doc.setTextColor(...INK)
-          doc.text(`${prefix}${text}`, x, y)
-          y += lineH
+          doc.splitTextToSize(`${prefix}${text}`, contentWidth).forEach(line => {
+            doc.text(line, x, y)
+            y += lineH
+          })
 
           if (m.note) {
             doc.setFontSize(8.5)
             doc.setTextColor(...INK_3)
-            doc.text(m.note, x, y)
-            y += lineH
+            doc.splitTextToSize(m.note, contentWidth).forEach(line => {
+              doc.text(line, x, y)
+              y += lineH
+            })
           }
         })
 
