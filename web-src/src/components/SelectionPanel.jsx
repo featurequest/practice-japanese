@@ -62,8 +62,14 @@ export default function SelectionPanel({
         {selectedWords.map(w => (
           <div key={w.id} className="selected-row">
             <div className="selected-word-label">
-              <span className="sel-primary">{w.kanji || w.kana}</span>
-              {w.kanji && <span className="sel-reading">{w.kana}</span>}
+              <div className="sel-main">
+                <span className="sel-primary">{w.kanji || w.kana}</span>
+                {w.kanji && <span className="sel-reading">{w.kana}</span>}
+              </div>
+              <div className="sel-sub">
+                <span className="sel-romaji">{w.romaji}</span>
+                {w.jlpt && <span className="sel-jlpt">{w.jlpt}</span>}
+              </div>
             </div>
             <button
               className="remove-btn"

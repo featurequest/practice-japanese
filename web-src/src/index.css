@@ -720,15 +720,19 @@ a.vb-cta svg { width: 14px; height: 14px; flex-shrink: 0; }
 }
 .selected-word-label {
   display: flex;
-  gap: 8px;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 2px;
 }
+.sel-main { display: flex; gap: 8px; align-items: baseline; }
+.sel-sub  { display: flex; gap: 6px; align-items: center; }
 .sel-primary {
   font-family: 'KleeOne', serif;
   color: var(--ink);
   font-size: 15px;
 }
 .sel-reading { color: var(--ink-3); font-size: 12px; }
+.sel-romaji  { color: var(--ink-3); font-size: 11px; }
+.sel-jlpt    { font-size: 10px; color: var(--ink-3); background: var(--border-s); border-radius: 3px; padding: 0 4px; line-height: 1.6; }
 .remove-btn {
   background: none;
   border: none;
