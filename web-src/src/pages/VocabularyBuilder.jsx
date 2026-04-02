@@ -26,7 +26,16 @@ export default function VocabularyBuilder() {
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'vocab.json')
       .then(r => r.json())
-      .then(data => { setVocab(data); setLoading(false) })
+      .then(data => {
+        setVocab(data)
+        setLoading(false)
+        // Migrate old selections that predate the id field
+        setSelectedWords(prev => {
+          if (prev.length === 0 || prev.every(w => w.id)) return prev
+          const byComposite = new Map(data.map(w => [`${w.kanji}|${w.kana}|${w.jlpt}`, w]))
+          return prev.map(w => w.id ? w : (byComposite.get(`${w.kanji}|${w.kana}|${w.jlpt}`) ?? w))
+        })
+      })
       .catch(() => setLoading(false))
   }, [])
 
@@ -94,10 +103,12 @@ export default function VocabularyBuilder() {
 
   function handleImport(ids) {
     if (!Array.isArray(ids)) return
-    const vocabMap = new Map(vocab.map(w => [w.id, w]))
+    const byId = new Map(vocab.map(w => [w.id, w]))
+    const byComposite = new Map(vocab.map(w => [`${w.kanji}|${w.kana}|${w.jlpt}`, w]))
     const toAdd = ids
-      .filter(id => typeof id === 'string')
-      .map(id => vocabMap.get(id))
+      .map(id => typeof id === 'string'
+        ? byId.get(id)
+        : (id && typeof id === 'object' ? byComposite.get(`${id.kanji}|${id.kana}|${id.jlpt}`) : undefined))
       .filter(Boolean)
     if (toAdd.length === 0) return
     setSelectedWords(prev => {
