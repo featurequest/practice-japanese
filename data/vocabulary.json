@@ -4148,26 +4148,6 @@
     "category": "Home & Daily Life"
   },
   {
-    "kana": "かようび",
-    "kanji": "火曜日",
-    "romaji": "kayoubi",
-    "meanings": [
-      {
-        "localized": {
-          "en": "Tuesday",
-          "sv": "tisdag"
-        },
-        "note": ""
-      }
-    ],
-    "pos": "noun",
-    "jlpt": "N5",
-    "frequency_rank": 141,
-    "tags": [],
-    "antonym": "",
-    "category": "Weekdays"
-  },
-  {
     "kana": "からい",
     "kanji": "辛い",
     "romaji": "karai",
@@ -4639,7 +4619,7 @@
           "en": "North Korea",
           "sv": ""
         },
-        "note": ""
+        "note": "Heading"
       }
     ],
     "pos": "noun",
@@ -5019,26 +4999,6 @@
     ],
     "antonym": "",
     "category": ""
-  },
-  {
-    "kana": "きんようび",
-    "kanji": "金曜日",
-    "romaji": "kinyoubi",
-    "meanings": [
-      {
-        "localized": {
-          "en": "Friday",
-          "sv": "fredag"
-        },
-        "note": ""
-      }
-    ],
-    "pos": "noun",
-    "jlpt": "N5",
-    "frequency_rank": 172,
-    "tags": [],
-    "antonym": "",
-    "category": "Weekdays"
   },
   {
     "kana": "ぎゅうにく",
@@ -5656,26 +5616,6 @@
     "tags": [],
     "antonym": "",
     "category": ""
-  },
-  {
-    "kana": "げつようび",
-    "kanji": "月曜日",
-    "romaji": "getsuyoubi",
-    "meanings": [
-      {
-        "localized": {
-          "en": "Monday",
-          "sv": "måndag"
-        },
-        "note": ""
-      }
-    ],
-    "pos": "noun",
-    "jlpt": "N5",
-    "frequency_rank": 195,
-    "tags": [],
-    "antonym": "",
-    "category": "Weekdays"
   },
   {
     "kana": "げんかん",
@@ -7400,26 +7340,6 @@
     "tags": [],
     "antonym": "",
     "category": "Body & Health"
-  },
-  {
-    "kana": "すいようび",
-    "kanji": "水曜日",
-    "romaji": "suiyoubi",
-    "meanings": [
-      {
-        "localized": {
-          "en": "Wednesday",
-          "sv": "onsdag"
-        },
-        "note": ""
-      }
-    ],
-    "pos": "noun",
-    "jlpt": "N5",
-    "frequency_rank": 262,
-    "tags": [],
-    "antonym": "",
-    "category": "Time & Numbers"
   },
   {
     "kana": "すう",
@@ -10551,26 +10471,6 @@
     "category": ""
   },
   {
-    "kana": "どようび",
-    "kanji": "土曜日",
-    "romaji": "doyoubi",
-    "meanings": [
-      {
-        "localized": {
-          "en": "Saturday",
-          "sv": "lördag"
-        },
-        "note": ""
-      }
-    ],
-    "pos": "noun",
-    "jlpt": "N5",
-    "frequency_rank": 372,
-    "tags": [],
-    "antonym": "",
-    "category": "Weekdays"
-  },
-  {
     "kana": "どれ",
     "kanji": "",
     "romaji": "dore",
@@ -11121,7 +11021,127 @@
     "frequency_rank": 392,
     "tags": [],
     "antonym": "",
-    "category": ""
+    "category": "Heading"
+  },
+  {
+    "kana": "げつようび",
+    "kanji": "月曜日",
+    "romaji": "getsuyoubi",
+    "meanings": [
+      {
+        "localized": {
+          "en": "Monday",
+          "sv": "måndag"
+        },
+        "note": ""
+      }
+    ],
+    "pos": "noun",
+    "jlpt": "N5",
+    "frequency_rank": 195,
+    "tags": [],
+    "antonym": "",
+    "category": "Weekdays"
+  },
+  {
+    "kana": "かようび",
+    "kanji": "火曜日",
+    "romaji": "kayoubi",
+    "meanings": [
+      {
+        "localized": {
+          "en": "Tuesday",
+          "sv": "tisdag"
+        },
+        "note": ""
+      }
+    ],
+    "pos": "noun",
+    "jlpt": "N5",
+    "frequency_rank": 141,
+    "tags": [],
+    "antonym": "",
+    "category": "Weekdays"
+  },
+  {
+    "kana": "すいようび",
+    "kanji": "水曜日",
+    "romaji": "suiyoubi",
+    "meanings": [
+      {
+        "localized": {
+          "en": "Wednesday",
+          "sv": "onsdag"
+        },
+        "note": ""
+      }
+    ],
+    "pos": "noun",
+    "jlpt": "N5",
+    "frequency_rank": 262,
+    "tags": [],
+    "antonym": "",
+    "category": "Weekdays"
+  },
+  {
+    "kana": "もくようび",
+    "kanji": "木曜日",
+    "romaji": "mokuyoubi",
+    "meanings": [
+      {
+        "localized": {
+          "en": "Thursday",
+          "sv": "torsdag"
+        },
+        "note": ""
+      }
+    ],
+    "pos": "noun",
+    "jlpt": "N5",
+    "frequency_rank": 504,
+    "tags": [],
+    "antonym": "",
+    "category": "Weekdays"
+  },
+  {
+    "kana": "きんようび",
+    "kanji": "金曜日",
+    "romaji": "kinyoubi",
+    "meanings": [
+      {
+        "localized": {
+          "en": "Friday",
+          "sv": "fredag"
+        },
+        "note": ""
+      }
+    ],
+    "pos": "noun",
+    "jlpt": "N5",
+    "frequency_rank": 172,
+    "tags": [],
+    "antonym": "",
+    "category": "Weekdays"
+  },
+  {
+    "kana": "どようび",
+    "kanji": "土曜日",
+    "romaji": "doyoubi",
+    "meanings": [
+      {
+        "localized": {
+          "en": "Saturday",
+          "sv": "lördag"
+        },
+        "note": ""
+      }
+    ],
+    "pos": "noun",
+    "jlpt": "N5",
+    "frequency_rank": 372,
+    "tags": [],
+    "antonym": "",
+    "category": "Weekdays"
   },
   {
     "kana": "にちようび",
@@ -12270,7 +12290,7 @@
           "en": "east",
           "sv": "ost"
         },
-        "note": ""
+        "note": "Heading"
       }
     ],
     "pos": "noun",
@@ -14049,7 +14069,7 @@
     "frequency_rank": 493,
     "tags": [],
     "antonym": "",
-    "category": ""
+    "category": "Heading"
   },
   {
     "kana": "みみ",
@@ -14379,26 +14399,6 @@
     "tags": [],
     "antonym": "",
     "category": ""
-  },
-  {
-    "kana": "もくようび",
-    "kanji": "木曜日",
-    "romaji": "mokuyoubi",
-    "meanings": [
-      {
-        "localized": {
-          "en": "Thursday",
-          "sv": "torsdag"
-        },
-        "note": ""
-      }
-    ],
-    "pos": "noun",
-    "jlpt": "N5",
-    "frequency_rank": 504,
-    "tags": [],
-    "antonym": "",
-    "category": "Weekdays"
   },
   {
     "kana": "もしもし",
