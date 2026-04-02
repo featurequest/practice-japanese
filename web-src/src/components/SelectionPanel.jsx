@@ -8,7 +8,7 @@ export default function SelectionPanel({
   const fileInputRef = useRef(null)
 
   function handleExport() {
-    const ids = selectedWords.map(w => ({ kanji: w.kanji, kana: w.kana, jlpt: w.jlpt }))
+    const ids = selectedWords.map(w => w.id)
     const blob = new Blob([JSON.stringify(ids, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -60,7 +60,7 @@ export default function SelectionPanel({
 
       <div className="selected-list">
         {selectedWords.map(w => (
-          <div key={`${w.kanji}|${w.kana}|${w.jlpt}`} className="selected-row">
+          <div key={w.id} className="selected-row">
             <div className="selected-word-label">
               <span className="sel-primary">{w.kanji || w.kana}</span>
               {w.kanji && <span className="sel-reading">{w.kana}</span>}

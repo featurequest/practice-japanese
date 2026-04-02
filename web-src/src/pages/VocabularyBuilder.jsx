@@ -58,7 +58,7 @@ export default function VocabularyBuilder() {
     return fuse.search(searchText).map(r => r.item).filter(jlptFilter)
   }, [vocab, fuse, activeJlpt, searchText])
 
-  const wordKey = w => `${w.kanji}|${w.kana}|${w.jlpt}`
+  const wordKey = w => w.id
 
   const selectedKeys = useMemo(
     () => new Set(selectedWords.map(wordKey)),
@@ -94,10 +94,10 @@ export default function VocabularyBuilder() {
 
   function handleImport(ids) {
     if (!Array.isArray(ids)) return
-    const vocabMap = new Map(vocab.map(w => [wordKey(w), w]))
+    const vocabMap = new Map(vocab.map(w => [w.id, w]))
     const toAdd = ids
-      .filter(id => id && typeof id === 'object')
-      .map(id => vocabMap.get(`${id.kanji}|${id.kana}|${id.jlpt}`))
+      .filter(id => typeof id === 'string')
+      .map(id => vocabMap.get(id))
       .filter(Boolean)
     if (toAdd.length === 0) return
     setSelectedWords(prev => {

@@ -11,6 +11,7 @@ export function transformEntry(entry) {
     note: m.note || '',
   }))
   return {
+    id: entry.id,
     kanji: entry.kanji || '',
     kana: entry.kana,
     romaji: entry.romaji,

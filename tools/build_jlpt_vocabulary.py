@@ -10,6 +10,7 @@ Usage:
 import argparse
 import csv
 import gzip
+import hashlib
 import json
 import re
 import sys
@@ -273,10 +274,15 @@ def _build_vocab_entry(kana: str, kanji: str, en_gloss: str,
     }
 
 
+def _word_id(kanji: str, kana: str, jlpt: str) -> str:
+    """Stable 8-char hex ID derived from the word's identity fields."""
+    return hashlib.md5(f"{kanji}|{kana}|{jlpt}".encode()).hexdigest()[:8]
+
+
 def _assign_frequency_ranks(words: list) -> list:
     """Assign 1-based frequency_rank within each JLPT level.
     Sort by _priority (asc), then kana alphabetically within ties.
-    Removes the _priority helper field.
+    Removes the _priority helper field. Adds stable id field.
     """
     result = []
     for level in ('N5', 'N4', 'N3', 'N2', 'N1'):
@@ -286,6 +292,7 @@ def _assign_frequency_ranks(words: list) -> list:
             w = dict(w)
             w['frequency_rank'] = i + 1
             del w['_priority']
+            w['id'] = _word_id(w['kanji'], w['kana'], w['jlpt'])
             result.append(w)
     return result
 

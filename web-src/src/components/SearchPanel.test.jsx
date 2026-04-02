@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event'
 import SearchPanel from './SearchPanel'
 
 const words = [
-  { kanji: '会う', kana: 'あう', romaji: 'au', meanings_en: 'to meet', meanings_sv: 'träffa', jlpt: 'N5' },
-  { kanji: '',    kana: 'あさ', romaji: 'asa', meanings_en: 'morning', meanings_sv: 'morgon', jlpt: 'N5' },
+  { id: 'aaaaaaaa', kanji: '会う', kana: 'あう', romaji: 'au', meanings_en: 'to meet', meanings_sv: 'träffa', jlpt: 'N5' },
+  { id: 'bbbbbbbb', kanji: '',    kana: 'あさ', romaji: 'asa', meanings_en: 'morning', meanings_sv: 'morgon', jlpt: 'N5' },
 ]
 
 const defaultProps = {

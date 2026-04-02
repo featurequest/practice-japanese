@@ -5,9 +5,9 @@ import { MemoryRouter } from 'react-router-dom'
 import VocabularyBuilder from './VocabularyBuilder'
 
 const mockVocab = [
-  { kanji: '会う', kana: 'あう', romaji: 'au',  meanings_en: 'to meet', meanings_sv: 'träffa', meanings: [{ en: 'to meet', sv: 'träffa', note: '' }], jlpt: 'N5' },
-  { kanji: '青',  kana: 'あお', romaji: 'ao',  meanings_en: 'blue',    meanings_sv: '',       meanings: [{ en: 'blue',    sv: '',       note: '' }], jlpt: 'N5' },
-  { kanji: '赤',  kana: 'あか', romaji: 'aka', meanings_en: 'red',     meanings_sv: 'röd',    meanings: [{ en: 'red',     sv: 'röd',    note: '' }], jlpt: 'N4' },
+  { id: 'aaaaaaaa', kanji: '会う', kana: 'あう', romaji: 'au',  meanings_en: 'to meet', meanings_sv: 'träffa', meanings: [{ en: 'to meet', sv: 'träffa', note: '' }], jlpt: 'N5' },
+  { id: 'bbbbbbbb', kanji: '青',  kana: 'あお', romaji: 'ao',  meanings_en: 'blue',    meanings_sv: '',       meanings: [{ en: 'blue',    sv: '',       note: '' }], jlpt: 'N5' },
+  { id: 'cccccccc', kanji: '赤',  kana: 'あか', romaji: 'aka', meanings_en: 'red',     meanings_sv: 'röd',    meanings: [{ en: 'red',     sv: 'röd',    note: '' }], jlpt: 'N4' },
 ]
 
 beforeEach(() => {
