@@ -39,10 +39,10 @@ export default function SelectionPanel({
       <div className="selection-header">
         <span>Selected ({selectedWords.length})</span>
         <div className="selection-header-actions">
-          <button className="icon-btn" onClick={() => fileInputRef.current.click()} title="Import selection">↑</button>
+          <button className="icon-btn" onClick={() => fileInputRef.current.click()} title="Import selection" aria-label="Import selection">↑</button>
           <input ref={fileInputRef} type="file" accept=".json" style={{ display: 'none' }} onChange={handleFileChange} />
           {selectedWords.length > 0 && (
-            <button className="icon-btn" onClick={handleExport} title="Export selection">↓</button>
+            <button className="icon-btn" onClick={handleExport} title="Export selection" aria-label="Export selection">↓</button>
           )}
           {selectedWords.length > 0 && (
             <button className="clear-btn" onClick={onClear}>Clear</button>
@@ -59,6 +59,12 @@ export default function SelectionPanel({
       </div>
 
       <div className="selected-list">
+        {selectedWords.length === 0 && (
+          <div className="sel-empty">
+            <span className="sel-empty-icon" aria-hidden="true">選</span>
+            <p>Search and add words to build your PDF</p>
+          </div>
+        )}
         {selectedWords.map(w => (
           <div key={w.id} className="selected-row">
             <div className="selected-word-label">

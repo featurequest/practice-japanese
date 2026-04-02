@@ -66,7 +66,7 @@ describe('VocabularyBuilder', () => {
   it('selecting a word adds it to the selection panel', async () => {
     renderBuilder()
     await waitFor(() => screen.getByText('会う'))
-    const addBtns = screen.getAllByRole('button', { name: /add to selection/i })
+    const addBtns = screen.getAllByRole('button', { name: /^add /i })
     await userEvent.click(addBtns[0])
     expect(screen.getByText(/selected.*1/i)).toBeInTheDocument()
   })
@@ -74,15 +74,15 @@ describe('VocabularyBuilder', () => {
   it('removing a word removes it from the selection panel', async () => {
     renderBuilder()
     await waitFor(() => screen.getByText('会う'))
-    await userEvent.click(screen.getAllByRole('button', { name: /add to selection/i })[0])
-    await userEvent.click(screen.getByRole('button', { name: /remove 会う/i }))
+    await userEvent.click(screen.getAllByRole('button', { name: /^add /i })[0])
+    await userEvent.click(screen.getByRole('button', { name: 'Remove 会う' }))
     expect(screen.getByText(/selected.*0/i)).toBeInTheDocument()
   })
 
   it('clear button removes all selected words', async () => {
     renderBuilder()
     await waitFor(() => screen.getByText('会う'))
-    await userEvent.click(screen.getAllByRole('button', { name: /add to selection/i })[0])
+    await userEvent.click(screen.getAllByRole('button', { name: /^add /i })[0])
     await userEvent.click(screen.getByRole('button', { name: /clear/i }))
     expect(screen.getByText(/selected.*0/i)).toBeInTheDocument()
   })
@@ -90,7 +90,7 @@ describe('VocabularyBuilder', () => {
   it('persists selected words to localStorage', async () => {
     renderBuilder()
     await waitFor(() => screen.getByText('会う'))
-    await userEvent.click(screen.getAllByRole('button', { name: /add to selection/i })[0])
+    await userEvent.click(screen.getAllByRole('button', { name: /^add /i })[0])
     const stored = JSON.parse(localStorage.getItem('japanese-practice-selected-words'))
     expect(stored).toHaveLength(1)
     expect(stored[0].kanji).toBe('会う')

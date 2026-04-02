@@ -4,21 +4,20 @@ export default function WordRow({ word, selected, language, onToggle }) {
   const meaning = language === 'sv' && word.meanings_sv ? word.meanings_sv : word.meanings_en
 
   return (
-    <div className="word-row">
+    <button
+      className={`word-row${selected ? ' selected' : ''}`}
+      onClick={() => onToggle(word)}
+      aria-label={`${selected ? 'Remove' : 'Add'} ${primary} (${word.romaji})`}
+      aria-pressed={selected}
+    >
       <div className="word-primary">
-        <span className="word-kanji">{primary}</span>
-        {showReading && <span className="word-kana">{word.kana}</span>}
+        <span className="word-kanji" lang="ja">{primary}</span>
+        {showReading && <span className="word-kana" lang="ja">{word.kana}</span>}
       </div>
       <span className="word-romaji">{word.romaji}</span>
-      <span className="word-meaning">{meaning}</span>
+      <span className="word-meaning" title={meaning}>{meaning}</span>
       {word.jlpt && <span className="word-jlpt-tag">{word.jlpt.toUpperCase()}</span>}
-      <button
-        className={`word-action-btn${selected ? ' selected' : ''}`}
-        onClick={() => onToggle(word)}
-        aria-label={selected ? 'Remove from selection' : 'Add to selection'}
-      >
-        {selected ? '✓' : '+'}
-      </button>
-    </div>
+      <span className="word-sel-icon" aria-hidden="true">{selected ? '✓' : '+'}</span>
+    </button>
   )
 }

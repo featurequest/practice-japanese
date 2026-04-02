@@ -18,6 +18,7 @@ export default function SearchPanel({
             key={level}
             className={`level-btn${activeJlpt.has(level) ? ' active' : ''}`}
             onClick={() => onJlptToggle(level)}
+            aria-pressed={activeJlpt.has(level)}
           >
             {level}
           </button>
@@ -28,6 +29,7 @@ export default function SearchPanel({
           className="search-input"
           type="text"
           placeholder="Search words, readings, meanings…"
+          aria-label="Search words, readings, meanings"
           value={searchText}
           onChange={e => onSearch(e.target.value)}
         />
