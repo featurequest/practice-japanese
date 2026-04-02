@@ -132,10 +132,7 @@ Examples:
         with open(JSON_FILE, encoding="utf-8") as f:
             all_words = json.load(f)
         level = args.jlpt.upper()
-        words = sorted(
-            [w for w in all_words if w.get("jlpt") == level],
-            key=lambda w: w.get("frequency_rank", 9999),
-        )
+        words = [w for w in all_words if w.get("jlpt") == level]
         out = Path(args.output) if args.output else Path(_default_output(args))
         print(f"Generating {level} vocabulary ({len(words)} words, lang={args.lang}) → {out}")
         build_pdf(words, level, args.lang, out)
