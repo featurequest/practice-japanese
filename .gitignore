@@ -9,3 +9,7 @@ docs/superpowers/
 .superpowers/
 .claude/
 .firecrawl/
+web/
+web-src/node_modules/
+web-src/public/vocab.json
+web-src/public/fonts/klee-one.ttf

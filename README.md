@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Data: CC BY-SA 3.0](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-lightblue.svg)](https://creativecommons.org/licenses/by-sa/3.0/)
 
-Generate printable flash cards, handwriting practice sheets, reference charts, and stroke order guides for all hiragana and katakana characters.
+Generate printable flash cards, handwriting practice sheets, reference charts, and stroke order guides for all hiragana and katakana characters. Also includes a web-based vocabulary builder for creating custom JLPT vocabulary PDFs.
 
 Produces five types of PDF:
 - **Flash cards** — 208 double-sided cards (104 hiragana + 104 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
@@ -55,6 +55,34 @@ Download the latest pre-built PDFs:
 - [Kaguya-hime](https://github.com/featurequest/practice-japanese/releases/latest/download/story_kaguya.pdf)
 - [Tsuru no Ongaeshi](https://github.com/featurequest/practice-japanese/releases/latest/download/story_tsuru.pdf)
 - [Issun Bōshi](https://github.com/featurequest/practice-japanese/releases/latest/download/story_issunboshi.pdf)
+
+## Web App — Vocabulary Builder
+
+The site at [featurequest.github.io/practice-japanese](https://featurequest.github.io/practice-japanese/) includes an interactive vocabulary builder. Search 7,500+ JLPT words (N5–N1), select the ones you want, and download a custom vocabulary PDF — client-side, no server required.
+
+### Running locally
+
+```bash
+cd web-src
+npm install
+npm run dev        # starts Vite dev server at http://localhost:5173
+```
+
+`npm run dev` uses the pre-built `public/vocab.json`. If `data/vocabulary.json` has been updated and you want the web app to reflect the latest data, regenerate it first:
+
+```bash
+cd web-src
+node scripts/build-vocab-data.js   # reads ../../data/vocabulary.json, writes public/vocab.json
+```
+
+`npm run build` runs this script automatically as a `prebuild` step before compiling the site.
+
+### Running tests
+
+```bash
+cd web-src
+npm test
+```
 
 ## Examples
 
