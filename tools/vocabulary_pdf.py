@@ -173,34 +173,24 @@ def build_pdf(words: list, level: str, lang: str, output_path: Path):
 
     row_idx = 1
     word_row_count = 0
-    for cat_name, cat_words in _group_by_category(words):
-        table_data.append([Paragraph(cat_name, cat_hdr_style), '', ''])
-        style_cmds += [
-            ('SPAN',          (0, row_idx), (-1, row_idx)),
-            ('BACKGROUND',    (0, row_idx), (-1, row_idx), COLOR_CAT_HDR),
-            ('TOPPADDING',    (0, row_idx), (-1, row_idx), 4),
-            ('BOTTOMPADDING', (0, row_idx), (-1, row_idx), 4),
-        ]
+    for entry in words:
+        kana  = entry['kana']
+        kanji = entry.get('kanji', '')
+
+        if kanji and font_has_chars(klee_font, kanji):
+            word_cell = [Paragraph(kanji, word_style), Paragraph(f'({kana})', kana_style)]
+        else:
+            word_cell = Paragraph(kana, word_style)
+
+        table_data.append([
+            word_cell,
+            Paragraph(entry.get('romaji', ''), romaji_style),
+            Paragraph(_format_meanings(entry, lang), meaning_style),
+        ])
+        if word_row_count % 2 == 1:
+            style_cmds.append(("BACKGROUND", (0, row_idx), (-1, row_idx), COLOR_ROW_ALT))
+        word_row_count += 1
         row_idx += 1
-
-        for entry in cat_words:
-            kana  = entry['kana']
-            kanji = entry.get('kanji', '')
-
-            if kanji and font_has_chars(klee_font, kanji):
-                word_cell = [Paragraph(kanji, word_style), Paragraph(f'({kana})', kana_style)]
-            else:
-                word_cell = Paragraph(kana, word_style)
-
-            table_data.append([
-                word_cell,
-                Paragraph(entry.get('romaji', ''), romaji_style),
-                Paragraph(_format_meanings(entry, lang), meaning_style),
-            ])
-            if word_row_count % 2 == 1:
-                style_cmds.append(("BACKGROUND", (0, row_idx), (-1, row_idx), COLOR_ROW_ALT))
-            word_row_count += 1
-            row_idx += 1
 
     table = Table(table_data, colWidths=col_widths, repeatRows=1)
     table.setStyle(TableStyle(style_cmds))
