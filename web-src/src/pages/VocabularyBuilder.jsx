@@ -90,6 +90,28 @@ export default function VocabularyBuilder() {
     setSelectedWords([])
   }
 
+  function handleImport(ids) {
+    if (!Array.isArray(ids)) return
+    const vocabMap = new Map(vocab.map(w => [`${w.kanji}|${w.kana}`, w]))
+    const toAdd = ids
+      .filter(id => id && typeof id === 'object')
+      .map(id => vocabMap.get(`${id.kanji}|${id.kana}`))
+      .filter(Boolean)
+    if (toAdd.length === 0) return
+    setSelectedWords(prev => {
+      const existing = new Set(prev.map(w => `${w.kanji}|${w.kana}`))
+      return [...prev, ...toAdd.filter(w => !existing.has(`${w.kanji}|${w.kana}`))]
+    })
+  }
+
+  function handleAddLevel(level) {
+    const toAdd = vocab.filter(w => w.jlpt === level)
+    setSelectedWords(prev => {
+      const existing = new Set(prev.map(w => `${w.kanji}|${w.kana}`))
+      return [...prev, ...toAdd.filter(w => !existing.has(`${w.kanji}|${w.kana}`))]
+    })
+  }
+
   async function handleGenerate() {
     setGenerating(true)
     try {
@@ -140,6 +162,8 @@ export default function VocabularyBuilder() {
         onLanguageChange={setLanguage}
         onGenerate={handleGenerate}
         onClear={clearWords}
+        onImport={handleImport}
+        onAddLevel={handleAddLevel}
       />
       </div>
     </div>
