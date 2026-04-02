@@ -72,6 +72,7 @@ export async function generatePdf(words, language) {
       2: { cellWidth: 'auto', valign: 'top' },
     },
     margin: { top: 40, left: marginLeft, right: marginRight, bottom: 30 },
+    rowPageBreak: 'avoid',
     // Suppress default text for cells we render manually in didDrawCell
     willDrawCell: (data) => {
       if (data.section !== 'body') return
