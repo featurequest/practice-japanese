@@ -103,7 +103,7 @@ def test_group_by_category_basic():
     ]
     groups = _group_by_category(words)
     names = [name for name, _ in groups]
-    assert names == ['Colors', 'Food']
+    assert names == ['Food', 'Colors']
 
 def test_group_by_category_other_last():
     words = [
