@@ -177,10 +177,10 @@ def test_no_match_fallback_warns_stderr():
 
 def test_frequency_ranks_within_level():
     words = [
-        {'kana': 'う', 'jlpt': 'N5', '_priority': 3},
-        {'kana': 'い', 'jlpt': 'N5', '_priority': 1},
-        {'kana': 'あ', 'jlpt': 'N5', '_priority': 1},
-        {'kana': 'え', 'jlpt': 'N4', '_priority': 2},
+        {'kana': 'う', 'kanji': '', 'jlpt': 'N5', '_priority': 3},
+        {'kana': 'い', 'kanji': '', 'jlpt': 'N5', '_priority': 1},
+        {'kana': 'あ', 'kanji': '', 'jlpt': 'N5', '_priority': 1},
+        {'kana': 'え', 'kanji': '', 'jlpt': 'N4', '_priority': 2},
     ]
     result = _assign_frequency_ranks(words)
     n5 = sorted([w for w in result if w['jlpt'] == 'N5'], key=lambda w: w['frequency_rank'])
@@ -194,15 +194,15 @@ def test_frequency_ranks_within_level():
 
 def test_frequency_ranks_independent_per_level():
     words = [
-        {'kana': 'あ', 'jlpt': 'N5', '_priority': 5},
-        {'kana': 'い', 'jlpt': 'N4', '_priority': 5},
+        {'kana': 'あ', 'kanji': '', 'jlpt': 'N5', '_priority': 5},
+        {'kana': 'い', 'kanji': '', 'jlpt': 'N4', '_priority': 5},
     ]
     result = _assign_frequency_ranks(words)
     for w in result:
         assert w['frequency_rank'] == 1  # each is rank 1 in its own level
 
 def test_frequency_ranks_removes_priority_field():
-    words = [{'kana': 'あ', 'jlpt': 'N5', '_priority': 1}]
+    words = [{'kana': 'あ', 'kanji': '', 'jlpt': 'N5', '_priority': 1}]
     result = _assign_frequency_ranks(words)
     assert '_priority' not in result[0]
 

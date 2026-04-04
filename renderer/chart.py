@@ -102,10 +102,15 @@ def _build_romaji_to_char(kana_type: str) -> dict[str, str]:
     mapping = {}
     for card in cards:
         mapping[card.romaji] = card.character
-    # Add explicit mappings for characters that share romaji
-    # (ji -> じ/ぢ, zu -> ず/づ) — we want the dakuten variants in dakuten cols
+    # Disambiguate homophonous pairs — the first loop leaves "ji"/"zu" pointing
+    # to ぢ/づ (last-write wins) because they appear after じ/ず in the list.
+    # Restore "ji"→じ/ジ and "zu"→ず/ズ (z-row), and add "di"→ぢ/ヂ, "du"→づ/ヅ.
     for card in cards:
-        if card.character in ("ぢ", "ヂ"):
+        if card.character in ("じ", "ジ"):
+            mapping["ji"] = card.character
+        elif card.character in ("ず", "ズ"):
+            mapping["zu"] = card.character
+        elif card.character in ("ぢ", "ヂ"):
             mapping["di"] = card.character
         elif card.character in ("づ", "ヅ"):
             mapping["du"] = card.character
@@ -120,7 +125,11 @@ def _build_romaji_to_card(kana_type: str) -> dict:
     for card in cards:
         mapping[card.romaji] = card
     for card in cards:
-        if card.character in ("ぢ", "ヂ"):
+        if card.character in ("じ", "ジ"):
+            mapping["ji"] = card
+        elif card.character in ("ず", "ズ"):
+            mapping["zu"] = card
+        elif card.character in ("ぢ", "ヂ"):
             mapping["di"] = card
         elif card.character in ("づ", "ヅ"):
             mapping["du"] = card
