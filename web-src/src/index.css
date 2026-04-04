@@ -260,7 +260,7 @@
     .dli-name { font-size: 14px; font-weight: 500; color: var(--ink); }
     .dli-hint { font-size: 11px; color: var(--ink-3); margin-top: 1px; }
     .dli-badge {
-      font-size: 10px; font-weight: 600;
+      font-size: 11px; font-weight: 600;
       letter-spacing: .04em;
       padding: 2px 8px; border-radius: 99px;
       background: var(--red-pale); color: var(--red);
@@ -711,8 +711,8 @@ a.vb-cta svg { width: 14px; height: 14px; flex-shrink: 0; }
   border: 1px solid var(--border);
   color: var(--ink-3);
   border-radius: 3px;
-  padding: 2px 8px;
-  font-size: 10px;
+  padding: 3px 8px;
+  font-size: 11px;
   cursor: pointer;
   font-family: 'Outfit', system-ui, sans-serif;
   text-transform: uppercase;
@@ -768,7 +768,7 @@ a.vb-cta svg { width: 14px; height: 14px; flex-shrink: 0; }
 }
 .sel-reading { color: var(--ink-3); font-size: 12px; }
 .sel-romaji  { color: var(--ink-3); font-size: 11px; }
-.sel-jlpt    { font-size: 10px; color: var(--ink-3); background: rgba(26,24,21,0.09); border-radius: 3px; padding: 0 4px; line-height: 1.6; }
+.sel-jlpt    { font-size: 11px; color: var(--ink-3); background: rgba(26,24,21,0.09); border-radius: 3px; padding: 0 4px; line-height: 1.6; }
 .remove-btn {
   background: none;
   border: none;

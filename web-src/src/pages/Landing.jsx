@@ -21,17 +21,18 @@ export default function Landing() {
 
       <div className="wrap">
         <header>
-          <div className="nav">
+          <nav className="nav" aria-label="Site navigation">
             <a href="#/" className="nav-brand"><span className="jp">日本語</span>Practice</a>
             <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
               <Link to="/vocabulary-builder" className="gh-btn">Vocabulary Builder</Link>
-              <a href="https://github.com/featurequest/practice-japanese" className="gh-btn" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/featurequest/practice-japanese" className="gh-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository (opens in new tab)">
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub
               </a>
             </div>
-          </div>
+          </nav>
         </header>
+        <main>
 
         <section className="hero">
           <p className="eyebrow">Open source · Free to download</p>
@@ -69,7 +70,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <section className="section reveal vb-feature-section">
+        <section className="section reveal vb-feature-section" aria-label="Vocabulary Builder tool">
           <div className="vb-feature-inner">
             <div className="vb-feature-content">
               <p className="eyebrow">Online Tool · Free</p>
@@ -86,11 +87,11 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="section reveal" id="kana">
+        <section className="section reveal" id="kana" aria-labelledby="kana-heading">
           <div className="sec-head">
             <div className="sec-glyph" aria-hidden="true">あ</div>
             <div>
-              <h2 className="sec-title">Kana Flash Cards &amp; Practice</h2>
+              <h2 id="kana-heading" className="sec-title">Kana Flash Cards &amp; Practice</h2>
               <p className="sec-desc">208 double-sided cards — 104 hiragana + 104 katakana. Print duplex on A4 and cut. Character on the front, romaji and stroke order on the back.</p>
             </div>
           </div>
@@ -144,11 +145,11 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="section reveal" id="vocabulary">
+        <section className="section reveal" id="vocabulary" aria-labelledby="vocabulary-heading">
           <div className="sec-head">
             <div className="sec-glyph" aria-hidden="true">語</div>
             <div>
-              <h2 className="sec-title">JLPT Vocabulary PDFs</h2>
+              <h2 id="vocabulary-heading" className="sec-title">JLPT Vocabulary PDFs</h2>
               <p className="sec-desc">Per-level reference sheets with meanings, part of speech, register tags and antonyms. Sourced from JMdict and Jonathan Waller's JLPT lists. English and Swedish.</p>
             </div>
           </div>
@@ -157,19 +158,19 @@ export default function Landing() {
               <div key={level} className="vc">
                 <div className="vc-top"><div className="vc-level">{level}</div></div>
                 <div className="vc-body">
-                  <a className="vc-link" href={`https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_${level.toLowerCase()}.pdf`} download><span className="flag">🇬🇧</span> English</a>
-                  <a className="vc-link" href={`https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_${level.toLowerCase()}.pdf`} download><span className="flag">🇸🇪</span> Swedish</a>
+                  <a className="vc-link" href={`https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_${level.toLowerCase()}.pdf`} download aria-label={`Download ${level} vocabulary PDF in English`}><span className="flag">🇬🇧</span> English</a>
+                  <a className="vc-link" href={`https://github.com/featurequest/practice-japanese/releases/latest/download/vocabulary_sv_${level.toLowerCase()}.pdf`} download aria-label={`Download ${level} vocabulary PDF in Swedish`}><span className="flag">🇸🇪</span> Swedish</a>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="section reveal" id="anki">
+        <section className="section reveal" id="anki" aria-labelledby="anki-heading">
           <div className="sec-head">
             <div className="sec-glyph" aria-hidden="true">習</div>
             <div>
-              <h2 className="sec-title">Anki Decks</h2>
+              <h2 id="anki-heading" className="sec-title">Anki Decks</h2>
               <p className="sec-desc">Bidirectional cards — Japanese → English and English → Japanese. One deck per JLPT level, or download everything in a single bundle. Import directly into Anki.</p>
             </div>
           </div>
@@ -190,6 +191,7 @@ export default function Landing() {
           </a>
         </section>
 
+        </main>
         <footer>
           <div className="footer-grid">
             <div>
