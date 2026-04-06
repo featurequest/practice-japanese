@@ -21,17 +21,36 @@ export default function SelectionPanel({
   function handleFileChange(e) {
     const file = e.target.files[0]
     if (!file) return
-    const reader = new FileReader()
-    reader.onload = evt => {
-      try {
-        const ids = JSON.parse(evt.target.result)
-        onImport(ids)
-      } catch {
-        alert('Invalid file. Please select a vocabulary-selection.json file.')
-      }
-    }
-    reader.readAsText(file)
     e.target.value = ''
+
+    const isPdf = file.name.endsWith('.pdf') || file.type === 'application/pdf'
+    const reader = new FileReader()
+
+    if (isPdf) {
+      reader.onload = evt => {
+        try {
+          const text = new TextDecoder('latin1').decode(evt.target.result)
+          const match = text.match(/\/Subject\s*\(([^)]*)\)/)
+          if (!match) throw new Error('No vocabulary data found in this PDF.')
+          const { v, ids } = JSON.parse(match[1])
+          if (v !== 1 || !Array.isArray(ids)) throw new Error('Unrecognized format.')
+          onImport(ids)
+        } catch (err) {
+          alert(err.message || 'Could not read vocabulary data from this PDF.')
+        }
+      }
+      reader.readAsArrayBuffer(file)
+    } else {
+      reader.onload = evt => {
+        try {
+          const ids = JSON.parse(evt.target.result)
+          onImport(ids)
+        } catch {
+          alert('Invalid file. Please select a vocabulary-selection.json or vocabulary-custom.pdf file.')
+        }
+      }
+      reader.readAsText(file)
+    }
   }
 
   return (
@@ -39,8 +58,8 @@ export default function SelectionPanel({
       <div className="selection-header">
         <span>Selected ({selectedWords.length})</span>
         <div className="selection-header-actions">
-          <button className="icon-btn" onClick={() => fileInputRef.current.click()} title="Import selection" aria-label="Import selection">↑</button>
-          <input ref={fileInputRef} type="file" accept=".json" style={{ display: 'none' }} onChange={handleFileChange} />
+          <button className="icon-btn" onClick={() => fileInputRef.current.click()} title="Import selection (JSON or PDF)" aria-label="Import selection">↑</button>
+          <input ref={fileInputRef} type="file" accept=".json,.pdf" style={{ display: 'none' }} onChange={handleFileChange} />
           {selectedWords.length > 0 && (
             <button className="icon-btn" onClick={handleExport} title="Export selection" aria-label="Export selection">↓</button>
           )}

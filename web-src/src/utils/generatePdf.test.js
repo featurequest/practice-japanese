@@ -6,6 +6,7 @@ const mockAddFileToVFS = vi.fn()
 const mockAddFont = vi.fn()
 const mockSetFont = vi.fn()
 const mockSetPage = vi.fn()
+const mockSetProperties = vi.fn()
 const mockDoc = {
   addFileToVFS: mockAddFileToVFS,
   addFont: mockAddFont,
@@ -19,6 +20,7 @@ const mockDoc = {
   getTextWidth: vi.fn(() => 30),
   save: mockSave,
   setPage: mockSetPage,
+  setProperties: mockSetProperties,
   internal: { pageSize: { width: 595.28, height: 841.89 }, getNumberOfPages: vi.fn(() => 2) },
 }
 const mockAutoTable = vi.fn()
@@ -42,8 +44,8 @@ beforeEach(() => {
 const { generatePdf } = await import('./generatePdf.js')
 
 const words = [
-  { kanji: '会う', kana: 'あう', romaji: 'au', meanings_en: 'to meet', meanings_sv: 'träffa', meanings: [{ en: 'to meet', sv: 'träffa', note: '' }], jlpt: 'N5' },
-  { kanji: '',    kana: 'あさ', romaji: 'asa', meanings_en: 'morning', meanings_sv: 'morgon', meanings: [{ en: 'morning', sv: 'morgon', note: '' }], jlpt: 'N5' },
+  { id: 'aaaaaaaa', kanji: '会う', kana: 'あう', romaji: 'au', meanings_en: 'to meet', meanings_sv: 'träffa', meanings: [{ en: 'to meet', sv: 'träffa', note: '' }], jlpt: 'N5' },
+  { id: 'bbbbbbbb', kanji: '',    kana: 'あさ', romaji: 'asa', meanings_en: 'morning', meanings_sv: 'morgon', meanings: [{ en: 'morning', sv: 'morgon', note: '' }], jlpt: 'N5' },
 ]
 
 describe('generatePdf', () => {
@@ -149,5 +151,12 @@ describe('generatePdf', () => {
   it('saves the file as vocabulary-custom.pdf', async () => {
     await generatePdf(words, 'en')
     expect(mockSave).toHaveBeenCalledWith('vocabulary-custom.pdf')
+  })
+
+  it('embeds word IDs in PDF subject metadata', async () => {
+    await generatePdf(words, 'en')
+    expect(mockSetProperties).toHaveBeenCalledWith(
+      expect.objectContaining({ subject: JSON.stringify({ v: 1, ids: ['aaaaaaaa', 'bbbbbbbb'] }) })
+    )
   })
 })

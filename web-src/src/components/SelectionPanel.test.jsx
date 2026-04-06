@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import SelectionPanel from './SelectionPanel'
 
@@ -16,6 +16,8 @@ const defaultProps = {
   onLanguageChange: vi.fn(),
   onGenerate: vi.fn(),
   onClear: vi.fn(),
+  onImport: vi.fn(),
+  onAddLevel: vi.fn(),
 }
 
 describe('SelectionPanel', () => {
@@ -86,5 +88,15 @@ describe('SelectionPanel', () => {
   it('does not show clear button when no words selected', () => {
     render(<SelectionPanel {...defaultProps} selectedWords={[]} />)
     expect(screen.queryByRole('button', { name: /clear/i })).not.toBeInTheDocument()
+  })
+
+  it('imports word IDs from a PDF file', async () => {
+    const onImport = vi.fn()
+    render(<SelectionPanel {...defaultProps} onImport={onImport} />)
+    const subject = JSON.stringify({ v: 1, ids: ['aaaaaaaa'] })
+    const file = new File([`/Subject (${subject})`], 'vocabulary-custom.pdf', { type: 'application/pdf' })
+    const fileInput = document.querySelector('input[type="file"]')
+    await userEvent.upload(fileInput, file)
+    await waitFor(() => expect(onImport).toHaveBeenCalledWith(['aaaaaaaa']))
   })
 })

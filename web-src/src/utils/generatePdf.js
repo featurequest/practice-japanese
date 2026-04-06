@@ -163,5 +163,9 @@ export async function generatePdf(words, language) {
   }
   doc.setTextColor(...INK)
 
+  doc.setProperties({
+    subject: JSON.stringify({ v: 1, ids: words.map(w => w.id) }),
+  })
+
   doc.save('vocabulary-custom.pdf')
 }
