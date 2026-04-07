@@ -549,6 +549,7 @@ def generate_chart_pdf(kana_types: list[str], output_path: str):
     """
     _register_fonts()
     c = Canvas(output_path, pagesize=(_PAGE_W, _PAGE_H))
+    c.setTitle(" / ".join(t.capitalize() for t in kana_types) + " Reference Chart")
     for kana_type in kana_types:
         _draw_chart_page(c, kana_type)
     c.save()
@@ -563,6 +564,7 @@ def generate_stroke_order_pdf(kana_types: list[str], output_path: str):
     """
     _register_fonts()
     c = Canvas(output_path, pagesize=(_PORT_W, _PORT_H))
+    c.setTitle(" / ".join(t.capitalize() for t in kana_types) + " Stroke Order")
     for kana_type in kana_types:
         _draw_stroke_order_pages(c, kana_type)
     c.save()

@@ -64,6 +64,8 @@ def generate_pdf(cards: list[KanaCard], output_path: str):
     """Generate a double-sided flash card PDF."""
     _register_fonts()
     c = Canvas(output_path, pagesize=(config.PAGE_WIDTH, config.PAGE_HEIGHT))
+    types = sorted({card.kana_type.capitalize() for card in cards})
+    c.setTitle(" / ".join(types) + " Flash Cards")
 
     front_positions = _card_positions_front()
     back_positions = _card_positions_back()

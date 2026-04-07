@@ -58,6 +58,8 @@ def generate_practice_pdf(cards: list[KanaCard], output_path: str):
     """Generate a practice worksheet PDF with landscape A4 pages."""
     _register_fonts()
     c = Canvas(output_path, pagesize=(_PAGE_W, _PAGE_H))
+    types = sorted({card.kana_type.capitalize() for card in cards})
+    c.setTitle(" / ".join(types) + " Practice Sheets")
 
     cols = int((_PAGE_W - 2 * _MARGIN) // _BOX)
     rows = int((_PAGE_H - 2 * _MARGIN) // _BOX)
