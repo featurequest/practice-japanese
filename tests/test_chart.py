@@ -6,6 +6,7 @@ import sys
 from renderer.chart import (
     _build_romaji_to_char,
     _get_basic_romaji,
+    _DUAL_DISPLAY,
     generate_chart_pdf,
     generate_stroke_order_pdf,
 )
@@ -21,6 +22,18 @@ def test_build_romaji_to_char_hiragana():
     # Dakuten special keys
     assert lookup["di"] == "ぢ"
     assert lookup["du"] == "づ"
+    # Yōon combinations from ぢ
+    assert lookup["dya"] == "ぢゃ"
+    assert lookup["dyu"] == "ぢゅ"
+    assert lookup["dyo"] == "ぢょ"
+
+
+def test_dual_display_entries():
+    assert _DUAL_DISPLAY["di"]  == "ji (di)"
+    assert _DUAL_DISPLAY["du"]  == "zu (du)"
+    assert _DUAL_DISPLAY["dya"] == "ja (dya)"
+    assert _DUAL_DISPLAY["dyu"] == "ju (dyu)"
+    assert _DUAL_DISPLAY["dyo"] == "jo (dyo)"
 
 
 def test_build_romaji_to_char_katakana():

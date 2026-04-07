@@ -4,6 +4,15 @@ from data.models import KanaCard
 from renderer.stroke_diagram import draw_stroke_diagram
 import config
 
+# Characters with two common romanizations — show both on the card back.
+# The more common Hepburn reading is primary; the d-row reading in parentheses.
+_DISPLAY_ROMAJI = {
+    "ぢ": "ji (di)",   "づ": "zu (du)",
+    "ぢゃ": "ja (dya)", "ぢゅ": "ju (dyu)", "ぢょ": "jo (dyo)",
+    "ヂ": "ji (di)",   "ヅ": "zu (du)",
+    "ヂャ": "ja (dya)", "ヂュ": "ju (dyu)", "ヂョ": "jo (dyo)",
+}
+
 
 def draw_card_back(c: Canvas, card: KanaCard, x: float, y: float, width: float, height: float):
     """Draw the back of a card: romaji in top third, stroke diagram in bottom two-thirds."""
@@ -13,7 +22,7 @@ def draw_card_back(c: Canvas, card: KanaCard, x: float, y: float, width: float, 
     cx = x + width / 2
     cy = y + height - top_third / 2 - config.ROMAJI_FONT_SIZE / 3
     c.setFillColorRGB(0, 0, 0)
-    c.drawCentredString(cx, cy, card.romaji)
+    c.drawCentredString(cx, cy, _DISPLAY_ROMAJI.get(card.character, card.romaji))
 
     # Stroke diagram in bottom two-thirds
     diagram_height = height * 2 / 3

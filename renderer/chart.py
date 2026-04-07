@@ -67,6 +67,15 @@ _IRREGULARS = {
     "ya": "ya", "yi_": None, "yu": "yu", "ye_": None, "yo": "yo",
 }
 
+# Cells with two valid romanizations — primary shown plainly, alternate in parentheses
+_DUAL_DISPLAY = {
+    "di":  "ji (di)",
+    "du":  "zu (du)",
+    "dya": "ja (dya)",
+    "dyu": "ju (dyu)",
+    "dyo": "jo (dyo)",
+}
+
 # Yōon basic groups: (base consonant romaji prefix, display prefix)
 _YOON_BASIC = [
     ("ky", "KY"),
@@ -183,9 +192,15 @@ def _draw_cell(c: Canvas, x: float, y: float, w: float, h: float,
     c.line(x, y + h - romaji_area_h, x + w, y + h - romaji_area_h)
 
     c.setFillColorRGB(0.2, 0.2, 0.2)
-    c.setFont("Helvetica-Bold", _ROMAJI_FONT_SIZE)
-    c.drawCentredString(x + w / 2, y + h - romaji_area_h + (romaji_area_h - _ROMAJI_FONT_SIZE) / 2,
-                        romaji.upper())
+    label = romaji.upper()
+    font_size = _ROMAJI_FONT_SIZE
+    c.setFont("Helvetica-Bold", font_size)
+    text_w = c.stringWidth(label, "Helvetica-Bold", font_size)
+    if text_w > w * 0.92:
+        font_size = font_size * (w * 0.92) / text_w
+    c.setFont("Helvetica-Bold", font_size)
+    c.drawCentredString(x + w / 2, y + h - romaji_area_h + (romaji_area_h - font_size) / 2,
+                        label)
 
     # Kana character (center of remaining area)
     kana_area_h = h - romaji_area_h
@@ -232,9 +247,15 @@ def _draw_stroke_cell(c: Canvas, x: float, y: float, w: float, h: float,
     c.line(x, y + h - romaji_area_h, x + w, y + h - romaji_area_h)
 
     c.setFillColorRGB(0.2, 0.2, 0.2)
-    c.setFont("Helvetica-Bold", _ROMAJI_FONT_SIZE)
-    c.drawCentredString(x + w / 2, y + h - romaji_area_h + (romaji_area_h - _ROMAJI_FONT_SIZE) / 2,
-                        romaji.upper())
+    label = romaji.upper()
+    font_size = _ROMAJI_FONT_SIZE
+    c.setFont("Helvetica-Bold", font_size)
+    text_w = c.stringWidth(label, "Helvetica-Bold", font_size)
+    if text_w > w * 0.92:
+        font_size = font_size * (w * 0.92) / text_w
+    c.setFont("Helvetica-Bold", font_size)
+    c.drawCentredString(x + w / 2, y + h - romaji_area_h + (romaji_area_h - font_size) / 2,
+                        label)
 
     # Stroke diagram — square, centered in the available area
     kana_area_h = h - romaji_area_h
@@ -346,7 +367,8 @@ def _draw_chart_page(c: Canvas, kana_type: str, stroke_order: bool = False):
                 _draw_empty_cell(c, x, y, _CELL_W, _CELL_H)
                 continue
             lookup_key = raw if raw in ("di", "du") else romaji
-            draw_filled_cell(x, y, romaji, lookup_key)
+            display = _DUAL_DISPLAY.get(lookup_key, romaji)
+            draw_filled_cell(x, y, display, lookup_key)
 
     # --- COMBINATIONS (YŌON) section (centered on page) ---
     yoon_top = grid_top - 5 * _CELL_H - 7 * mm
@@ -370,7 +392,8 @@ def _draw_chart_page(c: Canvas, kana_type: str, stroke_order: bool = False):
             x = dakuten_yoon_x + col_idx * _YOON_CELL_W
             y = yoon_grid_top - (row_idx + 1) * _YOON_CELL_H
             romaji = prefix + suffix
-            draw_filled_cell(x, y, romaji, cell_w=_YOON_CELL_W, cell_h=_YOON_CELL_H)
+            cell_display = _DUAL_DISPLAY.get(romaji, romaji)
+            draw_filled_cell(x, y, cell_display, romaji, cell_w=_YOON_CELL_W, cell_h=_YOON_CELL_H)
 
     c.showPage()
 
@@ -485,7 +508,8 @@ def _draw_stroke_order_pages(c: Canvas, kana_type: str):
         if romaji is None:
             return None
         lookup_key = raw if raw in ("di", "du") else romaji
-        return (romaji, lookup_key)
+        display = _DUAL_DISPLAY.get(lookup_key, romaji)
+        return (display, lookup_key)
 
     _draw_stroke_grid_page(c, f"{label} STROKE ORDER — DAKUTEN / HANDAKUTEN",
                            _DAKUTEN_COLS, _VOWELS, dakuten_row_fn,
@@ -498,7 +522,8 @@ def _draw_stroke_order_pages(c: Canvas, kana_type: str):
         suffix, _ = suffix_col
         prefix, _ = group_row
         romaji = prefix + suffix
-        return (romaji, romaji)
+        display = _DUAL_DISPLAY.get(romaji, romaji)
+        return (display, romaji)
 
     # Split basic combinations: 4 + 3 rows across two pages
     _draw_stroke_grid_page(c, f"{label} STROKE ORDER — COMBINATIONS (1/2)",
