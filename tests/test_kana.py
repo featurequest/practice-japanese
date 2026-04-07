@@ -23,11 +23,11 @@ def test_kana_card_creation():
 
 
 def test_hiragana_count():
-    assert len(HIRAGANA) == 104
+    assert len(HIRAGANA) == 107
 
 
 def test_katakana_count():
-    assert len(KATAKANA) == 104
+    assert len(KATAKANA) == 107
 
 
 def test_all_hiragana_have_romaji():

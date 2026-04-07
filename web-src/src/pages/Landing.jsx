@@ -42,7 +42,7 @@ export default function Landing() {
             Printable flash cards, handwriting practice sheets, stroke order guides, JLPT vocabulary PDFs and Anki decks for hiragana, katakana and N5–N1 vocabulary — generated from open-licensed sources and free to use.
           </p>
           <div className="stats">
-            <div className="stat"><div className="stat-n">208</div><div className="stat-l">Kana cards</div></div>
+            <div className="stat"><div className="stat-n">214</div><div className="stat-l">Kana cards</div></div>
             <div className="stat"><div className="stat-n">7,500+</div><div className="stat-l">JLPT words</div></div>
             <div className="stat"><div className="stat-n">N5–N1</div><div className="stat-l">All levels</div></div>
             <div className="stat"><div className="stat-n">PDF+apkg</div><div className="stat-l">Formats</div></div>

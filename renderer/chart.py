@@ -20,9 +20,9 @@ _MARGIN = 8 * mm
 # Cell sizing
 _CELL_W = 17.5 * mm
 _CELL_H = 18 * mm
-# Yōon cell width computed to fill the page: 7 basic + gap + 4 dakuten columns
+# Yōon cell width computed to fill the page: 7 basic + gap + 5 dakuten columns
 _YOON_GAP = 5 * mm
-_YOON_TOTAL_COLS = len(["ky", "sh", "ch", "ny", "hy", "my", "ry"]) + len(["gy", "j", "by", "py"])
+_YOON_TOTAL_COLS = len(["ky", "sh", "ch", "ny", "hy", "my", "ry"]) + len(["gy", "j", "dy", "by", "py"])
 _YOON_CELL_W = (_PAGE_W - 2 * _MARGIN - _YOON_GAP) / _YOON_TOTAL_COLS
 _YOON_CELL_H = _YOON_CELL_W  # keep square
 _ROMAJI_FONT_SIZE = 2.5 * mm
@@ -82,6 +82,7 @@ _YOON_BASIC = [
 _YOON_DAKUTEN = [
     ("gy", "GY"),
     ("j", "J"),
+    ("dy", "DY"),
     ("by", "BY"),
     ("py", "PY"),
 ]

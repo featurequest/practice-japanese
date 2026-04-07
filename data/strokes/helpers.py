@@ -161,6 +161,7 @@ YOON_TRIPLES = [
     ("ri", "ya", "rya"), ("ri", "yu", "ryu"), ("ri", "yo", "ryo"),
     ("gi", "ya", "gya"), ("gi", "yu", "gyu"), ("gi", "yo", "gyo"),
     ("ji", "ya", "ja"), ("ji", "yu", "ju"), ("ji", "yo", "jo"),
+    ("di", "ya", "dya"), ("di", "yu", "dyu"), ("di", "yo", "dyo"),
     ("bi", "ya", "bya"), ("bi", "yu", "byu"), ("bi", "yo", "byo"),
     ("pi", "ya", "pya"), ("pi", "yu", "pyu"), ("pi", "yo", "pyo"),
 ]

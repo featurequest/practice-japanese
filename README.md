@@ -8,7 +8,7 @@ Generate printable flash cards, handwriting practice sheets, reference charts, a
 > **Educational use only.** All materials are intended for personal study and practice. Vocabulary data is sourced from community-maintained dictionaries and may contain errors or omissions. Always verify with authoritative references when accuracy matters.
 
 Produces five types of PDF:
-- **Flash cards** — 208 double-sided cards (104 hiragana + 104 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
+- **Flash cards** — 214 double-sided cards (107 hiragana + 107 katakana) arranged in a 3×3 grid on A4 pages, designed for duplex printing and cutting.
 - **Practice sheets** — Landscape A4 pages with 2cm grid boxes. Each character gets 3 rows: the first box shows the KanjiVG stroke-order character, the rest are empty for handwriting practice. Boxes include dashed cross guides for centering.
 - **Reference charts** — Landscape A4 pages with the standard gojūon table layout: basic characters, dakuten/handakuten, and yōon combinations with romaji labels.
 - **Stroke order** — Portrait A4 pages with KanjiVG stroke diagrams and numbered indicators for each character, split into basic, dakuten, and combination sections for readability.
@@ -135,7 +135,7 @@ All commands go through `python generate.py`. Run without arguments to see help.
 ### Kana
 
 ```bash
-python generate.py --kana                              # Flash cards (208 cards)
+python generate.py --kana                              # Flash cards (214 cards)
 python generate.py --kana --hiragana-only              # Hiragana only
 python generate.py --kana --katakana-only              # Katakana only
 python generate.py --kana -o my_cards.pdf              # Custom output path
