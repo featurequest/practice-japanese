@@ -16,6 +16,8 @@ def _default_output(args) -> str:
             return f"output/vocabulary_{args.lang}_{level}.pdf"
         return f"output/vocabulary_{level}.pdf"
     # kana modes
+    if args.combined_practice:
+        return "output/kana_combined_practice.pdf"
     if args.practice:
         return "output/kana_practice.pdf"
     if args.chart:
@@ -35,10 +37,13 @@ Examples:
   python generate.py --kana --practice                  Practice sheets
   python generate.py --kana --chart --hiragana-only     Hiragana reference chart
   python generate.py --kana --stroke-order              Stroke order guide
+  python generate.py --kana --combined-practice         Combined stroke order + practice sheet
   python generate.py --vocabulary --jlpt n5             N5 vocabulary PDF (English)
   python generate.py --vocabulary --jlpt n3 --lang sv   N3 vocabulary PDF (Swedish)
   python generate.py --anki --jlpt n5                   N5 Anki deck → output/anki_n5.apkg
   python generate.py --anki                             All 5 levels (N5–N1)
+  python generate.py --stories                          Folk tale reading PDFs
+  python generate.py --stories --practice-sheets        Reading practice sheets with answer key
   python generate.py --setup                            Check/download prerequisites
   python generate.py --build-vocabulary                 Rebuild vocabulary data from source
 """,
@@ -49,6 +54,8 @@ Examples:
                           help="Generate kana PDF (flash cards by default)")
     kana_grp.add_argument("--practice", action="store_true",
                           help="Practice sheets (use with --kana)")
+    kana_grp.add_argument("--combined-practice", action="store_true", dest="combined_practice",
+                          help="Combined stroke order + practice sheet (use with --kana)")
     kana_grp.add_argument("--chart", action="store_true",
                           help="Reference chart (use with --kana)")
     kana_grp.add_argument("--stroke-order", action="store_true", dest="stroke_order",
@@ -76,6 +83,8 @@ Examples:
     stories_grp = parser.add_argument_group("Stories")
     stories_grp.add_argument("--stories", action="store_true",
                              help="Generate reading-practice PDFs for all folk tales")
+    stories_grp.add_argument("--practice-sheets", action="store_true", dest="stories_practice",
+                             help="Generate reading practice sheets instead of full stories (use with --stories)")
 
     maint_grp = parser.add_argument_group("Maintenance")
     maint_grp.add_argument("--setup", action="store_true",
@@ -153,12 +162,20 @@ Examples:
 
     if args.stories:
         from data.stories import load_stories
-        from tools.stories_pdf import generate_story_pdf
-        for story in load_stories():
-            out = Path(f"output/story_{story.slug}.pdf")
-            print(f"Generating {story.title_en} → {out}")
-            generate_story_pdf(story, out)
-            print(f"Saved to {out}")
+        if args.stories_practice:
+            from tools.stories_pdf import generate_reading_practice_pdf
+            for story in load_stories():
+                out = Path(f"output/story_{story.slug}_practice.pdf")
+                print(f"Generating practice sheet: {story.title_en} → {out}")
+                generate_reading_practice_pdf(story, out)
+                print(f"Saved to {out}")
+        else:
+            from tools.stories_pdf import generate_story_pdf
+            for story in load_stories():
+                out = Path(f"output/story_{story.slug}.pdf")
+                print(f"Generating {story.title_en} → {out}")
+                generate_story_pdf(story, out)
+                print(f"Saved to {out}")
         return
 
     if args.kana:
@@ -197,6 +214,10 @@ Examples:
         elif args.stroke_order:
             generate_stroke_order_pdf(kana_types, out)
             print(f"Generated stroke order ({', '.join(kana_types)}) → {out}")
+        elif args.combined_practice:
+            from renderer.practice_sheet import generate_combined_practice_pdf
+            generate_combined_practice_pdf(cards, out)
+            print(f"Generated {len(cards)} combined practice cards → {out}")
         elif args.practice:
             generate_practice_pdf(cards, out)
             print(f"Generated {len(cards)} cards → {out}")

@@ -90,6 +90,27 @@ describe('SelectionPanel', () => {
     expect(screen.queryByRole('button', { name: /clear/i })).not.toBeInTheDocument()
   })
 
+  it('calls onPractice when Practice Flashcards is clicked', async () => {
+    const onPractice = vi.fn()
+    const word = { id: '1', kanji: '食べる', kana: 'たべる', romaji: 'taberu', jlpt: 'N5' }
+    render(
+      <SelectionPanel
+        selectedWords={[word]}
+        language="en"
+        generating={false}
+        onRemove={() => {}}
+        onLanguageChange={() => {}}
+        onGenerate={() => {}}
+        onClear={() => {}}
+        onImport={() => {}}
+        onAddLevel={() => {}}
+        onPractice={onPractice}
+      />
+    )
+    await userEvent.click(screen.getByRole('button', { name: /practice flashcards/i }))
+    expect(onPractice).toHaveBeenCalled()
+  })
+
   it('imports word IDs from a PDF file', async () => {
     const onImport = vi.fn()
     render(<SelectionPanel {...defaultProps} onImport={onImport} />)

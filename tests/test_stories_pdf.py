@@ -3,7 +3,7 @@ import tempfile
 from pathlib import Path
 
 from data.stories import Story, Sentence
-from tools.stories_pdf import generate_story_pdf, _to_romaji
+from tools.stories_pdf import generate_story_pdf, _to_romaji, generate_reading_practice_pdf
 
 
 SAMPLE_STORY = Story(
@@ -56,3 +56,19 @@ def test_generate_story_pdf_creates_parent_dirs():
         out = Path(tmp) / "subdir" / "story.pdf"
         generate_story_pdf(SAMPLE_STORY, out)
         assert out.exists()
+
+
+def test_generate_reading_practice_pdf_creates_file(tmp_path):
+    out = tmp_path / "practice.pdf"
+    generate_reading_practice_pdf(SAMPLE_STORY, out)
+    assert out.exists()
+    assert out.stat().st_size > 1000
+
+
+def test_generate_reading_practice_pdf_all_stories(tmp_path):
+    from data.stories import load_stories
+    for story in load_stories():
+        out = tmp_path / f"{story.slug}_practice.pdf"
+        generate_reading_practice_pdf(story, out)
+        assert out.exists()
+        assert out.stat().st_size > 1000

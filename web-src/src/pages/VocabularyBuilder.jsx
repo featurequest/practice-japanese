@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Fuse from 'fuse.js'
 import SearchPanel from '../components/SearchPanel'
 import SelectionPanel from '../components/SelectionPanel'
@@ -125,6 +125,12 @@ export default function VocabularyBuilder() {
     })
   }
 
+  const navigate = useNavigate()
+
+  function handlePractice() {
+    navigate('/vocabulary-builder/practice', { state: { words: selectedWords } })
+  }
+
   async function handleGenerate() {
     setGenerating(true)
     try {
@@ -177,6 +183,7 @@ export default function VocabularyBuilder() {
         onClear={clearWords}
         onImport={handleImport}
         onAddLevel={handleAddLevel}
+        onPractice={handlePractice}
       />
       </div>
     </div>

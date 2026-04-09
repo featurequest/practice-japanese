@@ -405,7 +405,7 @@ _PORT_H = 297 * mm
 
 def _draw_stroke_grid_page(c: Canvas, title: str, cols_data, rows,
                            row_fn, lookup, card_lookup, font_name):
-    """Draw a single stroke order grid page filling the available space.
+    """Draw a single stroke order grid page with square cells, centered.
 
     Args:
         title: Page title text.
@@ -429,33 +429,34 @@ def _draw_stroke_grid_page(c: Canvas, title: str, cols_data, rows,
 
     avail_w = _PORT_W - 2 * _MARGIN
     avail_h = top_y - section_label_h - _MARGIN
-    cell_w = avail_w / num_cols
-    cell_h = avail_h / num_rows
+    # Square cells: constrained by whichever dimension is tighter
+    cell = min(avail_w / num_cols, avail_h / num_rows)
 
-    total_w = num_cols * cell_w
-    total_h = num_rows * cell_h
+    total_w = num_cols * cell
+    total_h = num_rows * cell
+    # Center the grid horizontally and vertically within the available area
     grid_x = (_PORT_W - total_w) / 2
-    grid_top = top_y - section_label_h + (avail_h - total_h) / 2
+    grid_top = (top_y - section_label_h) - (avail_h - total_h) / 2
 
     for col_idx, col in enumerate(cols_data):
         for row_idx, row in enumerate(rows):
-            x = grid_x + col_idx * cell_w
-            y = grid_top - (row_idx + 1) * cell_h
+            x = grid_x + col_idx * cell
+            y = grid_top - (row_idx + 1) * cell
             result = row_fn(col, row)
             if result is None:
-                _draw_empty_cell(c, x, y, cell_w, cell_h)
+                _draw_empty_cell(c, x, y, cell, cell)
                 continue
             romaji, lookup_key = result
             key = lookup_key or romaji
             char = lookup.get(key)
             if not char:
-                _draw_empty_cell(c, x, y, cell_w, cell_h)
+                _draw_empty_cell(c, x, y, cell, cell)
                 continue
             card = card_lookup.get(key)
             if card and card.strokes:
-                _draw_stroke_cell(c, x, y, cell_w, cell_h, card, romaji)
+                _draw_stroke_cell(c, x, y, cell, cell, card, romaji)
             else:
-                _draw_cell(c, x, y, cell_w, cell_h, char, romaji, font_name)
+                _draw_cell(c, x, y, cell, cell, char, romaji, font_name)
 
     c.showPage()
 
@@ -496,11 +497,16 @@ def _draw_stroke_order_pages(c: Canvas, kana_type: str):
             return None
         return (romaji, romaji)
 
-    _draw_stroke_grid_page(c, f"{label} STROKE ORDER — BASIC",
-                           basic_cols, _VOWELS, basic_with_n_fn,
-                           lookup, card_lookup, font_name)
+    # Split basic cols into pages of 4 so each cell is ~48 mm wide and readable
+    _BASIC_COLS_PER_PAGE = 4
+    basic_pages = [basic_cols[i:i + _BASIC_COLS_PER_PAGE]
+                   for i in range(0, len(basic_cols), _BASIC_COLS_PER_PAGE)]
+    for page_num, batch in enumerate(basic_pages, 1):
+        page_title = f"{label} STROKE ORDER — BASIC ({page_num}/{len(basic_pages)})"
+        _draw_stroke_grid_page(c, page_title, batch, _VOWELS, basic_with_n_fn,
+                               lookup, card_lookup, font_name)
 
-    # Page 2: Dakuten / Handakuten
+    # Dakuten / Handakuten
     def dakuten_row_fn(col, vowel):
         consonant, _ = col
         raw = consonant + vowel

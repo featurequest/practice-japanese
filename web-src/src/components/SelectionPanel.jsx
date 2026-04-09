@@ -3,7 +3,7 @@ import { useRef } from 'react'
 const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1']
 
 export default function SelectionPanel({
-  selectedWords, language, generating, onRemove, onLanguageChange, onGenerate, onClear, onImport, onAddLevel,
+  selectedWords, language, generating, onRemove, onLanguageChange, onGenerate, onClear, onImport, onAddLevel, onPractice,
 }) {
   const fileInputRef = useRef(null)
 
@@ -124,6 +124,13 @@ export default function SelectionPanel({
         onClick={onGenerate}
       >
         {generating ? 'Generating…' : '⬇ Generate PDF'}
+      </button>
+      <button
+        className="generate-btn generate-btn--secondary"
+        disabled={selectedWords.length === 0}
+        onClick={onPractice}
+      >
+        Practice Flashcards
       </button>
     </div>
   )

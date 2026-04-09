@@ -142,6 +142,7 @@ python generate.py --kana -o my_cards.pdf              # Custom output path
 
 python generate.py --kana --practice                   # Practice sheets
 python generate.py --kana --practice --hiragana-only
+python generate.py --kana --combined-practice           # Combined stroke order + practice sheet
 
 python generate.py --kana --chart                      # Reference chart
 python generate.py --kana --chart --hiragana-only
@@ -167,6 +168,7 @@ python generate.py --anki                              # All levels     → outp
 ```bash
 # Generate story PDFs
 python generate.py --stories                           # All folk tales → output/story_*.pdf
+python generate.py --stories --practice-sheets         # Reading practice sheets with answer key
 ```
 
 ### Maintenance
